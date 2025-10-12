@@ -1,0 +1,26 @@
+# Copy this file to .env.local and fill in your values
+
+# Site Configuration
+NEXT_PUBLIC_SITE_URL=https://coastalcalm.vercel.app
+
+# Contact Form - OPTION A (Default): Formspree
+# Get your endpoint from: https://formspree.io/
+NEXT_PUBLIC_FORMSPREE_ENDPOINT=https://formspree.io/f/REPLACE_ME
+
+# Contact Form - OPTION B (Alternative): Resend API
+# Uncomment and configure if using the /api/contact route instead of Formspree
+# You'll also need to: npm install resend
+# RESEND_API_KEY=re_xxxxxxxxxxxxx
+# CONTACT_TO=you@yourdomain.com
+# CONTACT_FROM=noreply@yourdomain.com
+
+# Newsletter - OPTION B (Alternative): MailerLite API
+# Uncomment if using the /api/subscribe route instead of MailerLite embed
+# Get your API key from: https://dashboard.mailerlite.com/integrations/api
+# MAILERLITE_API_KEY=your_api_key_here
+# MAILERLITE_GROUP_ID=your_group_id_here
+
+# Analytics - OPTIONAL: Plausible
+# Uncomment the script tag in app/(site)/layout.tsx to enable
+# PLAUSIBLE_DOMAIN=coastalcalm.vercel.app
+

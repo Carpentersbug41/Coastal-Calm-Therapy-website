@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="840" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F7FAFC;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#EDE9E3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F7F5F2;stop-opacity:1" />
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="840" fill="url(#bg)"/>
+  
+  <!-- Soft bokeh circles -->
+  <circle cx="200" cy="150" r="80" fill="#60A5FA" opacity="0.15" filter="url(#blur)"/>
+  <circle cx="900" cy="200" r="120" fill="#EDE9E3" opacity="0.25" filter="url(#blur)"/>
+  <circle cx="1000" cy="600" r="100" fill="#60A5FA" opacity="0.1" filter="url(#blur)"/>
+  
+  <!-- Plant stems -->
+  <path d="M 500 840 Q 480 600, 520 400 Q 540 200, 560 100" stroke="#7FA68D" stroke-width="4" fill="none" opacity="0.6"/>
+  <path d="M 520 840 Q 540 650, 500 450 Q 480 250, 490 120" stroke="#8FB99F" stroke-width="3" fill="none" opacity="0.5"/>
+  
+  <!-- Leaves -->
+  <ellipse cx="560" cy="150" rx="40" ry="80" fill="#9EC5AB" opacity="0.7" transform="rotate(-20 560 150)"/>
+  <ellipse cx="490" cy="180" rx="35" ry="70" fill="#8FB99F" opacity="0.6" transform="rotate(25 490 180)"/>
+  <ellipse cx="520" cy="300" rx="45" ry="85" fill="#A5D4B8" opacity="0.65" transform="rotate(-15 520 300)"/>
+  <ellipse cx="500" cy="400" rx="38" ry="75" fill="#9EC5AB" opacity="0.7" transform="rotate(30 500 400)"/>
+  <ellipse cx="510" cy="520" rx="42" ry="80" fill="#8FB99F" opacity="0.6" transform="rotate(-10 510 520)"/>
+  
+  <!-- Soft light effect -->
+  <rect x="700" y="0" width="500" height="840" fill="white" opacity="0.15"/>
+  <rect x="800" y="0" width="400" height="840" fill="white" opacity="0.08"/>
+</svg>

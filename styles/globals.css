@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Soft, airy background with coastal therapy palette */
+body {
+  background:
+    radial-gradient(1200px 500px at 0% -10%, rgba(199,210,192,0.15), transparent 65%),
+    radial-gradient(1000px 400px at 100% 10%, rgba(233,199,165,0.08), transparent 60%),
+    radial-gradient(900px 400px at 50% 100%, rgba(227,215,198,0.3), transparent 65%),
+    linear-gradient(180deg, #F7F3ED 0%, #F1EBE2 100%);
+  color: #4F584F; /* Olive Grey */
+  min-height: 100vh;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  @apply outline-2 outline-offset-2 outline-sea-sage;
+}
+
+/* Ensure images work well */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Fade-in on scroll animations */
+@layer utilities {
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .slide-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .slide-in-left.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .slide-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .slide-in-right.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Glassmorphism effect with coastal colors */
+.glass-effect {
+  background: rgba(247, 243, 237, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Hover glow effect with sea sage */
+.hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 12px 40px rgba(199, 210, 192, 0.3);
+}
+
+/* Text opacity utilities for coastal palette */
+.text-body {
+  color: rgba(79, 88, 79, 0.8); /* 80% Olive Grey */
+}

@@ -3,10 +3,13 @@ import Link from 'next/link'
 import { Container } from '@/components/container'
 import { PostCard } from '@/components/post-card'
 import { ScrollReveal } from '@/components/scroll-reveal'
+import { TestimonialCard } from '@/components/testimonial-card'
 import { getLatestPosts } from '@/lib/posts'
+import { getRandomTestimonials } from '@/lib/testimonials'
 
 export default function HomePage() {
   const latestPosts = getLatestPosts(3)
+  const featuredTestimonials = getRandomTestimonials(3)
 
   return (
     <>
@@ -90,6 +93,48 @@ export default function HomePage() {
               </div>
             </ScrollReveal>
           </div>
+        </Container>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section className="py-20 md:py-28">
+        <Container>
+          <ScrollReveal>
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-seafoam/20 border border-seafoam mb-6">
+                <span className="text-sm font-medium text-sea-sage">Client Experiences</span>
+              </div>
+              
+              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
+                Stories of Growth & Healing
+              </h2>
+              <p className="text-lg text-body max-w-2xl mx-auto leading-8">
+                Real experiences from people who have found clarity and calm
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {featuredTestimonials.map((testimonial, index) => (
+              <ScrollReveal key={testimonial.id} delay={index * 100}>
+                <TestimonialCard testimonial={testimonial} />
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <ScrollReveal delay={400}>
+            <div className="text-center">
+              <Link 
+                href="/testimonials" 
+                className="inline-flex items-center text-sea-sage font-medium hover:text-golden-shell group transition-colors"
+              >
+                <span>Read more testimonials</span>
+                <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+          </ScrollReveal>
         </Container>
       </section>
 

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Container } from './container';
 import { useEffect, useState } from 'react';
@@ -45,13 +46,17 @@ export function Header() {
           {/* Logo / Site name */}
           <Link
             href="/"
-            className="group flex items-center gap-2"
+            className="group flex items-center gap-3"
           >
-            <div className="relative">
-              <div className="absolute inset-0 bg-seafoam rounded-full blur-lg opacity-20 group-hover:opacity-30 transition-opacity"></div>
-              <div className="relative w-10 h-10 rounded-full bg-gradient-to-br from-sea-sage to-seafoam flex items-center justify-center shadow-soft">
-                <span className="text-white font-bold text-lg">🌊</span>
-              </div>
+            <div className="relative w-20 h-20 flex-shrink-0">
+              <Image
+                src="/images/logo_ap1.png"
+                alt="The Anxiety Protocol"
+                width={80}
+                height={80}
+                className="w-full h-full object-contain transition-transform group-hover:scale-110"
+                priority
+              />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-sea-sage to-seafoam bg-clip-text text-transparent">
               The Anxiety Protocol

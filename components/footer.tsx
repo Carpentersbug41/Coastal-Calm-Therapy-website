@@ -23,7 +23,7 @@ export function Footer() {
                 </h3>
               </div>
               <p className="text-body mb-4 leading-7 max-w-md">
-                A 30-day Cognitive Bootcamp for mastering anxiety. The Carpenter Method combines expert 
+                A 30-day Cognitive Bootcamp for mastering anxiety. The Protocol Framework combines expert 
                 human strategy with intensive structured drills for accelerated, measurable results.
               </p>
               <p className="text-sm font-medium text-sea-sage mb-2">
@@ -85,7 +85,7 @@ export function Footer() {
                 Program Info
               </h4>
               <p className="text-sm text-body mb-3 leading-6">
-                The Carpenter Method is an evidence-based anxiety treatment protocol combining licensed 
+                The Protocol Framework is an evidence-based anxiety treatment protocol combining licensed 
                 therapy with a proprietary training platform.
               </p>
               <p className="text-xs text-soft-clay leading-5">

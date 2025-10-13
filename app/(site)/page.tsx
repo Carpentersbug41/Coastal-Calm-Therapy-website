@@ -61,7 +61,7 @@ export default function HomePage() {
                     href="/blog"
                     className="group inline-flex items-center justify-center rounded-2xl px-8 py-4 border-2 border-sea-sage text-sea-sage font-medium hover:bg-pebble hover:scale-105 transition-all duration-300"
                   >
-                    <span>Learn More</span>
+                    <span>Learn More About the Protocol</span>
                   </Link>
                 </div>
               </div>
@@ -115,14 +115,14 @@ export default function HomePage() {
           <ScrollReveal>
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-seafoam/20 border border-seafoam mb-6">
-                <span className="text-sm font-medium text-sea-sage">Program Results</span>
+                <span className="text-sm font-medium text-sea-sage">✨</span>
               </div>
               
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                From Anxious to Confident in 30 Days
+                From Anxious to Confident in 30 Days.
               </h2>
               <p className="text-lg text-body max-w-2xl mx-auto leading-8">
-                Real results from high-performing professionals who completed the protocol
+                Real results from professionals who completed The Anxiety Protocol.
               </p>
             </div>
           </ScrollReveal>
@@ -167,26 +167,50 @@ export default function HomePage() {
         </Container>
       </div>
 
-      {/* 4-WEEK CURRICULUM */}
+      {/* CURRICULUM */}
       <section className="py-20 md:py-28">
         <Container>
           <ScrollReveal>
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-seafoam/20 border border-seafoam mb-6">
                 <span className="text-sm font-medium text-sea-sage">The Structured Curriculum</span>
               </div>
               
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                Your 30-Day Training Protocol
+                Your Personalized Training Protocol
               </h2>
-              <p className="text-lg text-body max-w-2xl mx-auto leading-8">
-                A week-by-week breakdown of skills you'll master through expert human strategy and intensive structured drills
+              <p className="text-xl font-medium text-sea-sage mb-4">
+                A Structured, Tailored Curriculum
+              </p>
+              <p className="text-lg text-body max-w-3xl mx-auto leading-8">
+                Your anxiety is unique. Your treatment plan should be too. The Anxiety Protocol is not a one-size-fits-all program. 
+                It is a dynamic bootcamp built from a core curriculum of four evidence-based skill modules.
               </p>
             </div>
           </ScrollReveal>
 
+          <ScrollReveal delay={100}>
+            <div className="max-w-3xl mx-auto mb-12">
+              <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft border border-dune-shadow">
+                <p className="text-lg text-body leading-8">
+                  In your initial 90-minute Strategy Session, your Head Coach will conduct a deep diagnostic of your specific anxiety patterns. 
+                  We will then design your personalized 30-day protocol, determining the precise sequence and emphasis of these modules to 
+                  target your unique challenges and goals.
+                </p>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={200}>
+            <div className="mb-10">
+              <h3 className="text-2xl md:text-3xl font-bold text-sea-sage text-center mb-8">
+                The Core Curriculum Modules:
+              </h3>
+            </div>
+          </ScrollReveal>
+
           <div className="grid gap-8 md:gap-10">
-            {/* Week 1 */}
+            {/* Module 1 */}
             <ScrollReveal delay={100}>
               <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft hover:shadow-soft-lg transition-all border border-dune-shadow">
                 <div className="flex items-start gap-4 mb-4">
@@ -194,21 +218,21 @@ export default function HomePage() {
                     1
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-sea-sage mb-2">Week 1: Deconstruction & Stabilization</h3>
-                    <p className="text-body mb-4">
-                      <strong className="text-sea-sage">Human Session:</strong> Deep diagnostic of your anxiety patterns. 
-                      Co-design your personalized protocol. Core insight: Anxiety isn't the enemy—the struggle with it is.
+                    <h3 className="text-2xl font-bold text-sea-sage mb-3">Module 1: Deconstruction & Diagnostics</h3>
+                    <p className="text-body mb-4 leading-7">
+                      Before we can build, we must understand. In this module, you will use our analytical tools to create a 
+                      precise, data-driven map of your anxiety. You will learn to identify your exact triggers, the core thoughts 
+                      and feelings that hook you, and the subtle avoidance patterns that keep you stuck.
                     </p>
-                    <p className="text-body">
-                      <strong className="text-sea-sage">Intensive Drills (2-3x):</strong> Functional analysis of anxiety episodes, 
-                      somatic awareness training, basic pendulation practice to build tolerance for anxious sensations.
+                    <p className="text-sm text-soft-clay italic">
+                      Drills Include: Functional Analysis Mapping, Somatic Awareness Training, Introduction to Titration.
                     </p>
                   </div>
                 </div>
               </div>
             </ScrollReveal>
 
-            {/* Week 2 */}
+            {/* Module 2 */}
             <ScrollReveal delay={200}>
               <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft hover:shadow-soft-lg transition-all border border-dune-shadow">
                 <div className="flex items-start gap-4 mb-4">
@@ -216,21 +240,21 @@ export default function HomePage() {
                     2
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-sea-sage mb-2">Week 2: Defusion & Dropping the Rope</h3>
-                    <p className="text-body mb-4">
-                      <strong className="text-sea-sage">Human Check-in:</strong> Review Week 1 data. Solidify the insight 
-                      that fighting anxiety amplifies it. Introduce cognitive defusion techniques.
+                    <h3 className="text-2xl font-bold text-sea-sage mb-3">Module 2: Cognitive Defusion</h3>
+                    <p className="text-body mb-4 leading-7">
+                      Anxious thoughts are not commands; they are noise. This module provides a suite of powerful techniques to 
+                      change your relationship with your mind. You will learn to "unhook" from worrying thoughts, see them as 
+                      temporary mental events, and strip them of their power to control your behavior.
                     </p>
-                    <p className="text-body">
-                      <strong className="text-sea-sage">Intensive Drills (2-3x):</strong> Practice multiple defusion techniques, 
-                      work with metaphors (Tug of War, Passengers on the Bus), advanced titration exercises.
+                    <p className="text-sm text-soft-clay italic">
+                      Drills Include: Advanced Defusion Techniques, Metaphorical Practice (e.g., 'Tug of War'), In-Vivo Thought Labeling.
                     </p>
                   </div>
                 </div>
               </div>
             </ScrollReveal>
 
-            {/* Week 3 */}
+            {/* Module 3 */}
             <ScrollReveal delay={300}>
               <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft hover:shadow-soft-lg transition-all border border-dune-shadow">
                 <div className="flex items-start gap-4 mb-4">
@@ -238,21 +262,21 @@ export default function HomePage() {
                     3
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-sea-sage mb-2">Week 3: Exposure & Committed Action</h3>
-                    <p className="text-body mb-4">
-                      <strong className="text-sea-sage">Human Check-in:</strong> Analyze progress. Shift from internal 
-                      skills to real-world application. Design values-based exposure experiments.
+                    <h3 className="text-2xl font-bold text-sea-sage mb-3">Module 3: Somatic Regulation</h3>
+                    <p className="text-body mb-4 leading-7">
+                      The physical sensations of anxiety—a racing heart, a tight chest—are often the most distressing part of the 
+                      experience. This module trains your nervous system's capacity to tolerate these sensations without spiraling 
+                      into panic. You will build the foundational skill of "affect tolerance."
                     </p>
-                    <p className="text-body">
-                      <strong className="text-sea-sage">Intensive Drills (2-3x):</strong> Values clarification exercises, 
-                      imaginal exposure rehearsals, design concrete behavioral experiments aligned with your values.
+                    <p className="text-sm text-soft-clay italic">
+                      Drills Include: Advanced Pendulation & Titration, Breathwork Protocols, Grounding Exercises.
                     </p>
                   </div>
                 </div>
               </div>
             </ScrollReveal>
 
-            {/* Week 4 */}
+            {/* Module 4 */}
             <ScrollReveal delay={400}>
               <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft hover:shadow-soft-lg transition-all border border-dune-shadow">
                 <div className="flex items-start gap-4 mb-4">
@@ -260,20 +284,32 @@ export default function HomePage() {
                     4
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-sea-sage mb-2">Week 4: Integration & Relapse Prevention</h3>
-                    <p className="text-body mb-4">
-                      <strong className="text-sea-sage">Human Debrief (90 min):</strong> Full review of monthly data. 
-                      Analyze behavioral experiment results. Create your personalized Go-Forward Plan for independence.
+                    <h3 className="text-2xl font-bold text-sea-sage mb-3">Module 4: Committed Action & Exposure</h3>
+                    <p className="text-body mb-4 leading-7">
+                      This is where insight becomes action. This module is focused on helping you re-engage with the life your 
+                      anxiety has taken from you. You will clarify your core values and design small, courageous, real-world 
+                      "behavioral experiments" to approach feared situations, with the new skills you've learned to manage the internal storm.
                     </p>
-                    <p className="text-body">
-                      <strong className="text-sea-sage">Final Drill:</strong> Future-self visualization exercise to 
-                      reinforce skills and prepare for long-term anxiety mastery.
+                    <p className="text-sm text-soft-clay italic">
+                      Drills Include: Values Clarification, Imaginal Exposure Rehearsals, Behavioral Experiment Design.
                     </p>
                   </div>
                 </div>
               </div>
             </ScrollReveal>
           </div>
+
+          <ScrollReveal delay={500}>
+            <div className="mt-12 max-w-3xl mx-auto">
+              <div className="rounded-2xl bg-seafoam/10 p-8 border border-seafoam/30">
+                <p className="text-lg text-body leading-8 text-center">
+                  <strong className="text-sea-sage">Your 30-day bootcamp is a unique combination of these core modules,</strong> designed 
+                  by your Head Coach specifically for you. This is the power of the Protocol Framework: the rigor of a structured curriculum 
+                  combined with the precision of a personalized strategy.
+                </p>
+              </div>
+            </div>
+          </ScrollReveal>
         </Container>
       </section>
 
@@ -388,7 +424,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="font-medium text-sea-sage">Proprietary Training Platform</p>
-                        <p className="text-sm text-body">HIPAA-compliant, end-to-end encrypted platform designed specifically for the Carpenter Method</p>
+                        <p className="text-sm text-body">A HIPAA-compliant, end-to-end encrypted platform designed specifically for our Protocol Framework</p>
                       </div>
                     </div>
                   </div>
@@ -403,7 +439,7 @@ export default function HomePage() {
 
                   {/* Note */}
                   <p className="mt-6 text-center text-sm text-body">
-                    <strong>Limited Availability:</strong> To maintain quality, I accept a maximum of 4 new clients per month.
+                    <strong>Limited Availability:</strong> To maintain the highest quality of strategic oversight, I accept a maximum of 4 new clients per month.
                   </p>
                 </div>
               </div>
@@ -456,24 +492,32 @@ export default function HomePage() {
             {/* Content */}
             <ScrollReveal direction="right" delay={200} className="order-1 lg:order-2">
               <div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-sea-sage mb-6">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-sea-sage mb-3">
                   Your Head Coach: Robert Carpenter
                 </h2>
                 
+                <p className="text-xl italic text-soft-clay mb-6">
+                  Psychotherapist, Author, and Creator of The Anxiety Protocol
+                </p>
+                
                 <div className="space-y-4 text-lg leading-8 text-body mb-8">
                   <p>
-                    I'm a licensed psychotherapist, published author, and the creator of The Anxiety Protocol. 
-                    After 20 years treating anxiety across diverse cultures in Asia and South America, I recognized 
-                    a critical gap: high-performing individuals need a faster, more intensive approach.
+                    I'm a licensed psychotherapist, published author, and anxiety specialist. After 20 years treating 
+                    anxiety across diverse cultures, I recognized a critical gap: high-performing individuals need a 
+                    faster, more structured, and more effective approach than traditional talk therapy can provide.
                   </p>
                   
                   <p>
-                    As your <strong className="text-sea-sage">Head Coach</strong>, I design your personalized 
-                    30-day training program, analyze your session data, and provide strategic oversight. The Anxiety 
-                    Protocol is built on my proprietary <strong className="text-sea-sage">"Carpenter Method,"</strong> a 
-                    hybrid system that integrates high-level clinical strategy with high-frequency, technology-assisted 
-                    skill-building. This allows clients to engage in structured practice at an intensity previously 
-                    impossible, leading to dramatically accelerated results.
+                    As your <strong className="text-sea-sage">Head Coach</strong>, I do not act as a traditional therapist. 
+                    I am your clinical strategist. I design your personalized 30-day training program, analyze the data from 
+                    your practice sessions, and provide the high-level oversight to ensure you achieve your goals.
+                  </p>
+
+                  <p>
+                    The Anxiety Protocol is built on my proprietary <strong className="text-sea-sage">"Protocol Framework,"</strong> a 
+                    hybrid system that integrates my two decades of clinical experience with a precision training platform. This 
+                    allows you to engage in high-frequency, structured practice at an intensity previously impossible, leading to 
+                    dramatically accelerated results.
                   </p>
 
                   <div className="p-6 bg-seafoam/10 rounded-2xl border border-seafoam/30 my-6">
@@ -503,15 +547,9 @@ export default function HomePage() {
                   </div>
                   
                   <p className="font-medium text-sea-sage">
-                    This isn't traditional therapy. It's a structured bootcamp where you'll do the reps, build 
+                    This isn't therapy as you know it. It's a structured bootcamp where you'll do the reps, build 
                     the skills, and learn to become your own therapist. I provide the strategy, our training 
                     platform provides the drills, and you get measurable results in 30 days.
-                  </p>
-                  
-                  <p>
-                    Having guided hundreds through anxiety, I know what works: high-frequency practice, radical 
-                    honesty, and data-driven adjustments. The Anxiety Protocol is the culmination of two decades 
-                    of clinical experience, refined for the modern professional who values efficiency and results.
                   </p>
                 </div>
 
@@ -539,7 +577,7 @@ export default function HomePage() {
                 Why This Program is Superior
               </h2>
               <p className="text-lg text-body max-w-2xl mx-auto leading-8">
-                The unfair advantages of The Carpenter Method
+                The Unfair Advantages of The Protocol Framework
               </p>
             </div>
           </ScrollReveal>
@@ -547,7 +585,7 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-3">
             <ScrollReveal delay={100}>
               <Feature
-                title="10x Velocity"
+                title="⚡ Velocity"
                 body="High-frequency structured drills (2-3x per week) accelerate skill acquisition at a rate impossible in traditional weekly therapy."
                 icon={
                   <div className="relative">
@@ -562,7 +600,7 @@ export default function HomePage() {
 
             <ScrollReveal delay={200}>
               <Feature
-                title="Data, Not Guesswork"
+                title="📊 Data, Not Guesswork"
                 body="Every session is transcribed and analyzed. We track real progress and make precise strategic adjustments based on hard evidence."
                 icon={
                   <div className="relative">
@@ -577,8 +615,8 @@ export default function HomePage() {
 
             <ScrollReveal delay={300}>
               <Feature
-                title="On-Demand Access"
-                body="Training happens on your schedule, not the therapist's. Structured drills available 24/7 for maximum convenience and real-world integration."
+                title="🎯 On-Demand Access"
+                body="Training happens on your schedule, not a therapist's. Structured drills are available 24/7 for maximum convenience and real-world integration."
                 icon={
                   <div className="relative">
                     <div className="absolute inset-0 bg-seafoam rounded-full blur-xl opacity-20"></div>
@@ -603,7 +641,7 @@ export default function HomePage() {
                 Anxiety Mastery Insights
               </h2>
               <p className="text-lg text-body max-w-2xl mx-auto leading-8">
-                Evidence-based strategies and practical skills for anxiety management
+                Evidence-based strategies and practical skills from our curriculum
               </p>
             </div>
           </ScrollReveal>

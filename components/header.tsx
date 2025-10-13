@@ -10,7 +10,7 @@ const navigation = [
   { name: 'Blog', href: '/blog' },
   { name: 'Testimonials', href: '/testimonials' },
   { name: 'Contact', href: '/contact' },
-  { name: 'Subscribe', href: '/subscribe' },
+  { name: 'Apply', href: '/contact', highlight: true },
 ];
 
 export function Header() {
@@ -65,13 +65,15 @@ export function Header() {
                 key={item.name}
                 href={item.href}
                 className={`relative text-sm font-medium transition-all px-4 py-2 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-sea-sage ${
-                  isActive(item.href)
+                  item.highlight
+                    ? 'bg-sea-sage text-white hover:bg-golden-shell hover:text-olive-grey'
+                    : isActive(item.href)
                     ? 'text-sea-sage bg-pebble'
                     : 'text-olive-grey hover:text-sea-sage hover:bg-pebble/50'
                 }`}
               >
                 {item.name}
-                {isActive(item.href) && (
+                {!item.highlight && isActive(item.href) && (
                   <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-golden-shell rounded-full"></span>
                 )}
               </Link>

@@ -37,7 +37,7 @@ export default function HomePage() {
                 </h1>
                 
                 <p className="text-2xl text-sea-sage font-medium mb-4">
-                  A Cognitive Bootcamp to Master Anxiety
+                  A Cognitive Bootcamp to Master Your Anxiety
                 </p>
                 
                 <p className="text-lg leading-8 text-body mb-8">

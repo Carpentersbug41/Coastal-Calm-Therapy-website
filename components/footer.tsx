@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Container } from './container';
 
 export function Footer() {
@@ -15,8 +16,14 @@ export function Footer() {
             {/* Brand */}
             <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-sea-sage to-seafoam flex items-center justify-center shadow-soft">
-                  <span className="text-white text-lg">🌊</span>
+                <div className="relative w-10 h-10 flex-shrink-0">
+                  <Image
+                    src="/images/logo_ap1.png"
+                    alt="The Anxiety Protocol"
+                    width={40}
+                    height={40}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <h3 className="text-lg font-bold bg-gradient-to-r from-sea-sage to-seafoam bg-clip-text text-transparent">
                   The Anxiety Protocol

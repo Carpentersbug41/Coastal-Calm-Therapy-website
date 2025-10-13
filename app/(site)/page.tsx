@@ -81,11 +81,6 @@ export default function HomePage() {
                     priority
                     className="object-cover rounded-3xl shadow-soft-lg ring-1 ring-dune-shadow group-hover:scale-[1.02] transition-transform duration-500"
                   />
-                  
-                  {/* Floating badge */}
-                  <div className="absolute bottom-6 left-6 glass-effect px-6 py-3 rounded-2xl shadow-soft animate-float">
-                    <p className="text-sm font-medium text-sea-sage">⚡ 10x Faster Results</p>
-                  </div>
                 </div>
               </div>
             </ScrollReveal>
@@ -515,7 +510,7 @@ export default function HomePage() {
 
                   <p>
                     The Anxiety Protocol is built on my proprietary <strong className="text-sea-sage">"Protocol Framework,"</strong> a 
-                    hybrid system that integrates my two decades of clinical experience with a precision training platform. This 
+                    hybrid system that integrates high-level clinical strategy with our proprietary precision training platform. This 
                     allows you to engage in high-frequency, structured practice at an intensity previously impossible, leading to 
                     dramatically accelerated results.
                   </p>

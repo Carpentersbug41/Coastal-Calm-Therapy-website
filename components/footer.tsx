@@ -19,15 +19,18 @@ export function Footer() {
                   <span className="text-white text-lg">🌊</span>
                 </div>
                 <h3 className="text-lg font-bold bg-gradient-to-r from-sea-sage to-seafoam bg-clip-text text-transparent">
-                  Coastal Calm Therapy
+                  The Anxiety Protocol
                 </h3>
               </div>
               <p className="text-body mb-4 leading-7 max-w-md">
-                A welcoming space for modern, evidence-based therapy. Practical tools, 
-                grounded perspective, and steady support—so you can move through life with more ease.
+                A 30-day Cognitive Bootcamp for mastering anxiety. The Carpenter Method combines expert 
+                human strategy with intensive structured drills for accelerated, measurable results.
               </p>
-              <p className="text-sm font-medium text-sea-sage">
-                Calm. Clarity. Connection.
+              <p className="text-sm font-medium text-sea-sage mb-2">
+                Stop Coping. Start Mastering.
+              </p>
+              <p className="text-xs text-soft-clay">
+                Created by Robert Carpenter, licensed psychotherapist and author of "Drop the Rope" and "The Loving Trap"
               </p>
             </div>
 
@@ -79,13 +82,14 @@ export function Footer() {
             {/* Contact Info */}
             <div>
               <h4 className="text-sm font-semibold text-sea-sage mb-4 uppercase tracking-wider">
-                Information
+                Program Info
               </h4>
               <p className="text-sm text-body mb-3 leading-6">
-                Resources for mental health, mindfulness, and calm living.
+                The Carpenter Method is an evidence-based anxiety treatment protocol combining licensed 
+                therapy with a proprietary training platform.
               </p>
               <p className="text-xs text-soft-clay leading-5">
-                Content for informational purposes only. Not a substitute for professional care.
+                Professional clinical service. HIPAA-compliant and secure.
               </p>
             </div>
           </div>
@@ -94,7 +98,7 @@ export function Footer() {
           <div className="pt-8 border-t border-dune-shadow">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-sm text-body">
-                © {currentYear} Coastal Calm Therapy. All rights reserved.
+                © {currentYear} The Anxiety Protocol. All rights reserved.
               </p>
               <div className="flex items-center gap-6 text-sm text-soft-clay">
                 <span>Made with care & calm</span>

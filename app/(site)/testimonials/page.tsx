@@ -6,11 +6,11 @@ import { ScrollReveal } from '@/components/scroll-reveal';
 import { getTestimonials } from '@/lib/testimonials';
 
 export const metadata: Metadata = {
-  title: 'Client Testimonials',
-  description: 'Read real stories from clients who have found clarity, calm, and healing through therapy. Discover how evidence-based therapy can help you.',
+  title: 'Program Results & Success Stories',
+  description: 'Real results from high-performing professionals who completed The Anxiety Protocol. Discover how the 30-day Cognitive Bootcamp transformed their relationship with anxiety.',
   openGraph: {
-    title: 'Client Testimonials | Coastal Calm Therapy',
-    description: 'Real experiences from people who have found clarity and calm through therapy.',
+    title: 'Program Results | The Anxiety Protocol',
+    description: 'From anxious to confident in 30 days. Real results from the Cognitive Bootcamp.',
   },
 };
 
@@ -30,17 +30,18 @@ export default function TestimonialsPage() {
             <div className="max-w-3xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-seafoam/20 border border-seafoam mb-6">
                 <span className="w-2 h-2 bg-golden-shell rounded-full animate-pulse"></span>
-                <span className="text-sm font-medium text-sea-sage">Client Experiences</span>
+                <span className="text-sm font-medium text-sea-sage">Program Results</span>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-sea-sage mb-6">
-                Stories of Growth & 
-                <span className="bg-gradient-to-r from-seafoam to-golden-shell bg-clip-text text-transparent"> Healing</span>
+                From Anxious to 
+                <span className="bg-gradient-to-r from-seafoam to-golden-shell bg-clip-text text-transparent"> Confident</span>
               </h1>
               
               <p className="text-xl leading-8 text-body mb-8">
-                Real experiences from people who have found clarity, calm, and connection through therapy.
-                These testimonials reflect the transformative power of evidence-based care delivered with empathy.
+                Real results from high-performing professionals who completed The Anxiety Protocol. 
+                These stories reflect the transformative power of structured, intensive training combined 
+                with expert guidance and data-driven adjustments.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -48,7 +49,7 @@ export default function TestimonialsPage() {
                   href="/contact"
                   className="group inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-sea-sage text-white font-medium shadow-soft hover:shadow-soft-lg hover:bg-golden-shell hover:text-olive-grey hover:scale-105 transition-all duration-300"
                 >
-                  <span>Start Your Journey</span>
+                  <span>Apply for the Program</span>
                   <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -58,7 +59,7 @@ export default function TestimonialsPage() {
                   href="/blog"
                   className="group inline-flex items-center justify-center rounded-2xl px-8 py-4 border-2 border-sea-sage text-sea-sage font-medium hover:bg-pebble hover:scale-105 transition-all duration-300"
                 >
-                  <span>Read the Blog</span>
+                  <span>Learn About the Protocol</span>
                 </Link>
               </div>
             </div>
@@ -72,10 +73,10 @@ export default function TestimonialsPage() {
           <ScrollReveal>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                What Clients Are Saying
+                What Program Graduates Say
               </h2>
               <p className="text-lg text-body max-w-2xl mx-auto leading-8">
-                Every journey is unique, and these stories reflect the diverse paths to healing and growth.
+                Every anxiety journey is unique, but the skills learned in The Anxiety Protocol create lasting change.
               </p>
             </div>
           </ScrollReveal>
@@ -97,28 +98,28 @@ export default function TestimonialsPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
               <div className="space-y-2">
                 <div className="text-5xl md:text-6xl font-bold text-sea-sage">
-                  98%
+                  10x
                 </div>
                 <div className="text-lg text-body">
-                  Client Satisfaction
+                  Faster Than Traditional Therapy
                 </div>
               </div>
               
               <div className="space-y-2">
                 <div className="text-5xl md:text-6xl font-bold text-sea-sage">
-                  5/5
+                  30
                 </div>
                 <div className="text-lg text-body">
-                  Average Rating
+                  Days to Mastery
                 </div>
               </div>
               
               <div className="space-y-2">
                 <div className="text-5xl md:text-6xl font-bold text-sea-sage">
-                  100+
+                  100%
                 </div>
                 <div className="text-lg text-body">
-                  Lives Transformed
+                  Data-Driven Adjustments
                 </div>
               </div>
             </div>
@@ -137,17 +138,18 @@ export default function TestimonialsPage() {
               
               <div className="relative p-10 md:p-16 text-center">
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Ready to Write Your Own Story?
+                  Ready to Master Your Anxiety?
                 </h3>
                 <p className="text-lg text-white/95 leading-8 max-w-2xl mx-auto mb-8">
-                  Take the first step toward clarity and calm. Reach out today to start your journey.
+                  Stop coping. Start mastering. Apply for the 30-day Cognitive Bootcamp and join 
+                  high-performers who've transformed their relationship with anxiety.
                 </p>
                 
                 <Link
                   href="/contact"
                   className="inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-golden-shell text-olive-grey font-medium shadow-soft hover:shadow-soft-lg hover:scale-105 transition-all duration-300"
                 >
-                  <span>Get in Touch</span>
+                  <span>Apply Now</span>
                   <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
@@ -164,11 +166,12 @@ export default function TestimonialsPage() {
           <ScrollReveal>
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6">
-                Your Privacy Matters
+                Confidentiality Guaranteed
               </h2>
               <p className="text-lg text-body leading-8">
-                All testimonials are shared with client consent and have been anonymized to protect privacy. 
-                Names and identifying details have been changed while preserving the essence of each experience.
+                All testimonials are shared with explicit client consent and have been anonymized to protect privacy. 
+                Names and identifying details have been changed while preserving the essence of each experience. 
+                The Anxiety Protocol operates under HIPAA-compliant standards with end-to-end encryption for all sessions and data.
               </p>
             </div>
           </ScrollReveal>

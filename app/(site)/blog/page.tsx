@@ -9,9 +9,9 @@ interface BlogPageProps {
 }
 
 export const metadata = {
-  title: 'Blog',
+  title: 'Anxiety Mastery Insights',
   description:
-    'Articles on mindfulness, mental health, stress management, and calm living. Evidence-based insights and practical tips for your wellness journey.',
+    'Expert insights on anxiety mastery from The Anxiety Protocol. Learn about cognitive bootcamp techniques, defusion skills, exposure therapy, and the science behind rapid anxiety treatment.',
 };
 
 export default function BlogPage({ searchParams }: BlogPageProps) {
@@ -26,18 +26,18 @@ export default function BlogPage({ searchParams }: BlogPageProps) {
           <div className="mb-16 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sage-50 border border-sage-200 mb-6">
               <span className="w-2 h-2 bg-sage-500 rounded-full animate-pulse"></span>
-              <span className="text-sm font-medium text-sage-700">Mental Health Resources</span>
+              <span className="text-sm font-medium text-sage-700">Anxiety Mastery Education</span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               <span className="bg-gradient-to-r from-brand-900 to-sage-700 bg-clip-text text-transparent">
-                Blog
+                Insights & Training Methods
               </span>
             </h1>
             
             <p className="text-xl text-ink/70 max-w-3xl mx-auto leading-8">
-              Explore articles on mindfulness, mental health, and calm living. Find evidence-based
-              insights and practical tips for your wellness journey.
+              Learn the science and skills behind The Anxiety Protocol. Evidence-based insights on 
+              defusion, exposure therapy, somatic practices, and the cognitive bootcamp approach.
             </p>
           </div>
         </ScrollReveal>

@@ -54,7 +54,7 @@ export function Header() {
               </div>
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-sea-sage to-seafoam bg-clip-text text-transparent">
-              Coastal Calm Therapy
+              The Anxiety Protocol
             </span>
           </Link>
 

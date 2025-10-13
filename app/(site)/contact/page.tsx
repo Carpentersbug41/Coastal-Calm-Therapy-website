@@ -62,18 +62,19 @@ export default function ContactPage() {
           <ScrollReveal>
             <div className="mb-12 text-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sage-50 border border-sage-200 mb-6">
-                <span className="text-2xl">✉️</span>
-                <span className="text-sm font-medium text-sage-700">Get in Touch</span>
+                <span className="text-2xl">🎯</span>
+                <span className="text-sm font-medium text-sage-700">Apply for the Program</span>
               </div>
               
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
                 <span className="bg-gradient-to-r from-brand-900 to-sage-700 bg-clip-text text-transparent">
-                  Contact
+                  Start Your 30-Day Journey
                 </span>
               </h1>
               
               <p className="text-lg text-ink/70 leading-8 max-w-xl mx-auto">
-                Have a question, feedback, or collaboration inquiry? I'd love to hear from you.
+                Ready to master your anxiety? Share your information below and I'll personally 
+                reach out within 48 hours to discuss if The Anxiety Protocol is right for you.
               </p>
             </div>
           </ScrollReveal>
@@ -99,16 +100,17 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <h2 className="text-2xl font-bold text-brand-900 mb-2">
-                  Message Sent!
+                  Application Received!
                 </h2>
                 <p className="text-ink/80 mb-6">
-                  Thank you for reaching out. I'll get back to you soon.
+                  Thank you for your interest in The Anxiety Protocol. I'll review your application 
+                  and get back to you within 48 hours to schedule an initial consultation.
                 </p>
                 <button
                   onClick={() => setStatus('idle')}
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-xl2 bg-brand-500 text-white font-medium hover:bg-brand-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
+                  className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-brand-500 text-white font-medium hover:bg-brand-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
                 >
-                  Send Another Message
+                  Submit Another Application
                 </button>
               </div>
             ) : (
@@ -159,12 +161,13 @@ export default function ContactPage() {
                     htmlFor="subject"
                     className="block text-sm font-medium text-brand-900 mb-2"
                   >
-                    Subject
+                    Current Situation
                   </label>
                   <input
                     type="text"
                     id="subject"
                     name="subject"
+                    placeholder="e.g., Panic attacks before presentations, Chronic worry, Social anxiety"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                     className="w-full px-4 py-2 rounded-lg border border-sand-100 bg-white text-ink focus:outline-none focus:ring-2 focus:ring-brand-500"
@@ -178,13 +181,14 @@ export default function ContactPage() {
                     htmlFor="message"
                     className="block text-sm font-medium text-brand-900 mb-2"
                   >
-                    Message <span className="text-red-500">*</span>
+                    Tell Me About Your Anxiety <span className="text-red-500">*</span>
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     required
                     rows={6}
+                    placeholder="What brings you here? What impact is anxiety having on your life? What have you tried before?"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full px-4 py-2 rounded-lg border border-sand-100 bg-white text-ink focus:outline-none focus:ring-2 focus:ring-brand-500 resize-none"
@@ -211,9 +215,9 @@ export default function ContactPage() {
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                       </svg>
-                      Sending...
+                      Submitting...
                     </span>
-                  ) : 'Send Message'}
+                  ) : 'Submit Application'}
                 </button>
               </form>
             )}
@@ -224,8 +228,10 @@ export default function ContactPage() {
           <ScrollReveal delay={400}>
             <div className="mt-8 text-center text-sm text-ink/70 glass-effect rounded-2xl p-4">
             <p>
-              I typically respond within 1-2 business days. Your privacy is important—
-              I'll never share your information with third parties.
+              <strong>What happens next?</strong> I'll personally review your application within 48 hours 
+              and reach out to schedule a free 30-minute consultation call. We'll discuss your specific 
+              anxiety challenges and determine if The Anxiety Protocol is the right fit. All information 
+              is confidential and HIPAA-compliant.
             </p>
             </div>
           </ScrollReveal>

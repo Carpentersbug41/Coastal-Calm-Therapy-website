@@ -159,3 +159,4 @@ cover: "/images/hero-coastal.jpg"  // Major features, journeys
 **Your coastal therapy image library is complete and ready to use!** 🌊✨
 
 
+

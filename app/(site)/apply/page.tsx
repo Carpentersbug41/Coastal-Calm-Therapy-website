@@ -101,12 +101,12 @@ export default function ApplyPage() {
         </Container>
       </section>
 
-      {/* OFFER PANEL - Price & What's Included */}
-      <section className="py-12 md:py-16">
+      {/* OFFER PANEL - Price & What's Included - ABOVE THE FOLD */}
+      <section className="py-8 md:py-12 bg-gradient-to-br from-sea-sage/5 to-seafoam/5">
         <Container>
           <div className="max-w-3xl mx-auto">
             <ScrollReveal delay={100}>
-              <OfferPanel variant="default" showCta={true} />
+              <OfferPanel variant="compact" showCta={true} />
             </ScrollReveal>
           </div>
         </Container>

@@ -1,10 +1,47 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { Container } from './container';
 
 export function Footer() {
+  const pathname = usePathname();
+  const isApplyPage = pathname === '/apply';
   const currentYear = new Date().getFullYear();
 
+  // Minimal footer for /apply page
+  if (isApplyPage) {
+    return (
+      <footer className="relative mt-auto border-t border-dune-shadow bg-gradient-to-b from-drift-sand to-warm-linen">
+        <Container>
+          <div className="py-8">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+              <div className="flex items-center gap-3">
+                <div className="relative w-8 h-8 flex-shrink-0">
+                  <Image
+                    src="/images/logo_ap1.png"
+                    alt="The Anxiety Protocol"
+                    width={32}
+                    height={32}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="text-sm text-body">
+                  © {currentYear} The Anxiety Protocol. All rights reserved.
+                </p>
+              </div>
+              <p className="text-xs text-soft-clay">
+                Licensed psychotherapist • HIPAA-compliant platform
+              </p>
+            </div>
+          </div>
+        </Container>
+      </footer>
+    );
+  }
+
+  // Full footer for other pages
   return (
     <footer className="relative mt-auto border-t border-dune-shadow bg-gradient-to-b from-drift-sand to-warm-linen">
       {/* Decorative wave */}

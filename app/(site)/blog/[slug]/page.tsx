@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Container } from '@/components/container';
 import { Prose } from '@/components/prose';
 import { ScrollReveal } from '@/components/scroll-reveal';
+import { ArticleSchema, BreadcrumbSchema } from '@/components/structured-data';
 import { getPostBySlug, getAllPostsSorted, getAdjacentPosts } from '@/lib/posts';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
@@ -64,8 +65,27 @@ export default function PostPage({ params }: PostPageProps) {
     year: 'numeric',
   });
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://coastalcalm.vercel.app';
+  const postUrl = `${siteUrl}/blog/${params.slug}`;
+
   return (
     <article className="py-12 md:py-20">
+      {/* Structured Data for SEO */}
+      <ArticleSchema
+        title={post.title}
+        description={post.description}
+        publishDate={post.date}
+        authorName="Robert Carpenter"
+        imageUrl={post.cover ? `${siteUrl}${post.cover}` : undefined}
+        url={postUrl}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: siteUrl },
+          { name: 'Blog', url: `${siteUrl}/blog` },
+          { name: post.title, url: postUrl },
+        ]}
+      />
       <Container>
         <div className="max-w-4xl mx-auto">
           {/* Back to blog link */}

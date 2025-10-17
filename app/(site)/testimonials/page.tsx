@@ -46,7 +46,7 @@ export default function TestimonialsPage() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/contact"
+                  href="/apply"
                   className="group inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-sea-sage text-white font-medium shadow-soft hover:shadow-soft-lg hover:bg-golden-shell hover:text-olive-grey hover:scale-105 transition-all duration-300"
                 >
                   <span>Apply for the Program</span>
@@ -146,7 +146,7 @@ export default function TestimonialsPage() {
                 </p>
                 
                 <Link
-                  href="/contact"
+                  href="/apply"
                   className="inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-golden-shell text-olive-grey font-medium shadow-soft hover:shadow-soft-lg hover:scale-105 transition-all duration-300"
                 >
                   <span>Apply Now</span>

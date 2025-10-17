@@ -12,10 +12,22 @@ export function GET() {
       priority: 1.0,
     },
     {
+      url: `${siteUrl}/apply`,
+      lastModified: new Date().toISOString(),
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
       url: `${siteUrl}/blog`,
       lastModified: new Date().toISOString(),
       changeFrequency: 'daily',
       priority: 0.9,
+    },
+    {
+      url: `${siteUrl}/testimonials`,
+      lastModified: new Date().toISOString(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
     },
     {
       url: `${siteUrl}/contact`,
@@ -27,7 +39,7 @@ export function GET() {
       url: `${siteUrl}/subscribe`,
       lastModified: new Date().toISOString(),
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.6,
     },
   ];
 

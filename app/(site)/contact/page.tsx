@@ -3,6 +3,21 @@
 import { useState, FormEvent } from 'react';
 import { Container } from '@/components/container';
 import { ScrollReveal } from '@/components/scroll-reveal';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact & Apply',
+  description: 'Apply for The Anxiety Protocol. Get a free consultation to discuss your anxiety challenges and determine if our 30-day intensive program is right for you.',
+  openGraph: {
+    title: 'Contact & Apply | The Anxiety Protocol',
+    description: 'Apply for the 30-day Cognitive Bootcamp. Free consultation available.',
+    url: '/contact',
+    type: 'website',
+  },
+  alternates: {
+    canonical: '/contact',
+  },
+};
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({

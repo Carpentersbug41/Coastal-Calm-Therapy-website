@@ -11,10 +11,14 @@ const navigation = [
   { name: 'Blog', href: '/blog' },
   { name: 'Testimonials', href: '/testimonials' },
   { name: 'Contact', href: '/contact' },
-  { name: 'Apply', href: '/contact', highlight: true },
+  { name: 'Apply', href: '/apply', highlight: true },
 ];
 
-export function Header() {
+interface HeaderProps {
+  minimal?: boolean;
+}
+
+export function Header({ minimal = false }: HeaderProps) {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
 
@@ -32,6 +36,10 @@ export function Header() {
     }
     return pathname.startsWith(href);
   };
+
+  // Check if current page is /apply for automatic minimal mode
+  const isApplyPage = pathname === '/apply';
+  const shouldBeMinimal = minimal || isApplyPage;
 
   return (
     <header 
@@ -65,24 +73,35 @@ export function Header() {
 
           {/* Navigation links */}
           <div className="flex items-center gap-1 sm:gap-2">
-            {navigation.map((item) => (
+            {shouldBeMinimal ? (
+              // Minimal mode: Only show Apply CTA
               <Link
-                key={item.name}
-                href={item.href}
-                className={`relative text-sm font-medium transition-all px-4 py-2 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-sea-sage ${
-                  item.highlight
-                    ? 'bg-sea-sage text-white hover:bg-golden-shell hover:text-olive-grey'
-                    : isActive(item.href)
-                    ? 'text-sea-sage bg-pebble'
-                    : 'text-olive-grey hover:text-sea-sage hover:bg-pebble/50'
-                }`}
+                href="/apply"
+                className="relative text-sm font-medium transition-all px-6 py-3 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-sea-sage bg-sea-sage text-white hover:bg-golden-shell hover:text-olive-grey hover:scale-105"
               >
-                {item.name}
-                {!item.highlight && isActive(item.href) && (
-                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-golden-shell rounded-full"></span>
-                )}
+                Book Free Consult
               </Link>
-            ))}
+            ) : (
+              // Full navigation
+              navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={`relative text-sm font-medium transition-all px-4 py-2 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-sea-sage ${
+                    item.highlight
+                      ? 'bg-sea-sage text-white hover:bg-golden-shell hover:text-olive-grey hover:scale-105'
+                      : isActive(item.href)
+                      ? 'text-sea-sage bg-pebble'
+                      : 'text-olive-grey hover:text-sea-sage hover:bg-pebble/50'
+                  }`}
+                >
+                  {item.name}
+                  {!item.highlight && isActive(item.href) && (
+                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-golden-shell rounded-full"></span>
+                  )}
+                </Link>
+              ))
+            )}
           </div>
         </nav>
       </Container>

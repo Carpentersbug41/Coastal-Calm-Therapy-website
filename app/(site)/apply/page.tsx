@@ -76,19 +76,7 @@ export default function ApplyPage() {
                 {/* Primary CTA */}
                 <a
                   href="#apply-form"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    // Track GA4 event
-                    if (typeof window !== 'undefined' && (window as any).gtag) {
-                      (window as any).gtag('event', 'select_content', {
-                        content_type: 'button',
-                        item_id: 'hero_cta',
-                        location: 'hero',
-                      });
-                    }
-                    document.querySelector('#apply-form')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="inline-flex items-center justify-center rounded-2xl px-8 py-5 bg-gradient-to-r from-sea-sage to-seafoam text-white text-lg font-medium shadow-soft hover:shadow-soft-lg hover:scale-105 transition-all duration-300"
+                  className="inline-flex items-center justify-center rounded-2xl px-8 py-5 bg-gradient-to-r from-sea-sage to-seafoam text-white text-lg font-medium shadow-soft hover:shadow-soft-lg hover:scale-105 transition-all duration-300 scroll-smooth"
                 >
                   <span>Book a Free 15-min Consult</span>
                   <svg className="ml-2 w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

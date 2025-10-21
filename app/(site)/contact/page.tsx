@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
+import Image from 'next/image';
 import { Container } from '@/components/container';
 import { ScrollReveal } from '@/components/scroll-reveal';
 
@@ -57,12 +58,14 @@ export default function ContactPage() {
   return (
     <div className="py-16 md:py-24">
       <Container>
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {/* Page header */}
           <ScrollReveal>
             <div className="mb-12 text-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sage-50 border border-sage-200 mb-6">
-                <span className="text-2xl">🎯</span>
+                <svg className="w-5 h-5 text-sage-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
                 <span className="text-sm font-medium text-sage-700">Apply for the Program</span>
               </div>
               
@@ -79,8 +82,28 @@ export default function ContactPage() {
             </div>
           </ScrollReveal>
 
+          {/* Hero Image */}
+          <ScrollReveal delay={100}>
+            <div className="relative group mb-12">
+              {/* Glow effect */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-brand-500/20 to-sage-500/20 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <div className="relative h-[280px] md:h-[360px] rounded-3xl overflow-hidden shadow-soft-lg ring-1 ring-black/5">
+                <Image
+                  src="/images/pier.jpg"
+                  alt="Coastal pier - taking the first step on your journey"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  priority
+                />
+              </div>
+            </div>
+          </ScrollReveal>
+
+          <div className="max-w-2xl mx-auto">
+
           {/* Contact form */}
-          <ScrollReveal delay={200}>
+          <ScrollReveal delay={150}>
             <div className="bg-white rounded-3xl shadow-soft-lg ring-1 ring-black/5 p-8 md:p-10">
             {status === 'success' ? (
               <div className="text-center py-8">
@@ -225,7 +248,7 @@ export default function ContactPage() {
           </ScrollReveal>
 
           {/* Additional info */}
-          <ScrollReveal delay={400}>
+          <ScrollReveal delay={250}>
             <div className="mt-8 text-center text-sm text-ink/70 glass-effect rounded-2xl p-4">
             <p>
               <strong>What happens next?</strong> I'll personally review your application within 48 hours 
@@ -235,6 +258,7 @@ export default function ContactPage() {
             </p>
             </div>
           </ScrollReveal>
+          </div>
         </div>
       </Container>
     </div>

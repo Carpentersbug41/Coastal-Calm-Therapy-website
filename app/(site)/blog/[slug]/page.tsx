@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Container } from '@/components/container';
 import { Prose } from '@/components/prose';
 import { ScrollReveal } from '@/components/scroll-reveal';
+import { BlogSubscribe } from '@/components/blog-subscribe';
 import { ArticleSchema, BreadcrumbSchema } from '@/components/structured-data';
 import { getPostBySlug, getAllPostsSorted, getAdjacentPosts } from '@/lib/posts';
 import { MDXRemote } from 'next-mdx-remote/rsc';
@@ -131,7 +132,7 @@ export default function PostPage({ params }: PostPageProps) {
                 </div>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-900 mb-6 leading-tight">
+              <h1 className="text-3xl md:text-4xl font-bold text-brand-900 mb-6 leading-tight">
                 {post.title}
               </h1>
 
@@ -156,22 +157,20 @@ export default function PostPage({ params }: PostPageProps) {
             </header>
           </ScrollReveal>
 
-          {/* Cover image */}
-          {post.cover && (
-            <ScrollReveal delay={200}>
-              <div className="mb-12 rounded-3xl overflow-hidden shadow-soft-lg ring-1 ring-black/5 group">
-                <img
-                  src={post.cover}
-                  alt={post.title}
-                  className="w-full h-auto group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-            </ScrollReveal>
-          )}
-
           {/* Post content */}
           <ScrollReveal delay={300}>
             <div className="bg-white rounded-3xl shadow-soft ring-1 ring-black/5 p-8 md:p-12 mb-12">
+              {/* Cover image inside content - floats to the right with text wrap */}
+              {post.cover && (
+                <div className="float-right ml-6 mb-6 rounded-2xl overflow-hidden shadow-md ring-1 ring-black/5 group w-64 md:w-80">
+                  <img
+                    src={post.cover}
+                    alt={post.title}
+                    className="w-full h-auto group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+              )}
+              
               <Prose>
                 <MDXRemote
                   source={post.content}
@@ -183,6 +182,11 @@ export default function PostPage({ params }: PostPageProps) {
                 />
               </Prose>
             </div>
+          </ScrollReveal>
+
+          {/* Subscribe section */}
+          <ScrollReveal delay={350}>
+            <BlogSubscribe />
           </ScrollReveal>
 
           {/* Previous/Next navigation */}

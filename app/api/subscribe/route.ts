@@ -1,19 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 /**
- * OPTION B: Newsletter subscription API route using MailerLite API
+ * Newsletter subscription API route using MailerLite API
  * 
- * This is an alternative to using the MailerLite embed form (Option A, which is the default).
- * 
- * To use this route:
- * 1. Set environment variables in .env:
+ * Environment variables required:
  *    - MAILERLITE_API_KEY=your_mailerlite_api_key
  *    - MAILERLITE_GROUP_ID=your_group_id (optional, if you want to add to a specific group)
- * 2. Update app/(site)/subscribe/page.tsx to use a custom form that POSTs to /api/subscribe
- * 3. Uncomment the code below
  */
 
-/*
 import { z } from 'zod';
 
 const SubscribeSchema = z.object({
@@ -103,16 +97,5 @@ export async function POST(request: NextRequest) {
       { status: 500 }
     );
   }
-}
-*/
-
-// Placeholder response when Option B is not enabled
-export async function POST() {
-  return NextResponse.json(
-    {
-      error: 'Subscribe API route not configured. Use MailerLite embed (Option A) or uncomment and configure this route (Option B).',
-    },
-    { status: 501 }
-  );
 }
 

@@ -14,11 +14,10 @@ NEXT_PUBLIC_FORMSPREE_ENDPOINT=https://formspree.io/f/REPLACE_ME
 # CONTACT_TO=you@yourdomain.com
 # CONTACT_FROM=noreply@yourdomain.com
 
-# Newsletter - OPTION B (Alternative): MailerLite API
-# Uncomment if using the /api/subscribe route instead of MailerLite embed
+# Newsletter - MailerLite API (REQUIRED for blog subscriptions)
 # Get your API key from: https://dashboard.mailerlite.com/integrations/api
-# MAILERLITE_API_KEY=your_api_key_here
-# MAILERLITE_GROUP_ID=your_group_id_here
+MAILERLITE_API_KEY=your_api_key_here
+MAILERLITE_GROUP_ID=your_group_id_here
 
 # Analytics - OPTIONAL: Plausible
 # Uncomment the script tag in app/(site)/layout.tsx to enable

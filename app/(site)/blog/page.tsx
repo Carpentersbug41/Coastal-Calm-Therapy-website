@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Container } from '@/components/container';
 import { PostCard } from '@/components/post-card';
 import { ScrollReveal } from '@/components/scroll-reveal';
+import { BlogSubscribe } from '@/components/blog-subscribe';
 import { getPaginatedPosts } from '@/lib/posts';
 
 interface BlogPageProps {
@@ -87,6 +88,13 @@ export default function BlogPage({ searchParams }: BlogPageProps) {
                 </div>
               </ScrollReveal>
             )}
+
+            {/* Subscribe section */}
+            <ScrollReveal delay={200}>
+              <div className="max-w-4xl mx-auto">
+                <BlogSubscribe />
+              </div>
+            </ScrollReveal>
           </>
         ) : (
           <ScrollReveal>

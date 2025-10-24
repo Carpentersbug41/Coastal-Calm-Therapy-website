@@ -81,6 +81,7 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className={inter.variable} suppressHydrationWarning>
       <head>
+        <meta name="google-site-verification" content="P2ONhhPYT3AxNnjpjmxmm8FRnQeB0wMIuhsIPK22RJE" />
         {/* Optional: Plausible Analytics (uncomment and set PLAUSIBLE_DOMAIN in .env) */}
         {/* {process.env.PLAUSIBLE_DOMAIN && (
           <script

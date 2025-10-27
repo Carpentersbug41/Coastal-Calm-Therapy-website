@@ -201,7 +201,7 @@ When you're ready to make your site live:
 4. Go to your project → **Settings** → **Environment Variables**
 5. Add these variables (same as your `.env.local`):
    ```
-   NEXT_PUBLIC_SITE_URL=https://your-actual-domain.com
+   NEXT_PUBLIC_SITE_URL=https://theanxietyprotocol.com
    NEXT_PUBLIC_FORMSPREE_ENDPOINT=https://formspree.io/f/xyzabc123
    MAILERLITE_API_KEY=eyJ0eXAiOiJKV1QiLCJhbGc...
    MAILERLITE_GROUP_ID=123456789

@@ -74,7 +74,7 @@ export function Footer() {
                 Stop Coping. Start Mastering.
               </p>
               <p className="text-xs text-soft-clay">
-                Created by Robert Carpenter, licensed psychotherapist and author of "Drop the Rope" and "The Loving Trap"
+                Created by Robert Carpenter, licensed psychotherapist.
               </p>
             </div>
 
@@ -129,8 +129,8 @@ export function Footer() {
                 Program Info
               </h4>
               <p className="text-sm text-body mb-3 leading-6">
-                The Protocol Framework is an evidence-based anxiety treatment protocol combining licensed 
-                therapy with a proprietary training platform.
+                The Protocol Framework is an evidence-based psychological training system that combines expert 
+                human strategy with our proprietary Cognitive Simulator.
               </p>
               <p className="text-xs text-soft-clay leading-5">
                 Professional clinical service. HIPAA-compliant and secure.
@@ -144,12 +144,6 @@ export function Footer() {
               <p className="text-sm text-body">
                 © {currentYear} The Anxiety Protocol. All rights reserved.
               </p>
-              <div className="flex items-center gap-6 text-sm text-soft-clay">
-                <span>Made with care & calm</span>
-                <span className="inline-flex items-center gap-1">
-                  🌿 <span className="text-sea-sage">Eco-friendly hosting</span>
-                </span>
-              </div>
             </div>
           </div>
         </div>

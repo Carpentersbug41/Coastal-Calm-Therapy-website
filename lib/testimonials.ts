@@ -58,7 +58,7 @@ export const testimonials: Testimonial[] = [
     id: '8',
     name: 'D. Williams',
     role: 'Architect',
-    content: 'The personalized protocol design made sense. Rather than a cookie-cutter approach, my Head Coach tailored the curriculum to my specific anxiety patterns. That precision was worth every penny.',
+    content: 'The personalized protocol design made sense. Rather than a cookie-cutter approach, my Clinical Strategist tailored the curriculum to my specific anxiety patterns. That precision was worth every penny.',
     rating: 5,
   },
 ];

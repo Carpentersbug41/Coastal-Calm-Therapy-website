@@ -1,11 +1,15 @@
 # Copy this file to .env.local and fill in your values
 
 # Site Configuration
-NEXT_PUBLIC_SITE_URL=https://coastalcalm.vercel.app
+NEXT_PUBLIC_SITE_URL=https://theanxietyprotocol.com
 
-# Contact Form - OPTION A (Default): Formspree
+# Contact Form - Formspree
 # Get your endpoint from: https://formspree.io/
 NEXT_PUBLIC_FORMSPREE_ENDPOINT=https://formspree.io/f/REPLACE_ME
+
+# Apply Form - Formspree
+# Create a SEPARATE form in Formspree for applications
+NEXT_PUBLIC_FORMSPREE_APPLY_ENDPOINT=https://formspree.io/f/REPLACE_ME
 
 # Contact Form - OPTION B (Alternative): Resend API
 # Uncomment and configure if using the /api/contact route instead of Formspree

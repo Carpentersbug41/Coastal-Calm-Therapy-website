@@ -11,8 +11,8 @@ import { getRandomTestimonials } from '@/lib/testimonials'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'The Anxiety Protocol - 30-Day Cognitive Bootcamp to Master Anxiety',
-  description: 'A rigorous, evidence-based 30-day program for high-functioning professionals. Master anxiety 10x faster than traditional therapy with structured drills and expert coaching. £2,500 fixed price.',
+  title: 'The Anxiety Protocol - Re-Engineering Therapy for a Structured Mind',
+  description: 'Not open-ended talk therapy. A 30-day, data-driven training protocol engineered to solve anxiety. High-performance psychological training for structured, results-oriented professionals. £2,500 fixed price.',
   keywords: [
     'anxiety treatment',
     'anxiety therapy UK',
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     'Robert Carpenter therapist',
   ],
   openGraph: {
-    title: 'The Anxiety Protocol - Master Anxiety in 30 Days',
-    description: 'Stop coping with anxiety. Start mastering it. A structured 30-day program for high-performing professionals. £2,500 fixed price.',
+    title: 'The Anxiety Protocol - Re-Engineering Therapy for a Structured Mind',
+    description: 'A 30-day, data-driven training protocol for high-achieving professionals. Not therapy as usual—engineered for maximum efficiency and measurable results.',
     url: '/',
     type: 'website',
   },
@@ -84,28 +84,20 @@ export default function HomePage() {
                   <span className="text-sm font-medium text-sea-sage">30-Day Intensive Program</span>
                 </div>
                 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-sea-sage mb-4">
-                  The Anxiety<br />
-                  <span className="bg-gradient-to-r from-seafoam to-golden-shell bg-clip-text text-transparent">
-                    Protocol
-                  </span>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-sea-sage mb-6">
+                  Re-Engineering Therapy for a Structured Mind.
                 </h1>
                 
-                <p className="text-2xl text-sea-sage font-medium mb-4">
-                  A Cognitive Bootcamp to Master Your Anxiety
-                </p>
-                
-                <p className="text-lg leading-8 text-body mb-8">
-                  For the high-functioning professional, anxiety isn't just a feeling—it's a critical 
-                  system failure. This rigorous, 30-day program rebuilds that system from the ground up 
-                  through a structured curriculum of intensive practice sessions and expert human strategy.
+                <p className="text-xl leading-8 text-body mb-8">
+                  This is not open-ended talk therapy. This is a 30-day, data-driven training protocol 
+                  engineered to solve anxiety, not just manage it indefinitely.
                 </p>
 
                 <Link
                   href="/apply"
                   className="group inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-sea-sage text-white font-medium shadow-soft hover:shadow-soft-lg hover:bg-golden-shell hover:text-olive-grey hover:scale-105 transition-all duration-300"
                 >
-                  <span>Book Free 15-min Consult</span>
+                  <span>Begin Your Application</span>
                   <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -122,7 +114,7 @@ export default function HomePage() {
                 <div className="relative h-[400px] md:h-[500px]">
                   <Image
                     src="/images/hero-coastal.jpg"
-                    alt="Coastal path at golden hour with soft sand and sea grass"
+                    alt="Clean architectural blueprint design representing a structured mental protocol"
                     fill
                     priority
                     className="object-cover rounded-3xl shadow-soft-lg ring-1 ring-dune-shadow group-hover:scale-[1.02] transition-transform duration-500"
@@ -145,173 +137,121 @@ export default function HomePage() {
         </Container>
       </section>
 
-      {/* 3. WHO IT'S FOR / NOT FOR */}
+      {/* 3. THE PROBLEM */}
       <section className="py-16 md:py-20">
         <Container>
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <ScrollReveal>
-              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage text-center mb-12">
-                Is This Program Right for You?
+              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6">
+                You Were Right to Be Frustrated with Therapy.
               </h2>
+              
+              <p className="text-lg leading-8 text-body mb-6">
+                If you are a high-achieving professional who values structure and measurable results, you likely found 
+                the traditional mental health system to be a failed model. It's not you; it's the design. Therapy was 
+                not engineered for a mind that runs on clear protocols, objective data, and a defined end-point. It often feels like:
+              </p>
+
+              <div className="space-y-4 mb-6">
+                <div className="flex items-start gap-4 p-6 glass-effect rounded-2xl shadow-soft border border-dune-shadow">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-soft-clay/20 flex items-center justify-center">
+                    <svg className="w-6 h-6 text-soft-clay" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-sea-sage mb-2">An Unending Process</h3>
+                    <p className="text-body">Aimless weekly conversations with no clear finish line.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-6 glass-effect rounded-2xl shadow-soft border border-dune-shadow">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-soft-clay/20 flex items-center justify-center">
+                    <svg className="w-6 h-6 text-soft-clay" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-sea-sage mb-2">A Data Black Box</h3>
+                    <p className="text-body">Progress is based on subjective feelings, not objective metrics.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-6 glass-effect rounded-2xl shadow-soft border border-dune-shadow">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-soft-clay/20 flex items-center justify-center">
+                    <svg className="w-6 h-6 text-soft-clay" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-sea-sage mb-2">An Inefficient Dosage</h3>
+                    <p className="text-body">A 50-minute session once a week is too low a frequency to build new neural pathways.</p>
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-lg leading-8 text-body font-medium text-sea-sage">
+                You are trying to run high-performance software on an outdated operating system. It's time for an upgrade.
+              </p>
             </ScrollReveal>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Who it's for */}
-              <ScrollReveal delay={100}>
-                <div className="glass-effect rounded-3xl p-8 shadow-soft ring-1 ring-dune-shadow h-full">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="w-10 h-10 rounded-full bg-seafoam/20 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-sea-sage" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
-                      </svg>
-                    </div>
-                    <h3 className="text-2xl font-bold text-sea-sage">Perfect For</h3>
-                  </div>
-                  <ul className="space-y-3 text-body">
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-seafoam mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      <span>High-performing professionals ready for intensive work</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-seafoam mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      <span>Individuals seeking rapid, measurable results</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-seafoam mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      <span>Those willing to do structured practice 2–3× per week</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-seafoam mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      <span>People frustrated with traditional therapy's slow pace</span>
-                    </li>
-                  </ul>
-                </div>
-              </ScrollReveal>
-
-              {/* Not for */}
-              <ScrollReveal delay={200}>
-                <div className="glass-effect rounded-3xl p-8 shadow-soft ring-1 ring-dune-shadow h-full">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="w-10 h-10 rounded-full bg-soft-clay/20 flex items-center justify-center">
-                      <svg className="w-6 h-6 text-soft-clay" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <h3 className="text-2xl font-bold text-sea-sage">Not For</h3>
-                  </div>
-                  <ul className="space-y-3 text-body">
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-soft-clay mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                      </svg>
-                      <span>Individuals in acute crisis (please seek emergency care)</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-soft-clay mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                      </svg>
-                      <span>Those looking for passive support without active practice</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-soft-clay mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                      </svg>
-                      <span>People unable to commit to the 30-day intensive format</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-soft-clay mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                      </svg>
-                      <span>Those needing medication management (psychiatric care)</span>
-                    </li>
-                  </ul>
-                </div>
-              </ScrollReveal>
-            </div>
           </div>
         </Container>
       </section>
 
-      {/* 4. 3-STEP PROCESS */}
-      <section className="py-16 md:py-20 bg-warm-linen/50">
+      {/* 4. THE SOLUTION */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-sea-sage/5 to-seafoam/5">
         <Container>
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                  How It Works
-                </h2>
-                <p className="text-lg text-body">
-                  Three simple steps to start your transformation
-                </p>
-              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6 text-center">
+                We Deconstructed the Therapist.
+              </h2>
+              
+              <p className="text-lg leading-8 text-body mb-12 text-center">
+                We identified the two core functions of effective therapy—<strong>Strategy</strong> and <strong>Practice</strong>—and 
+                assigned each to the component best suited for the job. This division of labor is our core innovation.
+              </p>
             </ScrollReveal>
 
             <div className="space-y-8">
+              {/* Human Clinical Strategist */}
               <ScrollReveal delay={100}>
-                <div className="flex gap-6 items-start">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-sea-sage text-white flex items-center justify-center font-bold text-xl">
-                    1
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-sea-sage mb-2">Apply</h3>
-                    <p className="text-body leading-7">
-                      Complete the brief application form. Tell me about what you're experiencing and what you hope to achieve.
-                    </p>
+                <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow">
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-sea-sage text-white flex items-center justify-center font-bold text-2xl">
+                      1
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-sea-sage mb-3">The Human Clinical Strategist</h3>
+                      <p className="text-lg leading-8 text-body">
+                        Your program is designed and personally overseen by a human expert. Their role is singular: to conduct 
+                        the initial deep-dive diagnostic, build your custom training protocol, analyze your performance data, 
+                        and make high-level strategic adjustments. You get pure expertise.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </ScrollReveal>
 
+              {/* Cognitive Simulator */}
               <ScrollReveal delay={200}>
-                <div className="flex gap-6 items-start">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-sea-sage text-white flex items-center justify-center font-bold text-xl">
-                    2
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-sea-sage mb-2">Free 15-Minute Consultation</h3>
-                    <p className="text-body leading-7">
-                      Within 24–48 hours, I'll review your application and schedule a brief, confidential call to determine if the program is a good fit.
-                    </p>
-                  </div>
-                </div>
-              </ScrollReveal>
-
-              <ScrollReveal delay={300}>
-                <div className="flex gap-6 items-start">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-sea-sage text-white flex items-center justify-center font-bold text-xl">
-                    3
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-sea-sage mb-2">Start Your 30-Day Plan</h3>
-                    <p className="text-body leading-7">
-                      If we're aligned, we'll schedule your first 90-minute Strategy Session and begin building your personalized protocol immediately.
-                    </p>
+                <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow">
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-sea-sage text-white flex items-center justify-center font-bold text-2xl">
+                      2
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-sea-sage mb-3">The Cognitive Simulator</h3>
+                      <p className="text-lg leading-8 text-body">
+                        The repetitive, hour-to-hour work of skill-building is delegated to our proprietary, voice-based 
+                        training technology. It runs your protocol with perfect fidelity and zero judgment, allowing you to 
+                        achieve a practice dosage up to <strong className="text-sea-sage">10x greater</strong> than traditional models.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </ScrollReveal>
             </div>
-
-            <ScrollReveal delay={400}>
-              <div className="mt-10 text-center">
-                <Link
-                  href="/apply"
-                  className="inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-gradient-to-r from-sea-sage to-seafoam text-white font-medium shadow-soft hover:shadow-soft-lg hover:scale-105 transition-all duration-300"
-                >
-                  <span>Start Your Application</span>
-                  <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              </div>
-            </ScrollReveal>
           </div>
         </Container>
       </section>
@@ -322,35 +262,25 @@ export default function HomePage() {
           <ScrollReveal>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                From Anxious to Confident in 30 Days
+                From a "Fast-Track to Panic" to Having "More Options."
               </h2>
-              <p className="text-lg text-body max-w-2xl mx-auto leading-8">
-                Real results from professionals who completed The Anxiety Protocol.
-              </p>
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-5xl mx-auto">
-            {featuredTestimonials.map((testimonial, index) => (
-              <ScrollReveal key={testimonial.id} delay={index * 100}>
-                <TestimonialCard testimonial={testimonial} />
-              </ScrollReveal>
-            ))}
+          <div className="max-w-4xl mx-auto">
+            <ScrollReveal delay={100}>
+              <blockquote className="glass-effect rounded-3xl p-8 md:p-12 shadow-soft-lg border border-dune-shadow">
+                <p className="text-xl md:text-2xl leading-relaxed text-body italic mb-6">
+                  "Before, it was just a fast track to a panic attack. I didn't even know there was another option. 
+                  Now, to be able to feel the sensations coming on and know there's a step I can take... it feels 
+                  like I've got a bit more control over it, but not being controlling of it."
+                </p>
+                <footer className="text-lg font-medium text-sea-sage">
+                  — Melissa P., Project Manager
+                </footer>
+              </blockquote>
+            </ScrollReveal>
           </div>
-
-          <ScrollReveal delay={300}>
-            <div className="text-center">
-              <Link 
-                href="/testimonials" 
-                className="inline-flex items-center text-sea-sage font-medium hover:text-golden-shell group transition-colors"
-              >
-                <span>Read more testimonials</span>
-                <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
-          </ScrollReveal>
         </Container>
       </section>
 
@@ -381,7 +311,7 @@ export default function HomePage() {
                     1
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-sea-sage mb-2">Deconstruction & Diagnostics</h3>
+                    <h3 className="text-xl font-bold text-sea-sage mb-2">1. Map Your Operating System</h3>
                     <p className="text-body leading-7">
                       Create a precise, data-driven map of your anxiety. Identify your exact triggers, core thoughts, and avoidance patterns.
                     </p>
@@ -398,7 +328,7 @@ export default function HomePage() {
                     2
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-sea-sage mb-2">Cognitive Defusion</h3>
+                    <h3 className="text-xl font-bold text-sea-sage mb-2">2. Master Your Internal Dialogue</h3>
                     <p className="text-body leading-7">
                       Learn to "unhook" from anxious thoughts. See them as temporary mental events and strip them of their power to control your behavior.
                     </p>
@@ -415,7 +345,7 @@ export default function HomePage() {
                     3
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-sea-sage mb-2">Somatic Regulation</h3>
+                    <h3 className="text-xl font-bold text-sea-sage mb-2">3. Command Your Physiology</h3>
                     <p className="text-body leading-7">
                       Train your nervous system to tolerate physical anxiety sensations without spiraling. Build foundational "affect tolerance."
                     </p>
@@ -432,7 +362,7 @@ export default function HomePage() {
                     4
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-sea-sage mb-2">Committed Action & Exposure</h3>
+                    <h3 className="text-xl font-bold text-sea-sage mb-2">4. Re-Engage With Your Life</h3>
                     <p className="text-body leading-7">
                       Re-engage with the life your anxiety has taken from you. Design small, courageous behavioral experiments to approach feared situations.
                     </p>
@@ -473,28 +403,28 @@ export default function HomePage() {
             <ScrollReveal direction="right" delay={200} className="order-1 lg:order-2">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-sea-sage mb-3">
-                  Your Head Coach: Robert Carpenter
+                  Your Clinical Strategist: Robert Carpenter
                 </h2>
                 
                 <p className="text-xl italic text-soft-clay mb-6">
-                  Psychotherapist, Author, and Creator of The Anxiety Protocol
+                  Licensed Psychotherapist & Author of "Drop the Rope"
                 </p>
                 
                 <div className="space-y-4 text-lg leading-8 text-body mb-8">
                   <p>
-                    I'm a licensed psychotherapist, published author, and anxiety specialist. After 20 years treating 
-                    anxiety across diverse cultures, I recognized a critical gap: high-performing individuals need a 
-                    faster, more structured, and more effective approach than traditional talk therapy can provide.
+                    I am a trained therapist, but I am a <strong className="text-sea-sage">systems-thinker</strong> at heart. 
+                    Early in my career, I saw that the traditional therapeutic model was failing a specific type of client: 
+                    the structured, results-oriented professional. The lack of a clear protocol, the absence of data, the 
+                    indefinite timeline—it was a system designed for a different kind of mind.
                   </p>
                   
                   <p>
-                    As your <strong className="text-sea-sage">Head Coach</strong>, I design your personalized 30-day training program, analyze the data from 
-                    your practice sessions, and provide the high-level oversight to ensure you achieve your goals.
+                    I became obsessed with one question: <em>If we were to re-engineer the process of therapy for maximum 
+                    efficiency and measurable results, what would it look like?</em>
                   </p>
 
-                  <p className="font-medium text-sea-sage">
-                    This isn't therapy as you know it. It's a structured bootcamp where you'll do the reps, build 
-                    the skills, and learn to become your own therapist.
+                  <p className="font-medium text-sea-sage text-xl">
+                    The Anxiety Protocol is the answer.
                   </p>
                 </div>
 
@@ -502,7 +432,7 @@ export default function HomePage() {
                   href="/apply"
                   className="group inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-sea-sage text-white font-medium shadow-soft hover:shadow-soft-lg hover:bg-golden-shell hover:text-olive-grey hover:scale-105 transition-all duration-300"
                 >
-                  <span>Apply to the Bootcamp</span>
+                  <span>Begin Your Application</span>
                   <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -546,10 +476,10 @@ export default function HomePage() {
 
               <ScrollReveal delay={300}>
                 <div className="glass-effect rounded-2xl p-6 shadow-soft">
-                  <h3 className="text-lg font-bold text-sea-sage mb-2">What should I expect from the free consultation?</h3>
+                  <h3 className="text-lg font-bold text-sea-sage mb-2">What is the purpose of the strategic consultation?</h3>
                   <p className="text-body leading-7">
-                    The 15-minute consultation is a brief, no-pressure conversation to determine if the program aligns with your 
-                    needs. We'll discuss your current challenges and whether the intensive format is right for you.
+                    The 15-minute consultation is the final step in our application process. It is a no-obligation conversation 
+                    to confirm that the program's intensity and methodology align with your specific needs and mindset.
                   </p>
                 </div>
               </ScrollReveal>
@@ -575,35 +505,38 @@ export default function HomePage() {
           <ScrollReveal>
             <div className="mb-12 text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                Anxiety Mastery Insights
+                From the Lab: Insights on Anxiety Mastery
               </h2>
-              <p className="text-lg text-body max-w-2xl mx-auto leading-8">
-                Evidence-based strategies and practical skills from our curriculum
-              </p>
             </div>
           </ScrollReveal>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {latestPosts.map((post, index) => (
-                <ScrollReveal key={post.slug} delay={index * 100}>
-                  <PostCard post={post} />
-                </ScrollReveal>
-              ))}
-            </div>
+            <div className="max-w-4xl mx-auto">
+              <ScrollReveal delay={100}>
+                <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-8">
+                  {latestPosts.map((post, index) => (
+                    <Link 
+                      key={post.slug}
+                      href={`/blog/${post.slug}`}
+                      className="text-base md:text-lg text-sea-sage hover:text-golden-shell font-medium transition-colors text-center"
+                    >
+                      {post.title}
+                    </Link>
+                  ))}
+                </div>
 
-            <ScrollReveal delay={400}>
-              <div className="mt-12 text-center">
-                <Link 
-                  href="/blog" 
-                  className="inline-flex items-center text-sea-sage font-medium hover:text-golden-shell group transition-colors"
-                >
-                  <span>View all posts</span>
-                  <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              </div>
-            </ScrollReveal>
+                <div className="text-center">
+                  <Link 
+                    href="/blog" 
+                    className="inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-sea-sage text-white font-medium shadow-soft hover:shadow-soft-lg hover:scale-105 transition-all duration-300"
+                  >
+                    <span>View All Insights</span>
+                    <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
+                </div>
+              </ScrollReveal>
+            </div>
           </Container>
         </section>
       )}
@@ -620,11 +553,11 @@ export default function HomePage() {
               <div className="relative p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8">
                 <div className="text-white">
                   <h3 className="text-3xl md:text-4xl font-bold mb-4">
-                    Ready to Master Your Anxiety?
+                    Apply for a Strategic Consultation.
                   </h3>
                   <p className="text-lg text-white/95 leading-8 max-w-xl">
-                    Stop coping. Start mastering. Apply for the 30-day Anxiety Protocol and 
-                    get the skills to become your own therapist.
+                    We accept a maximum of four new clients per month. If you believe this protocol was designed 
+                    for you, the next step is to apply for a no-obligation strategic consultation to determine if you are a fit.
                   </p>
                 </div>
                 
@@ -632,7 +565,7 @@ export default function HomePage() {
                   href="/apply"
                   className="flex-shrink-0 inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-golden-shell text-olive-grey font-medium shadow-soft hover:shadow-soft-lg hover:scale-105 transition-all duration-300"
                 >
-                  <span>Apply Now</span>
+                  <span>Begin Your Application</span>
                   <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>

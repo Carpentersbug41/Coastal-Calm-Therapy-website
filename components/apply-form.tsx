@@ -10,8 +10,10 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: '',
-    phone: '',
+    challenge: '',
+    therapy_experience: '',
+    commitment: '',
+    outcome: '',
   });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
@@ -22,7 +24,14 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
     setErrorMessage('');
 
     try {
-      const response = await fetch('/api/apply', {
+      // Use Formspree endpoint from environment variable
+      const formspreeEndpoint = process.env.NEXT_PUBLIC_FORMSPREE_APPLY_ENDPOINT;
+      
+      if (!formspreeEndpoint || formspreeEndpoint.includes('REPLACE_ME')) {
+        throw new Error('Apply form not configured yet. Please contact us directly.');
+      }
+
+      const response = await fetch(formspreeEndpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -43,7 +52,7 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
       }
 
       // Reset form
-      setFormData({ name: '', email: '', message: '', phone: '' });
+      setFormData({ name: '', email: '', challenge: '', therapy_experience: '', commitment: '', outcome: '' });
     } catch (error) {
       setStatus('error');
       setErrorMessage('Something went wrong. Please try again or email us directly.');
@@ -60,7 +69,7 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
         </div>
         <h3 className="text-2xl font-bold text-sea-sage mb-4">Application Received!</h3>
         <p className="text-lg text-body leading-7">
-          Thank you for your interest in The Anxiety Protocol. I'll review your application and get back to you within 24–48 hours.
+          Your application is under review. Our Clinical Strategist will personally evaluate your submission and respond within 24–48 business hours.
         </p>
       </div>
     );
@@ -70,7 +79,7 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-sea-sage mb-2">
-          Name <span className="text-red-500">*</span>
+          Full Name <span className="text-red-500">*</span>
         </label>
         <input
           type="text"
@@ -86,7 +95,7 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
 
       <div>
         <label htmlFor="email" className="block text-sm font-medium text-sea-sage mb-2">
-          Email <span className="text-red-500">*</span>
+          Email Address <span className="text-red-500">*</span>
         </label>
         <input
           type="email"
@@ -101,34 +110,76 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
       </div>
 
       <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-sea-sage mb-2">
-          Phone <span className="text-soft-clay text-xs">(optional)</span>
+        <label htmlFor="challenge" className="block text-sm font-medium text-sea-sage mb-2">
+          In 1-2 sentences, what is the primary challenge related to anxiety you are trying to solve? <span className="text-red-500">*</span>
         </label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          value={formData.phone}
-          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-          className="w-full px-4 py-3 rounded-xl border border-dune-shadow bg-white text-olive-grey focus:outline-none focus:ring-2 focus:ring-sea-sage focus:border-transparent transition-all"
-          placeholder="+44 7XXX XXXXXX"
+        <textarea
+          id="challenge"
+          name="challenge"
+          required
+          rows={4}
+          value={formData.challenge}
+          onChange={(e) => setFormData({ ...formData, challenge: e.target.value })}
+          className="w-full px-4 py-3 rounded-xl border border-dune-shadow bg-white text-olive-grey focus:outline-none focus:ring-2 focus:ring-sea-sage focus:border-transparent transition-all resize-none"
+          placeholder="Describe your primary anxiety-related challenge..."
         />
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-sea-sage mb-2">
-          What would you like help with? <span className="text-red-500">*</span>
+        <label htmlFor="therapy_experience" className="block text-sm font-medium text-sea-sage mb-2">
+          What has been your experience with traditional therapy, and what were its specific limitations for you? <span className="text-red-500">*</span>
         </label>
-        <p className="text-sm text-soft-clay mb-2">1–3 sentences is perfect</p>
         <textarea
-          id="message"
-          name="message"
+          id="therapy_experience"
+          name="therapy_experience"
           required
-          rows={5}
-          value={formData.message}
-          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+          rows={4}
+          value={formData.therapy_experience}
+          onChange={(e) => setFormData({ ...formData, therapy_experience: e.target.value })}
           className="w-full px-4 py-3 rounded-xl border border-dune-shadow bg-white text-olive-grey focus:outline-none focus:ring-2 focus:ring-sea-sage focus:border-transparent transition-all resize-none"
-          placeholder="Tell me briefly about what you're experiencing and what you hope to achieve..."
+          placeholder="Share your therapy experience and what didn't work..."
+        />
+      </div>
+
+      <div>
+        <label htmlFor="commitment" className="block text-sm font-medium text-sea-sage mb-2">
+          On a scale of 1-10, how ready are you to engage in a high-intensity, data-driven program that requires consistent practice? <span className="text-red-500">*</span>
+        </label>
+        <select
+          id="commitment"
+          name="commitment"
+          required
+          value={formData.commitment}
+          onChange={(e) => setFormData({ ...formData, commitment: e.target.value })}
+          className="w-full px-4 py-3 rounded-xl border border-dune-shadow bg-white text-olive-grey focus:outline-none focus:ring-2 focus:ring-sea-sage focus:border-transparent transition-all"
+        >
+          <option value="">Please select a rating</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+
+      <div>
+        <label htmlFor="outcome" className="block text-sm font-medium text-sea-sage mb-2">
+          If this protocol is 100% successful, what is the single most important measurable outcome you will have achieved in 30 days? <span className="text-red-500">*</span>
+        </label>
+        <textarea
+          id="outcome"
+          name="outcome"
+          required
+          rows={4}
+          value={formData.outcome}
+          onChange={(e) => setFormData({ ...formData, outcome: e.target.value })}
+          className="w-full px-4 py-3 rounded-xl border border-dune-shadow bg-white text-olive-grey focus:outline-none focus:ring-2 focus:ring-sea-sage focus:border-transparent transition-all resize-none"
+          placeholder="What specific outcome would success look like for you..."
         />
       </div>
 
@@ -154,7 +205,7 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
             </>
           ) : (
             <>
-              <span>Submit Application</span>
+              <span>Submit for Consideration</span>
               <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -163,9 +214,6 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
         </button>
         
         <p className="mt-4 text-center text-sm text-soft-clay">
-          <svg className="inline w-4 h-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-          </svg>
           Confidential • Encrypted • Reviewed within 24–48h
         </p>
       </div>

@@ -8,10 +8,12 @@ import { useEffect, useState } from 'react';
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Testimonials', href: '/testimonials' },
-  { name: 'Subscribe', href: '/subscribe' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'The Protocol', href: '/protocol' },
+  { name: 'Simulator', href: '/simulator' },
+  { name: 'Who It\'s For', href: '/who-its-for' },
+  { name: 'About', href: '/about' },
+  { name: 'Investment', href: '/investment' },
+  { name: 'FAQ', href: '/faq' },
   { name: 'Apply', href: '/apply', highlight: true },
 ];
 
@@ -80,7 +82,7 @@ export function Header({ minimal = false }: HeaderProps) {
                 href="/apply"
                 className="relative text-sm font-medium transition-all px-6 py-3 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-sea-sage bg-sea-sage text-white hover:bg-golden-shell hover:text-olive-grey hover:scale-105"
               >
-                Book Free Consult
+                Apply
               </Link>
             ) : (
               // Full navigation

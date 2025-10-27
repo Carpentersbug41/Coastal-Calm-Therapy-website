@@ -40,7 +40,7 @@ export function OfferPanel({ variant = 'default', showCta = true }: OfferPanelPr
               </svg>
             </div>
             <div className={isCompact ? 'text-sm' : 'text-base'}>
-              <p className="font-medium text-sea-sage">2× 90-minute strategy sessions</p>
+              <p className="text-body"><strong className="font-bold text-sea-sage">The Blueprint:</strong> 2× 90-minute 1-on-1 strategy sessions</p>
             </div>
           </div>
 
@@ -51,7 +51,7 @@ export function OfferPanel({ variant = 'default', showCta = true }: OfferPanelPr
               </svg>
             </div>
             <div className={isCompact ? 'text-sm' : 'text-base'}>
-              <p className="font-medium text-sea-sage">3× 15-minute weekly check-ins</p>
+              <p className="text-body"><strong className="font-bold text-sea-sage">The Training:</strong> 8–12 high-intensity drills in the Cognitive Simulator</p>
             </div>
           </div>
 
@@ -62,7 +62,7 @@ export function OfferPanel({ variant = 'default', showCta = true }: OfferPanelPr
               </svg>
             </div>
             <div className={isCompact ? 'text-sm' : 'text-base'}>
-              <p className="font-medium text-sea-sage">8–12 structured skill drills</p>
+              <p className="text-body"><strong className="font-bold text-sea-sage">The Oversight:</strong> 3× 15-minute weekly performance reviews</p>
             </div>
           </div>
 
@@ -73,18 +73,7 @@ export function OfferPanel({ variant = 'default', showCta = true }: OfferPanelPr
               </svg>
             </div>
             <div className={isCompact ? 'text-sm' : 'text-base'}>
-              <p className="font-medium text-sea-sage">Session transcripts & analytics</p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-3">
-            <div className="flex-shrink-0 w-5 h-5 rounded-full bg-seafoam/20 flex items-center justify-center mt-0.5">
-              <svg className="w-3 h-3 text-sea-sage" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
-              </svg>
-            </div>
-            <div className={isCompact ? 'text-sm' : 'text-base'}>
-              <p className="font-medium text-sea-sage">HIPAA-grade encrypted platform</p>
+              <p className="text-body"><strong className="font-bold text-sea-sage">The Data:</strong> Full session transcripts & analytics</p>
             </div>
           </div>
         </div>

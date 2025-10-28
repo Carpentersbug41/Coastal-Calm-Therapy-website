@@ -128,7 +128,7 @@ export default function AboutPage() {
                 </ul>
                 
                 <p>
-                  The day-to-day, high-repetition practice work happens in our proprietary Cognitive Simulator, a tool engineered to do that job with a fidelity and intensity I could never match as a human. This division of labor allows me to provide you with pure, undiluted strategic expertise.
+                  The day-to-day, high-repetition practice work happens in our proprietary Resilience Simulator, a tool engineered to do that job with a fidelity and intensity I could never match as a human. This division of labor allows me to provide you with pure, undiluted strategic expertise.
                 </p>
               </div>
             </div>

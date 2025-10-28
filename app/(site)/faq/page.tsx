@@ -27,8 +27,8 @@ export default function FAQPage() {
       answer: 'We are not a "better therapy"; we are a different, more intensive model designed for a specific type of mind. For clients who value data, structure, and efficiency, our protocol can achieve in 30 days what might take years in traditional models.',
     },
     {
-      question: 'What is the "Cognitive Simulator"?',
-      answer: 'The Cognitive Simulator is our proprietary, voice-based training technology. We do not use the term "AI," as it is associated with low-quality chatbots. Our Simulator is a sophisticated, purpose-built environment for high-repetition psychological skill practice in a completely private, judgment-free space.',
+      question: 'What is the "Resilience Simulator"?',
+      answer: 'The Resilience Simulator is our proprietary, voice-based training technology. We do not use the term "AI," as it is associated with low-quality chatbots. Our Simulator is a sophisticated, purpose-built environment for high-repetition psychological skill practice in a completely private, judgment-free space.',
     },
     {
       question: 'What if I can\'t commit to 2-3 sessions per week?',

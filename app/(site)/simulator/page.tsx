@@ -4,10 +4,10 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'The Cognitive Simulator - Your Judgment-Free Training Environment',
+  title: 'The Resilience Simulator - Your Judgment-Free Training Environment',
   description: 'Our proprietary, voice-based training technology provides a private space for high-repetition psychological skill practice. Not AI—a sophisticated cognitive training environment.',
   openGraph: {
-    title: 'The Cognitive Simulator',
+    title: 'The Resilience Simulator',
     description: 'A tireless, judgment-free sparring partner for your mind. Practice vulnerable psychological skills in complete privacy.',
   },
 }
@@ -29,7 +29,7 @@ export default function SimulatorPage() {
             </h1>
             
             <p className="text-xl leading-8 text-body">
-              The centerpiece of The Anxiety Protocol is our proprietary Cognitive Simulator. It is not a therapist. 
+              The centerpiece of The Anxiety Protocol is our proprietary Resilience Simulator. It is not a therapist. 
               It is a highly sophisticated, voice-based training environment engineered to do one thing with flawless 
               precision: run the specific skill-building drills designed for you by your Human Strategist.
             </p>
@@ -114,7 +114,7 @@ export default function SimulatorPage() {
                   The Simulator is an Integrated Component of the Protocol.
                 </h2>
                 <p className="text-lg text-white/95 leading-8 mb-8 max-w-xl mx-auto">
-                  Access to the Cognitive Simulator is granted exclusively to clients accepted into The Anxiety Protocol. It is not a standalone product. The technology is powerful only when wielded by an expert human strategist. The next step is to apply for the full 30-day program.
+                  Access to the Resilience Simulator is granted exclusively to clients accepted into The Anxiety Protocol. It is not a standalone product. The technology is powerful only when wielded by an expert human strategist. The next step is to apply for the full 30-day program.
                 </p>
                 
                 <Link

@@ -222,9 +222,9 @@ export default function HomePage() {
                       1
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-sea-sage mb-3">The Human Clinical Strategist</h3>
+                      <h3 className="text-2xl font-bold text-sea-sage mb-3">Your Head Coach & Clinical Strategist</h3>
                       <p className="text-lg leading-8 text-body">
-                        Your program is designed and personally overseen by a human expert. Their role is singular: to conduct 
+                        Your program is <strong className="text-sea-sage">architected</strong> and <strong className="text-sea-sage">personally directed</strong> by a human expert. Their role is singular: to conduct 
                         the initial deep-dive diagnostic, build your custom training protocol, analyze your performance data, 
                         and make high-level strategic adjustments. You get pure expertise.
                       </p>
@@ -241,7 +241,7 @@ export default function HomePage() {
                       2
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-sea-sage mb-3">The Cognitive Simulator</h3>
+                      <h3 className="text-2xl font-bold text-sea-sage mb-3">The Resilience Simulator</h3>
                       <p className="text-lg leading-8 text-body">
                         The repetitive, hour-to-hour work of skill-building is delegated to our proprietary, voice-based 
                         training technology. It runs your protocol with perfect fidelity and zero judgment, allowing you to 
@@ -271,12 +271,10 @@ export default function HomePage() {
             <ScrollReveal delay={100}>
               <blockquote className="glass-effect rounded-3xl p-8 md:p-12 shadow-soft-lg border border-dune-shadow">
                 <p className="text-xl md:text-2xl leading-relaxed text-body italic mb-6">
-                  "Before, it was just a fast track to a panic attack. I didn't even know there was another option. 
-                  Now, to be able to feel the sensations coming on and know there's a step I can take... it feels 
-                  like I've got a bit more control over it, but not being controlling of it."
+                  "The Simulator provided the high-intensity reps I needed, but the real breakthrough came from the weekly Performance Review. My strategist had analyzed every transcript and was able to pinpoint a core avoidance pattern I never would have seen on my own. That single, data-driven insight changed the entire trajectory of the program for me. It's the combination of flawless practice and expert human analysis that makes this system so powerful."
                 </p>
                 <footer className="text-lg font-medium text-sea-sage">
-                  — Melissa P., Project Manager
+                  — Alex, Product Lead
                 </footer>
               </blockquote>
             </ScrollReveal>

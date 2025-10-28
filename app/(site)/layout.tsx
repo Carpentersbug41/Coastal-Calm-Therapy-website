@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL || 'https://coastalcalm.vercel.app'
   ),
   title: {
-    default: 'The Anxiety Protocol - 30-Day Cognitive Bootcamp to Master Anxiety',
+    default: 'The Anxiety Protocol - 30-Day Resilience Bootcamp to Master Anxiety',
     template: '%s | The Anxiety Protocol',
   },
   description:
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   keywords: [
     'anxiety treatment',
     'anxiety therapy',
-    'cognitive bootcamp',
+    'resilience bootcamp',
     'anxiety protocol',
     'high-intensity therapy',
     'carpenter method',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: '/',
     siteName: 'The Anxiety Protocol',
-    title: 'The Anxiety Protocol - 30-Day Cognitive Bootcamp to Master Anxiety',
+    title: 'The Anxiety Protocol - 30-Day Resilience Bootcamp to Master Anxiety',
     description:
       'Stop coping with anxiety. Start mastering it. A structured 30-day program combining human expertise with intensive practice drills for rapid, measurable results.',
     images: [

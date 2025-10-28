@@ -54,7 +54,7 @@
 ```json
 {
   "@type": "Service",
-  "name": "30-Day Cognitive Bootcamp",
+  "name": "30-Day Resilience Bootcamp",
   "price": "2500 GBP",
   "offers": {...}
 }
@@ -320,7 +320,7 @@ Sitemap: https://yourdomain.com/sitemap.xml
 1. "30 day anxiety program" ⭐⭐⭐
 2. "anxiety therapy for professionals" ⭐⭐⭐
 3. "intensive anxiety treatment UK" ⭐⭐⭐
-4. "cognitive bootcamp anxiety" ⭐⭐
+4. "resilience bootcamp anxiety" ⭐⭐
 5. "online panic attack treatment UK" ⭐⭐
 
 **Strategy:** Target NOW with blog content

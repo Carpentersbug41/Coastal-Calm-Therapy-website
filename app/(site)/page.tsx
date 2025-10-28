@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   keywords: [
     'anxiety treatment',
     'anxiety therapy UK',
-    'cognitive bootcamp',
+    'resilience bootcamp',
     'anxiety protocol',
     'rapid anxiety relief',
     'anxiety mastery',

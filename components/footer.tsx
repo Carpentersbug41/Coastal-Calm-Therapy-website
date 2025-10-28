@@ -67,7 +67,7 @@ export function Footer() {
                 </h3>
               </div>
               <p className="text-body mb-4 leading-7 max-w-md">
-                A 30-day Cognitive Bootcamp for mastering anxiety. The Protocol Framework combines expert 
+                A 30-day Resilience Bootcamp for mastering anxiety. The Protocol Framework combines expert 
                 human strategy with intensive structured drills for accelerated, measurable results.
               </p>
               <p className="text-sm font-medium text-sea-sage mb-2">

@@ -12,7 +12,7 @@ interface BlogPageProps {
 export const metadata = {
   title: 'Anxiety Mastery Insights',
   description:
-    'Expert insights on anxiety mastery from The Anxiety Protocol. Learn about cognitive bootcamp techniques, defusion skills, exposure therapy, and the science behind rapid anxiety treatment.',
+    'Expert insights on anxiety mastery from The Anxiety Protocol. Learn about resilience bootcamp techniques, defusion skills, exposure therapy, and the science behind rapid anxiety treatment.',
 };
 
 export default function BlogPage({ searchParams }: BlogPageProps) {
@@ -38,7 +38,7 @@ export default function BlogPage({ searchParams }: BlogPageProps) {
             
             <p className="text-xl text-ink/70 max-w-3xl mx-auto leading-8">
               Learn the science and skills behind The Anxiety Protocol. Evidence-based insights on 
-              defusion, exposure therapy, somatic practices, and the cognitive bootcamp approach.
+              defusion, exposure therapy, somatic practices, and the resilience bootcamp approach.
             </p>
           </div>
         </ScrollReveal>

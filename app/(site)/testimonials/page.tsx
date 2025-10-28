@@ -7,10 +7,10 @@ import { getTestimonials } from '@/lib/testimonials';
 
 export const metadata: Metadata = {
   title: 'Program Results & Success Stories',
-  description: 'Real results from high-performing professionals who completed The Anxiety Protocol. Discover how the 30-day Cognitive Bootcamp transformed their relationship with anxiety.',
+  description: 'Real results from high-performing professionals who completed The Anxiety Protocol. Discover how the 30-day Resilience Bootcamp transformed their relationship with anxiety.',
   openGraph: {
     title: 'Program Results | The Anxiety Protocol',
-    description: 'From anxious to confident in 30 days. Real results from the Cognitive Bootcamp.',
+    description: 'From anxious to confident in 30 days. Real results from the Resilience Bootcamp.',
   },
 };
 
@@ -141,7 +141,7 @@ export default function TestimonialsPage() {
                   Ready to Master Your Anxiety?
                 </h3>
                 <p className="text-lg text-white/95 leading-8 max-w-2xl mx-auto mb-8">
-                  Stop coping. Start mastering. Apply for the 30-day Cognitive Bootcamp and join 
+                  Stop coping. Start mastering. Apply for the 30-day Resilience Bootcamp and join 
                   high-performers who've transformed their relationship with anxiety.
                 </p>
                 

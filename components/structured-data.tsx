@@ -44,7 +44,7 @@ export function ServiceSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'The Anxiety Protocol - 30-Day Cognitive Bootcamp',
+    name: 'The Anxiety Protocol - 30-Day Resilience Bootcamp',
     description: 'A structured, evidence-based 30-day intensive program combining human expertise with precision training drills to master anxiety rapidly.',
     provider: {
       '@type': 'Organization',
@@ -59,7 +59,7 @@ export function ServiceSchema() {
       '@type': 'Offer',
       price: '2500',
       priceCurrency: 'GBP',
-      description: 'Complete 30-day Cognitive Bootcamp including 2 strategy sessions, 3 check-ins, 8-12 drills, and analytics',
+      description: 'Complete 30-day Resilience Bootcamp including 2 strategy sessions, 3 check-ins, 8-12 drills, and analytics',
     },
     availableChannel: {
       '@type': 'ServiceChannel',
@@ -168,7 +168,7 @@ export function AggregateRatingSchema({ reviews }: ReviewSchemaProps) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
-    name: 'The Anxiety Protocol - 30-Day Cognitive Bootcamp',
+    name: 'The Anxiety Protocol - 30-Day Resilience Bootcamp',
     description: 'A structured 30-day program to master anxiety for high-performing professionals',
     offers: {
       '@type': 'Offer',

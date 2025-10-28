@@ -60,6 +60,10 @@ export default function AboutPage() {
                 <p>
                   I am a therapist who became an engineer because traditional therapy was failing too many of my clients. I saw intelligent, capable people trapped in a slow, unstructured system that wasn't giving them the results they deserved. I became obsessed with one question: "How can we get our clients to a place of freedom and self-mastery, faster and more effectively?" The Anxiety Protocol is the answer to that obsession.
                 </p>
+                
+                <blockquote className="pl-6 border-l-4 border-dune italic text-xl text-sea-sage font-medium">
+                  "I realized then that anxiety wasn't a character flaw to be managed, but an engineering problem to be solved."
+                </blockquote>
               </div>
             </div>
           </ScrollReveal>

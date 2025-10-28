@@ -92,7 +92,7 @@ export default function WhoItsForPage() {
                     </svg>
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold text-sea-sage">
-                    This Protocol Is NOT for You If:
+                    We Are Not the Right Fit If...
                   </h2>
                 </div>
 
@@ -102,8 +102,7 @@ export default function WhoItsForPage() {
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                     </svg>
                     <p className="text-lg leading-7 text-body">
-                      You are in acute crisis, are having thoughts of self-harm, or require treatment for a severe psychiatric condition. 
-                      <em className="text-soft-clay"> This is not a crisis service.</em>
+                      <strong className="text-soft-clay">You are looking for a passive process.</strong> This is an intensive, demanding training protocol that requires your full commitment.
                     </p>
                   </li>
 
@@ -112,8 +111,7 @@ export default function WhoItsForPage() {
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                     </svg>
                     <p className="text-lg leading-7 text-body">
-                      Your primary challenge is deep, unprocessed developmental trauma. Our 30-day model is not designed to heal the 
-                      underlying relational wounds.
+                      <strong className="text-soft-clay">You want an open-ended space to talk.</strong> Our sessions are brief, tactical, and data-driven. We are focused on solving a specific problem, not on open-ended discussion.
                     </p>
                   </li>
 
@@ -122,7 +120,7 @@ export default function WhoItsForPage() {
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                     </svg>
                     <p className="text-lg leading-7 text-body">
-                      You are looking for a conventional, open-ended therapeutic relationship for emotional support.
+                      <strong className="text-soft-clay">You are in a state of acute crisis.</strong> Our protocol is designed for high-functioning individuals looking to optimize their performance. If you are in crisis, traditional therapy or emergency services are the appropriate and responsible choice.
                     </p>
                   </li>
                 </ul>

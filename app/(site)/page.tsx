@@ -89,7 +89,7 @@ export default function HomePage() {
                 </h1>
                 
                 <p className="text-xl leading-8 text-body mb-8">
-                  A different kind of therapy, engineered for a structured mind. We don't just talk about anxiety—we give you the tools to solve it.
+                  For the structured mind that's tired of talking and ready to solve the problem.
                 </p>
 
                 <Link
@@ -142,7 +142,7 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6">
-                You're Not Broken. Your Toolkit Is.
+                You're Not Broken. Your *Method* Is.
               </h2>
               
               <p className="text-lg leading-8 text-body mb-6">

@@ -44,6 +44,40 @@ export default function InvestmentPage() {
           </ScrollReveal>
         </section>
 
+        {/* The Return on Your Investment */}
+        <section className="mb-16 max-w-4xl mx-auto">
+          <ScrollReveal delay={150}>
+            <div className="glass-effect rounded-3xl p-8 md:p-12 shadow-soft-lg border border-seafoam">
+              <h2 className="text-3xl font-bold text-sea-sage mb-6">
+                The Return on Your Investment
+              </h2>
+              
+              <p className="text-lg leading-8 text-body mb-6">
+                The tangible returns of mastering your internal state are decisive:
+              </p>
+
+              <ul className="space-y-4 text-lg leading-8 text-body">
+                <li className="flex items-start">
+                  <span className="text-sea-sage mr-3 flex-shrink-0">•</span>
+                  <span><strong className="text-sea-sage">Reclaimed Mental Bandwidth:</strong> Hours of your day are no longer consumed by worry, second-guessing, and mental fatigue.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-sea-sage mr-3 flex-shrink-0">•</span>
+                  <span><strong className="text-sea-sage">Decisive Action:</strong> The hesitation and procrastination caused by anxiety are replaced with clear, focused execution.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-sea-sage mr-3 flex-shrink-0">•</span>
+                  <span><strong className="text-sea-sage">Deeper Focus & Presence:</strong> The ability to be fully present in your work and with your family, without the background noise of anxiety.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-sea-sage mr-3 flex-shrink-0">•</span>
+                  <span><strong className="text-sea-sage">Restored Physical Energy:</strong> A dysregulated nervous system is a massive drain on your physical resources. Regulating it unlocks new levels of energy and stamina.</span>
+                </li>
+              </ul>
+            </div>
+          </ScrollReveal>
+        </section>
+
         {/* What's Included */}
         <section className="mb-16 max-w-4xl mx-auto">
           <ScrollReveal delay={200}>

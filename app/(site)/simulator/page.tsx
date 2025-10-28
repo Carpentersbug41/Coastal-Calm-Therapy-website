@@ -66,28 +66,28 @@ export default function SimulatorPage() {
           <ScrollReveal delay={200}>
             <div className="mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-8">
-                Why It Works So Well For You:
+                Engineered for Real Breakthroughs
               </h2>
               
               <div className="space-y-8">
                 <div>
-                  <h4 className="text-xl font-bold text-sea-sage mb-3">Practice Without Performance Anxiety</h4>
+                  <h4 className="text-xl font-bold text-sea-sage mb-3">1. True Privacy.</h4>
                   <p className="text-lg leading-8 text-body">
-                    The Simulator is a 100% private, non-judgmental space. This allows you to practice vulnerable new skills without the fear of being watched or judged, which our clients find accelerates their progress.
+                    The messy, repetitive work of rewiring your brain shouldn't have an audience. Our simulator is a 100% judgment-free space, allowing you to practice vulnerable skills with zero social risk.
                   </p>
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-bold text-sea-sage mb-3">Achieve Relief Faster</h4>
+                  <h4 className="text-xl font-bold text-sea-sage mb-3">2. Unprecedented Dosage.</h4>
                   <p className="text-lg leading-8 text-body">
-                    The on-demand nature of the Simulator allows for an intensity of practice that is impossible in weekly therapy. More practice means faster, more durable relief from your symptoms.
+                    Lasting change requires a high volume of practice. The simulator gives you an intensity of training that is impossible to achieve in a weekly session, allowing you to build new habits in days, not months.
                   </p>
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-bold text-sea-sage mb-3">Get a Plan That Actually Solves Your Problem</h4>
+                  <h4 className="text-xl font-bold text-sea-sage mb-3">3. Objective Data.</h4>
                   <p className="text-lg leading-8 text-body">
-                    Every drill is transcribed, providing your strategist with objective data. This allows them to see exactly what's working and what's not, and to fine-tune your plan with a level of precision that is unheard of in traditional therapy.
+                    We don't guess about your progress. Every drill provides your strategist with clean, objective data, allowing them to pinpoint your sticking points with surgical precision and optimize your plan based on what the numbers actually say.
                   </p>
                 </div>
               </div>

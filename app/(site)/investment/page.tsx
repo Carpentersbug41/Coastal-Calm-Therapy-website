@@ -20,7 +20,7 @@ export default function InvestmentPage() {
         <ScrollReveal>
           <div className="max-w-4xl mx-auto mb-16 text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-sea-sage mb-6">
-              An Investment in a Measurable Outcome.
+              An Investment in Your Future Self
             </h1>
             
             <p className="text-xl leading-8 text-body">
@@ -38,12 +38,7 @@ export default function InvestmentPage() {
               </h2>
               
               <p className="text-lg leading-8 text-body mb-6">
-                This is an investment in a specific, data-driven result. The long-term cost of unstructured weekly therapy 
-                can exceed £10,000 over two years with no guaranteed outcome.
-              </p>
-
-              <p className="text-lg leading-8 text-body font-medium text-sea-sage">
-                Our protocol is engineered for a decisive result in one month.
+                The investment in the 30-Day Protocol is £2,500. This is not a fee for therapy sessions. It is a fixed-price investment in a specific outcome: reclaiming your focus, your peace of mind, and your ability to perform at your best, free from the grip of anxiety. Consider the high cost of <em>not</em> solving this problem—the lost productivity, the strained relationships, the constant mental fatigue. Our protocol is engineered to deliver a decisive return on that investment in one month.
               </p>
             </div>
           </ScrollReveal>

@@ -52,8 +52,7 @@ export default function WhoItsForPage() {
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     <p className="text-lg leading-7 text-body">
-                      You are a <strong className="text-sea-sage">high-achieving professional</strong> who wants a structured, 
-                      evidence-based approach to your mental well-being.
+                      You are tired of just "managing" your anxiety and want a structured plan to <strong className="text-sea-sage">solve</strong> it.
                     </p>
                   </li>
 
@@ -62,8 +61,7 @@ export default function WhoItsForPage() {
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     <p className="text-lg leading-7 text-body">
-                      You are <strong className="text-sea-sage">psychologically-minded</strong> and want to understand the mechanics 
-                      of your own mind, not just talk about your feelings.
+                      You want more than just emotional support; you want concrete <strong className="text-sea-sage">skills and tools</strong> that give you control.
                     </p>
                   </li>
 
@@ -72,27 +70,7 @@ export default function WhoItsForPage() {
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     <p className="text-lg leading-7 text-body">
-                      You value <strong className="text-sea-sage">data over dogma</strong> and are frustrated by subjective, 
-                      unmeasurable approaches.
-                    </p>
-                  </li>
-
-                  <li className="flex items-start gap-4">
-                    <svg className="w-6 h-6 text-seafoam mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-lg leading-7 text-body">
-                      You see anxiety as a complex system problem to be <strong className="text-sea-sage">solved</strong>, not a 
-                      lifelong condition to be passively managed.
-                    </p>
-                  </li>
-
-                  <li className="flex items-start gap-4">
-                    <svg className="w-6 h-6 text-seafoam mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-lg leading-7 text-body">
-                      You have tried traditional talk therapy and found it too slow, too unstructured, and lacking a clear action plan.
+                      You are frustrated with a lack of clear progress and want a <strong className="text-sea-sage">data-driven approach</strong> where you can see your improvement.
                     </p>
                   </li>
                 </ul>

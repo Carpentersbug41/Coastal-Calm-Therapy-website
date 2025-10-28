@@ -25,7 +25,7 @@ export default function SimulatorPage() {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold text-sea-sage mb-6">
-              A Tireless, Judgment-Free Sparring Partner for Your Mind.
+              A Private Space to Master Difficult Feelings
             </h1>
             
             <p className="text-xl leading-8 text-body">
@@ -61,40 +61,33 @@ export default function SimulatorPage() {
           </ScrollReveal>
         </section>
 
-        {/* Design Principles */}
+        {/* Why It Works So Well */}
         <section className="mb-16 max-w-4xl mx-auto">
           <ScrollReveal delay={200}>
             <div className="mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-8">
-                Design Principles
+                Why It Works So Well For You:
               </h2>
               
               <div className="space-y-8">
                 <div>
-                  <h4 className="text-xl font-bold text-sea-sage mb-3">Principle 1: Zero Relational Risk</h4>
+                  <h4 className="text-xl font-bold text-sea-sage mb-3">Practice Without Performance Anxiety</h4>
                   <p className="text-lg leading-8 text-body">
-                    The Simulator provides a 100% private training environment with no human observer. This complete absence of social judgment is a deliberate design choice to create the optimal conditions for vulnerable, high-repetition practice.
+                    The Simulator is a 100% private, non-judgmental space. This allows you to practice vulnerable new skills without the fear of being watched or judged, which our clients find accelerates their progress.
                   </p>
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-bold text-sea-sage mb-3">Principle 2: Perfect Fidelity & Dosage</h4>
+                  <h4 className="text-xl font-bold text-sea-sage mb-3">Achieve Relief Faster</h4>
                   <p className="text-lg leading-8 text-body">
-                    The system is engineered to execute your specific protocol with perfect fidelity, every time. This ensures a consistent, high-intensity practice dosage that is impossible to achieve in traditional, human-led models.
+                    The on-demand nature of the Simulator allows for an intensity of practice that is impossible in weekly therapy. More practice means faster, more durable relief from your symptoms.
                   </p>
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-bold text-sea-sage mb-3">Principle 3: On-Demand Availability</h4>
+                  <h4 className="text-xl font-bold text-sea-sage mb-3">Get a Plan That Actually Solves Your Problem</h4>
                   <p className="text-lg leading-8 text-body">
-                    The platform is designed for asynchronous use, allowing you to complete your drills on your schedule. This removes the friction of appointments and integrates seamlessly into a high-performer's workflow.
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="text-xl font-bold text-sea-sage mb-3">Principle 4: High-Fidelity Data Capture</h4>
-                  <p className="text-lg leading-8 text-body">
-                    Every drill is transcribed and analyzed, creating a stream of objective performance data. This feedback loop allows your Human Strategist to make precise, evidence-based adjustments to your protocol.
+                    Every drill is transcribed, providing your strategist with objective data. This allows them to see exactly what's working and what's not, and to fine-tune your plan with a level of precision that is unheard of in traditional therapy.
                   </p>
                 </div>
               </div>

@@ -25,7 +25,7 @@ export default function ProtocolPage() {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold text-sea-sage mb-6">
-              A 30-Day Sprint from Anxiety to Autonomy.
+              Your 30-Day Path to Self-Mastery
             </h1>
             
             <p className="text-xl leading-8 text-body">
@@ -53,12 +53,10 @@ export default function ProtocolPage() {
                   </div>
                   <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft-lg border border-dune-shadow flex-1 md:mt-8">
                     <h2 className="text-2xl md:text-3xl font-bold text-sea-sage mb-4">
-                      STEP 1: The Diagnostic & Blueprint
+                      Phase 1: Mapping Your Anxiety's DNA
                     </h2>
                     <p className="text-base md:text-lg leading-7 md:leading-8 text-body">
-                      The protocol begins with a 90-minute deep-dive diagnostic session with your <strong className="text-sea-sage">Head Coach & Clinical Strategist</strong>. We deconstruct 
-                      the specific patterns of your anxiety to design your personalized training protocol. You leave with a clear, 
-                      actionable blueprint for the month.
+                      We don't guess; we diagnose. In a 90-minute deep-dive, your strategist will map the precise mechanics of your anxiety, so we know exactly what we need to fix.
                     </p>
                   </div>
                 </div>
@@ -74,12 +72,10 @@ export default function ProtocolPage() {
                   </div>
                   <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft-lg border border-dune-shadow flex-1 md:mt-8">
                     <h2 className="text-2xl md:text-3xl font-bold text-sea-sage mb-4">
-                      STEP 2: The Simulator Drills
+                      Phase 2: Building New Neural Pathways for Calm
                     </h2>
                     <p className="text-base md:text-lg leading-7 md:leading-8 text-body">
-                      For four weeks, you engage in short (20-30 minute) "skill-building drills" 2-3 times per week in our proprietary 
-                      Resilience Simulator. This is where you build new neural pathways through high-repetition practice in a private, 
-                      judgment-free environment.
+                      This is where you do the work. Through 2-3 weekly drills in our simulator, you will actively build and automate the specific skills—somatic and cognitive—that give you control over your nervous system.
                     </p>
                   </div>
                 </div>
@@ -95,12 +91,10 @@ export default function ProtocolPage() {
                   </div>
                   <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft-lg border border-dune-shadow flex-1 md:mt-8">
                     <h2 className="text-2xl md:text-3xl font-bold text-sea-sage mb-4">
-                      STEP 3: The Performance Reviews
+                      Phase 3: Tracking Your Progress Toward the Goal
                     </h2>
                     <p className="text-base md:text-lg leading-7 md:leading-8 text-body">
-                      Once a week, you have a brief, 15-minute data-driven check-in call with your Human Strategist. This is not a 
-                      therapy session. We review the data from your Simulator drills, analyze progress, and make high-leverage 
-                      adjustments to your plan.
+                      Each week, your strategist reviews your performance data. These brief, 15-minute calls ensure you are on track, troubleshoot any issues, and optimize your plan for the fastest possible results.
                     </p>
                   </div>
                 </div>
@@ -204,12 +198,10 @@ export default function ProtocolPage() {
                   </div>
                   <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft-lg border border-dune-shadow flex-1 md:mt-8">
                     <h2 className="text-2xl md:text-3xl font-bold text-sea-sage mb-4">
-                      STEP 4: The Handover & Go-Forward Plan
+                      Phase 4: Your Plan for Lasting Freedom
                     </h2>
                     <p className="text-base md:text-lg leading-7 md:leading-8 text-body">
-                      At the end of the 30 days, we conduct a final 90-minute session. We review a full month of performance data, 
-                      measure your results against your initial goals, and build a clear plan for your autonomous, post-program success. 
-                      Our goal is your independence.
+                      We end by consolidating your new toolkit and building a clear, actionable plan to ensure you can manage your own system autonomously, long after the program is over. Our goal is your independence.
                     </p>
                   </div>
                 </div>

@@ -21,7 +21,7 @@ export default function AboutPage() {
         <ScrollReveal>
           <div className="max-w-4xl mx-auto mb-16 text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-sea-sage mb-6">
-              Meet the Architect.
+              Obsessed with Finding a Better Way
             </h1>
           </div>
         </ScrollReveal>
@@ -58,27 +58,7 @@ export default function AboutPage() {
               
               <div className="space-y-4 text-lg leading-8 text-body">
                 <p>
-                  I am a trained therapist, but I am a <strong className="text-sea-sage">systems-thinker</strong> at heart. 
-                  Early in my career, I saw that the traditional therapeutic model was failing a specific type of client: 
-                  the structured, results-oriented professional.
-                </p>
-                
-                <p>
-                  The lack of a clear protocol, the absence of data, the indefinite timeline—it was a system designed for 
-                  a different kind of mind.
-                </p>
-
-                <p>
-                  I became obsessed with one question:
-                </p>
-
-                <blockquote className="pl-6 border-l-4 border-seafoam italic text-lg text-sea-sage my-6">
-                  If we were to re-engineer the process of therapy for maximum efficiency and measurable results, 
-                  what would it look like?
-                </blockquote>
-
-                <p className="font-bold text-sea-sage text-2xl">
-                  The Anxiety Protocol is the answer.
+                  I am a therapist who became an engineer because traditional therapy was failing too many of my clients. I saw intelligent, capable people trapped in a slow, unstructured system that wasn't giving them the results they deserved. I became obsessed with one question: "How can we get our clients to a place of freedom and self-mastery, faster and more effectively?" The Anxiety Protocol is the answer to that obsession.
                 </p>
               </div>
             </div>

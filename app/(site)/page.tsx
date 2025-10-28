@@ -85,12 +85,11 @@ export default function HomePage() {
                 </div>
                 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-sea-sage mb-6">
-                  Re-Engineering Therapy for a Structured Mind.
+                  Master Anxiety in 30 Days.
                 </h1>
                 
                 <p className="text-xl leading-8 text-body mb-8">
-                  This is not open-ended talk therapy. This is a 30-day, data-driven training protocol 
-                  engineered to solve anxiety, not just manage it indefinitely.
+                  A different kind of therapy, engineered for a structured mind. We don't just talk about anxiety—we give you the tools to solve it.
                 </p>
 
                 <Link
@@ -143,13 +142,11 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6">
-                You Were Right to Be Frustrated with Therapy.
+                You're Not Broken. Your Toolkit Is.
               </h2>
               
               <p className="text-lg leading-8 text-body mb-6">
-                If you are a high-achieving professional who values structure and measurable results, you likely found 
-                the traditional mental health system to be a failed model. It's not you; it's the design. Therapy was 
-                not engineered for a mind that runs on clear protocols, objective data, and a defined end-point. It often feels like:
+                If you've found traditional talk therapy to be a slow, unstructured, and frustrating process, you're not alone. The problem isn't you; it's a model that wasn't designed for a mind that needs a clear plan, measurable results, and a defined end-point. You don't need another year of talking. You need a better toolkit.
               </p>
 
               <div className="space-y-4 mb-6">
@@ -204,12 +201,11 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6 text-center">
-                We Deconstructed the Therapist.
+                A System Built for One Result: Your Freedom.
               </h2>
               
               <p className="text-lg leading-8 text-body mb-12 text-center">
-                We identified the two core functions of effective therapy—<strong>Strategy</strong> and <strong>Practice</strong>—and 
-                assigned each to the component best suited for the job. This division of labor is our core innovation.
+                We deliver results by separating the two core functions of effective therapy:
               </p>
             </ScrollReveal>
 
@@ -222,11 +218,9 @@ export default function HomePage() {
                       1
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-sea-sage mb-3">Your Head Coach & Clinical Strategist</h3>
+                      <h3 className="text-2xl font-bold text-sea-sage mb-3">Expert Human Strategy</h3>
                       <p className="text-lg leading-8 text-body">
-                        Your program is <strong className="text-sea-sage">architected</strong> and <strong className="text-sea-sage">personally directed</strong> by a human expert. Their role is singular: to conduct 
-                        the initial deep-dive diagnostic, build your custom training protocol, analyze your performance data, 
-                        and make high-level strategic adjustments. You get pure expertise.
+                        Your program is architected by a Clinical Strategist who maps your specific anxiety patterns and builds your personal plan for relief.
                       </p>
                     </div>
                   </div>
@@ -241,11 +235,9 @@ export default function HomePage() {
                       2
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-sea-sage mb-3">The Resilience Simulator</h3>
+                      <h3 className="text-2xl font-bold text-sea-sage mb-3">Intensive Skill Practice</h3>
                       <p className="text-lg leading-8 text-body">
-                        The repetitive, hour-to-hour work of skill-building is delegated to our proprietary, voice-based 
-                        training technology. It runs your protocol with perfect fidelity and zero judgment, allowing you to 
-                        achieve a practice dosage up to <strong className="text-sea-sage">10x greater</strong> than traditional models.
+                        You will build new neural pathways for calm through high-repetition drills in our proprietary Resilience Simulator, a private, judgment-free training environment. This intensive practice is the key to making change happen fast.
                       </p>
                     </div>
                   </div>

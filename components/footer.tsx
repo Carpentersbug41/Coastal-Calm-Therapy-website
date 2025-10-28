@@ -130,7 +130,7 @@ export function Footer() {
               </h4>
               <p className="text-sm text-body mb-3 leading-6">
                 The Protocol Framework is an evidence-based psychological training system that combines expert 
-                human strategy with our proprietary Cognitive Simulator.
+                human strategy with our proprietary Resilience Simulator.
               </p>
               <p className="text-xs text-soft-clay leading-5">
                 Professional clinical service. HIPAA-compliant and secure.

@@ -5,7 +5,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'FAQ - Frequently Asked Questions | The Anxiety Protocol',
-  description: 'Common questions about The Anxiety Protocol, the Cognitive Simulator, investment, and how our 30-day program differs from traditional therapy.',
+  description: 'Common questions about The Anxiety Protocol, the Resilience Simulator, investment, and how our 30-day program differs from traditional therapy.',
   openGraph: {
     title: 'Frequently Asked Questions',
     description: 'Get answers about The Anxiety Protocol, our unique methodology, and how we\'re different from traditional therapy.',

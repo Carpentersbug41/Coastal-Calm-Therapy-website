@@ -64,7 +64,7 @@ export default function InvestmentPage() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-sea-sage mr-3 flex-shrink-0">•</span>
-                  <span><strong className="text-sea-sage">The Training:</strong> 8-12 high-intensity drills in the Cognitive Simulator.</span>
+                  <span><strong className="text-sea-sage">The Training:</strong> 8-12 high-intensity drills in the Resilience Simulator.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-sea-sage mr-3 flex-shrink-0">•</span>

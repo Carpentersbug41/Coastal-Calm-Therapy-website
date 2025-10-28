@@ -51,7 +51,7 @@ export function OfferPanel({ variant = 'default', showCta = true }: OfferPanelPr
               </svg>
             </div>
             <div className={isCompact ? 'text-sm' : 'text-base'}>
-              <p className="text-body"><strong className="font-bold text-sea-sage">The Training:</strong> 8–12 high-intensity drills in the Cognitive Simulator</p>
+              <p className="text-body"><strong className="font-bold text-sea-sage">The Training:</strong> 8–12 high-intensity drills in the Resilience Simulator</p>
             </div>
           </div>
 

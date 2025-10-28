@@ -233,7 +233,7 @@ export default function HomePage() {
                 </div>
               </ScrollReveal>
 
-              {/* Cognitive Simulator */}
+              {/* Resilience Simulator */}
               <ScrollReveal delay={200}>
                 <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow">
                   <div className="flex items-start gap-6">

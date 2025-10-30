@@ -195,6 +195,44 @@ export default function HomePage() {
         </Container>
       </section>
 
+      {/* NEW SECTION: THE CORE MISALIGNMENT */}
+      <section className="py-16 md:py-20">
+        <Container>
+          <div className="max-w-4xl mx-auto">
+            <ScrollReveal>
+              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6 text-center">
+                Engineered to Align With You, Not Your Therapist.
+              </h2>
+              <p className="text-lg leading-8 text-body mb-12 text-center">
+                Traditional therapy has two design flaws that serve the therapist's convenience, not your progress. We engineered our system to eliminate them.
+              </p>
+            </ScrollReveal>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Card 1: The 50-Minute Hour */}
+              <ScrollReveal delay={100}>
+                <div className="glass-effect rounded-3xl p-8 h-full shadow-soft border border-dune-shadow">
+                  <h3 className="text-xl font-bold text-sea-sage mb-3">1. We Abolished the 50-Minute Hour.</h3>
+                  <p className="text-body leading-7">
+                    You've likely felt it: you're on the verge of a breakthrough, but the session ends because "time is up." The process serves the clock, not your progress. Our Simulator drills run to completion. The clinical need dictates the session length, ensuring you can fully explore a new skill without being cut short by an arbitrary boundary.
+                  </p>
+                </div>
+              </ScrollReveal>
+
+              {/* Card 2: The Weekly Appointment */}
+              <ScrollReveal delay={200}>
+                <div className="glass-effect rounded-3xl p-8 h-full shadow-soft border border-dune-shadow">
+                  <h3 className="text-xl font-bold text-sea-sage mb-3">2. We Abolished the Weekly Appointment.</h3>
+                  <p className="text-body leading-7">
+                    Anxiety doesn't wait for your 4 p.m. slot on Tuesday. Our protocol is on-demand, designed to be used when it is most effective for you. You can run drills in the morning to prepare for a stressful day, or in the evening to decompress from one. This aligns the therapeutic "dosage" with your actual life, not a therapist's calendar.
+                  </p>
+                </div>
+              </ScrollReveal>
+            </div>
+          </div>
+        </Container>
+      </section>
+
       {/* 4. THE SOLUTION */}
       <section className="py-16 md:py-20 bg-gradient-to-br from-sea-sage/5 to-seafoam/5">
         <Container>

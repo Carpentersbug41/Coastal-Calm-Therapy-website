@@ -502,19 +502,13 @@ export default function HomePage() {
 
             <div className="max-w-4xl mx-auto">
               <ScrollReveal delay={100}>
-                <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-8">
-                  {latestPosts.map((post, index) => (
-                    <Link 
-                      key={post.slug}
-                      href={`/blog/${post.slug}`}
-                      className="text-base md:text-lg text-sea-sage hover:text-golden-shell font-medium transition-colors text-center"
-                    >
-                      {post.title}
-                    </Link>
+                <div className="grid gap-8 md:grid-cols-3">
+                  {latestPosts.map((post) => (
+                    <PostCard key={post.slug} post={post} />
                   ))}
                 </div>
 
-                <div className="text-center">
+                <div className="text-center mt-12">
                   <Link 
                     href="/blog" 
                     className="inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-sea-sage text-white font-medium shadow-soft hover:shadow-soft-lg hover:scale-105 transition-all duration-300"

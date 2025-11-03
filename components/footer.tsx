@@ -67,14 +67,13 @@ export function Footer() {
                 </h3>
               </div>
               <p className="text-body mb-4 leading-7 max-w-md">
-                A 30-day Resilience Bootcamp for mastering anxiety. The Protocol Framework combines expert 
-                human strategy with intensive structured drills for accelerated, measurable results.
+                An engineered, 30-day intensive designed to solve anxiety for those failed by the traditional model. We measure success by our own redundancy.
               </p>
               <p className="text-sm font-medium text-sea-sage mb-2">
-                Stop Coping. Start Mastering.
+                Created by Robert Carpenter, Licensed Psychotherapist.
               </p>
               <p className="text-xs text-soft-clay">
-                Created by Robert Carpenter, licensed psychotherapist.
+                Professional clinical service. End-to-end encrypted and secure.
               </p>
             </div>
 

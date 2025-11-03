@@ -9,11 +9,8 @@ import { useEffect, useState } from 'react';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'The Protocol', href: '/protocol' },
-  { name: 'Simulator', href: '/simulator' },
-  { name: 'Who It\'s For', href: '/who-its-for' },
   { name: 'About', href: '/about' },
   { name: 'Investment', href: '/investment' },
-  { name: 'FAQ', href: '/faq' },
   { name: 'Apply', href: '/apply', highlight: true },
 ];
 

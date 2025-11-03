@@ -36,8 +36,8 @@ export default function AboutPage() {
               
               <div className="relative w-full aspect-[3/4] rounded-3xl bg-gradient-to-br from-sea-sage/10 to-seafoam/10 shadow-soft-lg ring-1 ring-dune-shadow group-hover:scale-[1.02] transition-transform duration-500 overflow-hidden">
                 <Image
-                  src="/images/robert-carpenter.png"
-                  alt="Robert Carpenter"
+                  src="/images/glasses1.png"
+                  alt="Robert Carpenter - Psychotherapist and Coach specializing in Anxiety"
                   fill
                   className="object-cover"
                 />

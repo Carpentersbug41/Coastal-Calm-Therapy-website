@@ -5,11 +5,11 @@ import { StickyCtaMobile } from '@/components/sticky-cta-mobile';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Apply for The Anxiety Protocol | Strategic Consultation Application',
-  description: 'Apply for a strategic consultation with The Anxiety Protocol. Complete our diagnostic application to determine if you meet the requirements for this intensive, high-accountability program.',
+  title: 'The Diagnostic | The Anxiety Protocol',
+  description: 'Begin the diagnostic process. This clinical instrument provides the initial data for your case to determine if The Anxiety Protocol is the correct fit for your specific situation.',
   openGraph: {
-    title: 'Apply for The Anxiety Protocol | Strategic Consultation',
-    description: 'Submit your application for a strategic consultation. Our rigorous selection process ensures the program is a strong fit for high-achievers ready for intensive work.',
+    title: 'The Diagnostic | The Anxiety Protocol',
+    description: 'Complete the diagnostic intake. A clinical instrument designed to determine if our 30-day intensive protocol is appropriate for your needs.',
     url: '/apply',
     type: 'website',
   },
@@ -31,19 +31,19 @@ export default function ApplyPage() {
           <div className="max-w-5xl mx-auto">
             <ScrollReveal>
               <div className="text-center mb-12">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pebble border border-dune-shadow mb-6">
+                  <span className="w-2 h-2 bg-seafoam rounded-full animate-pulse"></span>
+                  <span className="text-sm font-medium text-sea-sage">The Diagnostic</span>
+                </div>
+                
                 {/* H1 */}
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-sea-sage mb-6">
-                  Application for a Strategic Consultation.
+                  Begin the Diagnostic Process.
                 </h1>
-                
-                {/* Subhead */}
-                <h3 className="text-2xl md:text-3xl text-sea-sage font-semibold mb-6 leading-relaxed max-w-3xl mx-auto">
-                  This is the first step in our rigorous selection process.
-                </h3>
                 
                 {/* Explanation */}
                 <p className="text-lg md:text-xl text-body leading-relaxed max-w-3xl mx-auto">
-                  Complete the application below with care and candor. This is a diagnostic tool to determine if you have the mindset and commitment required for this intensive program. If your application is a strong match, you will be invited to a no-obligation, 15-minute strategic consultation.
+                  This is the first, critical step of The Anxiety Protocol. The following questions are not a simple contact form; they are a clinical instrument designed to provide the initial data for your case. Your answers will allow us to make an accurate determination of whether our model is the correct fit for your specific situation. Please answer with care and candor.
                 </p>
               </div>
             </ScrollReveal>
@@ -51,68 +51,37 @@ export default function ApplyPage() {
         </Container>
       </section>
 
-      {/* WHO IT'S FOR / NOT FOR */}
+      {/* THE FILTER */}
       <section className="py-12 md:py-16 bg-warm-linen/50">
         <Container>
           <div className="max-w-5xl mx-auto">
             <ScrollReveal>
-              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage text-center mb-12">
-                A Reminder of the Required Mindset.
+              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage text-center mb-4">
+                A Reminder: The Protocol's Mandate
               </h2>
+              <p className="text-lg md:text-xl text-body text-center leading-relaxed max-w-3xl mx-auto mb-12">
+                This is an intensive, 30-day program engineered for a defined outcome. It is not a substitute for traditional, open-ended therapy.
+              </p>
             </ScrollReveal>
 
             <div className="grid md:grid-cols-2 gap-8">
               {/* Who it's for */}
               <ScrollReveal delay={100}>
                 <div className="glass-effect rounded-3xl p-8 shadow-soft ring-1 ring-dune-shadow h-full">
-                  <h4 className="text-xl font-bold text-sea-sage mb-6">This Protocol is Engineered For:</h4>
-                  <ul className="space-y-3 text-body">
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-seafoam mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      <span>High-achievers who demand a structured, data-driven process.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-seafoam mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      <span>Psychologically-minded individuals focused on solving the problem.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-seafoam mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      <span>Those prepared for an intensive, high-accountability program.</span>
-                    </li>
-                  </ul>
+                  <h4 className="text-xl font-bold text-sea-sage mb-6">Our Protocol is for you if:</h4>
+                  <p className="text-body leading-7">
+                    You value data, a structured process, and a clear path to a defined outcome. You have tried traditional therapy and found it lacking. You want a finite, intensive protocol with a clear finish line.
+                  </p>
                 </div>
               </ScrollReveal>
 
               {/* Not for */}
               <ScrollReveal delay={200}>
                 <div className="glass-effect rounded-3xl p-8 shadow-soft ring-1 ring-dune-shadow h-full">
-                  <h4 className="text-xl font-bold text-sea-sage mb-6">This Protocol is NOT For:</h4>
-                  <ul className="space-y-3 text-body">
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-soft-clay mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                      </svg>
-                      <span>Individuals in acute crisis or requiring psychiatric care.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-soft-clay mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                      </svg>
-                      <span>Those seeking open-ended, passive emotional support.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-soft-clay mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                      </svg>
-                      <span>Anyone not prepared to engage in consistent, independent practice.</span>
-                    </li>
-                  </ul>
+                  <h4 className="text-xl font-bold text-sea-sage mb-6">Our Protocol is NOT for you if:</h4>
+                  <p className="text-body leading-7">
+                    You are seeking a supportive space for open-ended talk. You are in an acute crisis or have deep-seated developmental trauma that requires long-term exploratory work.
+                  </p>
                 </div>
               </ScrollReveal>
             </div>
@@ -126,7 +95,7 @@ export default function ApplyPage() {
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage text-center mb-12">
-                The Selection Process
+                Our Process for Determining Fit
               </h2>
             </ScrollReveal>
 
@@ -137,9 +106,9 @@ export default function ApplyPage() {
                     1
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-sea-sage mb-2">Submit Your Application:</h3>
+                    <h3 className="text-xl font-bold text-sea-sage mb-2">Submit Your Diagnostic Data</h3>
                     <p className="text-body leading-7">
-                      Complete the diagnostic form below. This is our primary tool for assessing fit.
+                      Complete the secure, encrypted form below. This is our primary tool for assessing the fit between your needs and our methodology.
                     </p>
                   </div>
                 </div>
@@ -151,9 +120,9 @@ export default function ApplyPage() {
                     2
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-sea-sage mb-2">The Strategic Review:</h3>
+                    <h3 className="text-xl font-bold text-sea-sage mb-2">Clinical Strategist Review</h3>
                     <p className="text-body leading-7">
-                      Your application will be personally reviewed by our Clinical Strategist within 24-48 business hours.
+                      Your application will be personally reviewed by our Clinical Strategist within 24-48 business hours to determine if the protocol is appropriate.
                     </p>
                   </div>
                 </div>
@@ -165,9 +134,9 @@ export default function ApplyPage() {
                     3
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-sea-sage mb-2">The Final Consultation:</h3>
+                    <h3 className="text-xl font-bold text-sea-sage mb-2">The Fit & Alignment Call</h3>
                     <p className="text-body leading-7">
-                      If your application is a strong match, you will be invited to a brief, no-obligation consultation to confirm alignment before a final decision is made.
+                      If your diagnostic data indicates a strong match, you will be invited to a brief, no-obligation consultation to confirm alignment before a final decision is made.
                     </p>
                   </div>
                 </div>
@@ -177,18 +146,15 @@ export default function ApplyPage() {
         </Container>
       </section>
 
-      {/* APPLICATION FORM */}
+      {/* DIAGNOSTIC FORM */}
       <section id="apply-form" className="py-12 md:py-16 bg-gradient-to-br from-sea-sage/5 to-seafoam/5">
         <Container>
           <div className="max-w-2xl mx-auto">
             <ScrollReveal>
               <div className="text-center mb-10">
                 <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                  The Application
+                  The Diagnostic Intake
                 </h2>
-                <p className="text-lg text-body leading-7">
-                  This is not a contact form. Your answers will be used to evaluate your suitability for the 30-day protocol.
-                </p>
               </div>
             </ScrollReveal>
 
@@ -221,7 +187,7 @@ export default function ApplyPage() {
       </section>
 
       {/* Sticky Mobile CTA */}
-      <StickyCtaMobile href="#apply-form" text="Submit Application" />
+      <StickyCtaMobile href="#apply-form" text="Submit Diagnostic" />
     </>
   );
 }

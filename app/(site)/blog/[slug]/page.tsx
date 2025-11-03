@@ -83,13 +83,13 @@ export default function PostPage({ params }: PostPageProps) {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: siteUrl },
-          { name: 'Blog', url: `${siteUrl}/blog` },
+          { name: 'Insights', url: `${siteUrl}/blog` },
           { name: post.title, url: postUrl },
         ]}
       />
       <Container>
         <div className="max-w-4xl mx-auto">
-          {/* Back to blog link */}
+          {/* Back to Insights link */}
           <ScrollReveal>
             <Link
               href="/blog"
@@ -108,7 +108,7 @@ export default function PostPage({ params }: PostPageProps) {
                   d="M15 19l-7-7 7-7"
                 />
               </svg>
-              Back to blog
+              Back to Insights
             </Link>
           </ScrollReveal>
 

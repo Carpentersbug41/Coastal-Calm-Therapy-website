@@ -372,13 +372,13 @@ export default function HomePage() {
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Image */}
             <ScrollReveal direction="left">
-              <div className="relative group order-2 lg:order-1 h-full flex items-center">
+              <div className="relative group order-2 lg:order-1 h-full flex items-center justify-center">
                 {/* Glow effect */}
                 <div className="absolute -inset-4 bg-gradient-to-r from-sea-sage/20 to-seafoam/20 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
-                <div className="relative w-full aspect-[3/4] rounded-3xl bg-gradient-to-br from-sea-sage/10 to-seafoam/10 shadow-soft-lg ring-1 ring-dune-shadow group-hover:scale-[1.02] transition-transform duration-500 overflow-hidden">
+                <div className="relative w-full max-w-md aspect-[3/4] rounded-3xl bg-gradient-to-br from-sea-sage/10 to-seafoam/10 shadow-soft-lg ring-1 ring-dune-shadow group-hover:scale-[1.02] transition-transform duration-500 overflow-hidden">
                   <Image
-                    src="/images/robert-carpenter.jpg"
+                    src="/images/glasses1.png"
                     alt="Robert Carpenter - Clinical Strategist and Systems Engineer for The Anxiety Protocol"
                     fill
                     className="object-cover"

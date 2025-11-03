@@ -7,9 +7,9 @@ import { Container } from './container';
 import { useEffect, useState } from 'react';
 
 const navigation = [
-  { name: 'Home', href: '/' },
   { name: 'The Protocol', href: '/protocol' },
   { name: 'About', href: '/about' },
+  { name: 'Insights', href: '/blog' },
   { name: 'Investment', href: '/investment' },
   { name: 'Apply', href: '/apply', highlight: true },
 ];

@@ -21,7 +21,7 @@ export default function ProtocolPage() {
           <div className="max-w-4xl mx-auto mb-16 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pebble border border-dune-shadow mb-6">
               <span className="w-2 h-2 bg-seafoam rounded-full animate-pulse"></span>
-              <span className="text-sm font-medium text-sea-sage">30-Day Intensive Program</span>
+              <span className="text-sm font-medium text-sea-sage">A Finite, Data-Driven Protocol</span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold text-sea-sage mb-6">
@@ -46,7 +46,7 @@ export default function ProtocolPage() {
                   Anxiety is not one thing. It runs on two distinct, interacting pathways: <strong>Top-Down</strong> (ignited by catastrophic thoughts) and <strong>Bottom-Up</strong> (triggered by a hyper-sensitive nervous system). While both are always in play, every anxiety spiral has an <strong>ignition point.</strong> The critical error of traditional therapy is its diagnostic imprecision—it applies a generic "talk it out" model without first identifying where the fire actually starts.
                 </p>
                 <p className="text-lg leading-8 text-body max-w-3xl mx-auto text-center mt-4">
-                  The Core Argument: This is why progress is so often slow and frustrating. The model fails to match the right tool to the right problem. It brings cognitive solutions to a physiological crisis, or insufficient practice to a deeply ingrained cognitive habit. Our protocol corrects this foundational error. We begin with a deep, forensic diagnosis to identify the primary driver of <em>your</em> system. The answer to that single question determines the entire strategy.
+                  This is why progress is so often slow and frustrating. The model fails to match the right tool to the right problem. It brings cognitive solutions to a physiological crisis, or insufficient practice to a deeply ingrained cognitive habit. Our protocol corrects this foundational error. We begin with a deep, forensic diagnosis to identify the primary driver of <em>your</em> system. The answer to that single question determines the entire strategy.
                 </p>
               </div>
             </ScrollReveal>
@@ -147,55 +147,25 @@ export default function ProtocolPage() {
                 </div>
               </div>
             </ScrollReveal>
-
-            {/* Section 4: Final Call to Action */}
-            <ScrollReveal delay={400}>
-              <div className="max-w-3xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                  This is a System, Not a Suggestion.
-                </h2>
-                <p className="text-lg leading-8 text-body mb-8">
-                  The Anxiety Protocol is a rigorous, demanding, and highly effective system for individuals who are ready to do the work. We accept a maximum of four new clients per month to ensure the highest level of strategic oversight.
-                </p>
-                <Link
-                  href="/apply"
-                  className="inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-golden-shell text-olive-grey font-medium shadow-soft hover:shadow-soft-lg hover:scale-105 transition-all duration-300"
-                >
-                  <span>Begin the Diagnostic</span>
-                  <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </Link>
-              </div>
-            </ScrollReveal>
           </div>
         </div>
 
-        {/* CTA Section */}
-        <ScrollReveal delay={500}>
-          <div className="max-w-3xl mx-auto">
-            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sea-sage to-seafoam shadow-soft-lg">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-              <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
-              
-              <div className="relative p-10 md:p-12 text-center">
-                <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Your Protocol Begins with an Application.
-                </h3>
-                <p className="text-lg text-white/95 leading-8 mb-8 max-w-xl mx-auto">
-                  We accept a maximum of four new clients per month. Apply for a strategic consultation to determine if you are a fit.
-                </p>
-                
-                <Link
-                  href="/apply"
-                  className="inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-golden-shell text-olive-grey font-medium shadow-soft hover:shadow-soft-lg hover:scale-105 transition-all duration-300"
-                >
-                  <span>Begin Your Application</span>
-                  <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </Link>
-              </div>
+        {/* Final Call to Action */}
+        <ScrollReveal delay={400}>
+          <div className="max-w-4xl mx-auto text-center mt-16 md:mt-24">
+            <div className="glass-effect rounded-3xl p-12 md:p-16 shadow-soft-xl border border-dune-shadow">
+              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6">
+                This is a System, Not a Suggestion.
+              </h2>
+              <p className="text-lg leading-8 text-body mb-8">
+                The Anxiety Protocol is a rigorous, demanding, and highly effective system for individuals who are ready to do the work. We accept a maximum of four new clients per month to ensure the highest level of strategic oversight.
+              </p>
+              <Link
+                href="/apply"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-sea-sage rounded-xl hover:bg-opacity-90 transition-all duration-200 shadow-soft-lg hover:shadow-soft-xl"
+              >
+                Begin the Diagnostic
+              </Link>
             </div>
           </div>
         </ScrollReveal>

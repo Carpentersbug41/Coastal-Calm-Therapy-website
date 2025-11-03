@@ -5,11 +5,11 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About - Meet the Architect of The Anxiety Protocol',
-  description: 'Robert Carpenter is a trained therapist and systems-thinker who re-engineered therapy for the structured, results-oriented professional.',
+  title: 'About - My Goal is to Make Myself Redundant',
+  description: 'Robert Carpenter is a licensed psychotherapist who was forced to become an engineer. The Anxiety Protocol is a system built to solve anxiety as an engineering problem.',
   openGraph: {
-    title: 'About Robert Carpenter - The Architect',
-    description: 'A systems-thinker at heart, obsessed with one question: If we were to re-engineer the process of therapy for maximum efficiency and measurable results, what would it look like?',
+    title: 'About Robert Carpenter - Clinical Strategist',
+    description: 'A rigorous clinician forced to become a disruptor by the evidence of his own failure. Re-engineering therapy for defined outcomes, measurable results, and maximum efficiency.',
   },
 }
 
@@ -20,8 +20,13 @@ export default function AboutPage() {
         {/* Page Header */}
         <ScrollReveal>
           <div className="max-w-4xl mx-auto mb-16 text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pebble border border-dune-shadow mb-6">
+              <span className="w-2 h-2 bg-seafoam rounded-full animate-pulse"></span>
+              <span className="text-sm font-medium text-sea-sage">Meet Your Clinical Strategist</span>
+            </div>
+            
             <h1 className="text-4xl md:text-6xl font-bold text-sea-sage mb-6">
-              Obsessed with Finding a Better Way
+              My Goal is to Make Myself Redundant.
             </h1>
           </div>
         </ScrollReveal>
@@ -30,11 +35,11 @@ export default function AboutPage() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16 max-w-6xl mx-auto mb-16">
           {/* Image */}
           <ScrollReveal direction="left">
-            <div className="relative group order-2 lg:order-1">
+            <div className="relative group order-2 lg:order-1 flex justify-center">
               {/* Glow effect */}
               <div className="absolute -inset-4 bg-gradient-to-r from-sea-sage/20 to-seafoam/20 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
-              <div className="relative w-full aspect-[3/4] rounded-3xl bg-gradient-to-br from-sea-sage/10 to-seafoam/10 shadow-soft-lg ring-1 ring-dune-shadow group-hover:scale-[1.02] transition-transform duration-500 overflow-hidden">
+              <div className="relative w-full max-w-md aspect-[3/4] rounded-3xl bg-gradient-to-br from-sea-sage/10 to-seafoam/10 shadow-soft-lg ring-1 ring-dune-shadow group-hover:scale-[1.02] transition-transform duration-500 overflow-hidden">
                 <Image
                   src="/images/glasses1.png"
                   alt="Robert Carpenter - Psychotherapist and Coach specializing in Anxiety"
@@ -58,12 +63,12 @@ export default function AboutPage() {
               
               <div className="space-y-4 text-lg leading-8 text-body">
                 <p>
-                  I am a therapist who became an engineer because traditional therapy was failing too many of my clients. I saw intelligent, capable people trapped in a slow, unstructured system that wasn't giving them the results they deserved. I became obsessed with one question: "How can we get our clients to a place of freedom and self-mastery, faster and more effectively?" The Anxiety Protocol is the answer to that obsession.
+                  I am a licensed psychotherapist who was forced to become an engineer. For years, I applied the best, evidence-based tools of modern therapy, only to watch them fail my most capable clients. I saw intelligent people trapped in a slow, unstructured system that wasn't giving them the results they deserved. The data was undeniable: the model was broken.
                 </p>
                 
-                <blockquote className="pl-6 border-l-4 border-dune italic text-xl text-sea-sage font-medium">
-                  "I realized then that anxiety wasn't a character flaw to be managed, but an engineering problem to be solved."
-                </blockquote>
+                <p>
+                  My professional failure became my obsession. I went back to first principles, deconstructing the entire therapeutic process to answer one question: If we were to re-engineer therapy for a defined outcome, measurable results, and maximum efficiency, what would it look like? The Anxiety Protocol is the answer. It is a system built not just to manage anxiety, but to solve it as an engineering problem.
+                </p>
               </div>
             </div>
           </ScrollReveal>
@@ -79,15 +84,7 @@ export default function AboutPage() {
               
               <div className="space-y-4 text-lg leading-8 text-body">
                 <p>
-                  My role in your 30-day protocol is not that of a traditional therapist. I am your Clinical Strategist.
-                </p>
-                
-                <p>
-                  While I am a licensed psychotherapist with over 20 years of experience and a published author on psychological topics, my function here is purely strategic. The traditional model of hour-long talk therapy is an inefficient vehicle for skill acquisition.
-                </p>
-                
-                <p>
-                  My work with you is focused on three high-leverage areas:
+                  My function within the 30-day protocol is not that of a traditional therapist. The hour-long talk therapy model is an inefficient vehicle for skill acquisition. My role is purely strategic, focused on the three high-leverage areas where human expertise is irreplaceable:
                 </p>
                 
                 <ul className="space-y-3 text-lg text-body">
@@ -95,24 +92,24 @@ export default function AboutPage() {
                     <svg className="w-6 h-6 text-seafoam mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span><strong>Diagnostic & Blueprint Design:</strong> I conduct the initial deep-dive analysis to build your custom protocol.</span>
+                    <span><strong>1. Forensic Diagnosis & Blueprint Design:</strong> I conduct the initial deep-dive analysis to map your unique anxiety algorithm and architect your bespoke 30-day protocol.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-seafoam mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span><strong>Data Analysis & Performance Review:</strong> I analyze the objective data from your Simulator drills to track progress and identify sticking points.</span>
+                    <span><strong>2. Data Analysis & Performance Review:</strong> I analyze the objective, verbatim data from your simulator and instrument sessions to track progress, identify sticking points, and find the signal in the noise.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-seafoam mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span><strong>Strategic Optimization:</strong> I provide expert, high-level guidance during our weekly check-ins to refine and optimize your protocol for maximum results.</span>
+                    <span><strong>3. Strategic Optimization:</strong> I provide expert, high-level guidance during our weekly check-ins to make the precise, data-driven adjustments that will optimize your protocol for the fastest possible result.</span>
                   </li>
                 </ul>
                 
                 <p>
-                  The day-to-day, high-repetition practice work happens in our proprietary Resilience Simulator, a tool engineered to do that job with a fidelity and intensity I could never match as a human. This division of labor allows me to provide you with pure, undiluted strategic expertise.
+                  The day-to-day, high-repetition practice work happens in the Resilience Simulator and the Precision Instrument—tools engineered to do that job with a fidelity I could never match. This division of labor allows me to provide you with pure, undiluted strategic expertise.
                 </p>
               </div>
             </div>
@@ -128,17 +125,17 @@ export default function AboutPage() {
               
               <div className="relative p-10 md:p-12 text-center">
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Retain the Architect to Design Your Protocol.
+                  The First Step in a Strategic Process
                 </h3>
                 <p className="text-lg text-white/95 leading-8 mb-8 max-w-xl mx-auto">
-                  Apply for a strategic consultation to see if The Anxiety Protocol is right for you.
+                  Our protocol is a serious engagement for individuals who are ready for a new model. The process begins with a diagnostic intake to determine if our system is the correct fit for your specific situation.
                 </p>
                 
                 <Link
                   href="/apply"
                   className="inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-golden-shell text-olive-grey font-medium shadow-soft hover:shadow-soft-lg hover:scale-105 transition-all duration-300"
                 >
-                  <span>Begin Your Application</span>
+                  <span>Begin the Diagnostic</span>
                   <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>

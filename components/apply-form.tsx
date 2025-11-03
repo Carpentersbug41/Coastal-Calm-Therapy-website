@@ -111,7 +111,7 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
 
       <div>
         <label htmlFor="challenge" className="block text-sm font-medium text-sea-sage mb-2">
-          In 1-2 sentences, what is the primary challenge related to anxiety you are trying to solve? <span className="text-red-500">*</span>
+          In 2-5 sentences, what is the primary challenge related to anxiety you are trying to solve? <span className="text-red-500">*</span>
         </label>
         <textarea
           id="challenge"
@@ -143,7 +143,7 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
 
       <div>
         <label htmlFor="commitment" className="block text-sm font-medium text-sea-sage mb-2">
-          On a scale of 1-10, how ready are you to engage in a high-intensity, data-driven program that requires consistent practice? <span className="text-red-500">*</span>
+          On a scale of 1-10, how ready are you to fully commit to a structured, 30-day intensive that requires daily practice? <span className="text-red-500">*</span>
         </label>
         <select
           id="commitment"
@@ -205,7 +205,7 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
             </>
           ) : (
             <>
-              <span>Submit for Consideration</span>
+              <span>Submit Diagnostic</span>
               <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -214,7 +214,7 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
         </button>
         
         <p className="mt-4 text-center text-sm text-soft-clay">
-          Confidential • Encrypted • Reviewed within 24–48h
+          Your submission is confidential, encrypted, and will be reviewed by our Clinical Strategist within 24-48 hours.
         </p>
       </div>
     </form>

@@ -19,6 +19,11 @@ export default function WhoItsForPage() {
         {/* Page Header */}
         <ScrollReveal>
           <div className="max-w-4xl mx-auto mb-16 text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pebble border border-dune-shadow mb-6">
+              <span className="w-2 h-2 bg-seafoam rounded-full animate-pulse"></span>
+              <span className="text-sm font-medium text-sea-sage">Not For Everyone</span>
+            </div>
+            
             <h1 className="text-4xl md:text-6xl font-bold text-sea-sage mb-6">
               Engineered for a Specific Operating System.
             </h1>

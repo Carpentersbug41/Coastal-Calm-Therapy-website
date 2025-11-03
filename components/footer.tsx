@@ -49,92 +49,50 @@ export function Footer() {
       
       <Container>
         <div className="py-12 md:py-16">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+          <div className="max-w-2xl mx-auto text-center mb-10">
             {/* Brand */}
-            <div className="md:col-span-2">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="relative w-10 h-10 flex-shrink-0">
-                  <Image
-                    src="/images/logo_ap1.png"
-                    alt="The Anxiety Protocol"
-                    width={40}
-                    height={40}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <h3 className="text-lg font-bold bg-gradient-to-r from-sea-sage to-seafoam bg-clip-text text-transparent">
-                  The Anxiety Protocol
-                </h3>
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <div className="relative w-10 h-10 flex-shrink-0">
+                <Image
+                  src="/images/logo_ap1.png"
+                  alt="The Anxiety Protocol"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-contain"
+                />
               </div>
-              <p className="text-body mb-4 leading-7 max-w-md">
-                An engineered, 30-day intensive designed to solve anxiety for those failed by the traditional model. We measure success by our own redundancy.
-              </p>
-              <p className="text-sm font-medium text-sea-sage mb-2">
-                Created by Robert Carpenter, Licensed Psychotherapist.
-              </p>
-              <p className="text-xs text-soft-clay">
-                Professional clinical service. End-to-end encrypted and secure.
-              </p>
+              <h3 className="text-lg font-bold bg-gradient-to-r from-sea-sage to-seafoam bg-clip-text text-transparent">
+                The Anxiety Protocol
+              </h3>
             </div>
-
-            {/* Quick Links */}
-            <div>
-              <h4 className="text-sm font-semibold text-sea-sage mb-4 uppercase tracking-wider">
-                Quick Links
-              </h4>
-              <ul className="space-y-3 text-sm">
-                <li>
-                  <Link
-                    href="/blog"
-                    className="text-body hover:text-sea-sage transition-colors inline-flex items-center group"
-                  >
-                    <span className="w-1 h-1 bg-seafoam rounded-full mr-2 group-hover:w-2 transition-all"></span>
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contact"
-                    className="text-body hover:text-sea-sage transition-colors inline-flex items-center group"
-                  >
-                    <span className="w-1 h-1 bg-seafoam rounded-full mr-2 group-hover:w-2 transition-all"></span>
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/subscribe"
-                    className="text-body hover:text-sea-sage transition-colors inline-flex items-center group"
-                  >
-                    <span className="w-1 h-1 bg-seafoam rounded-full mr-2 group-hover:w-2 transition-all"></span>
-                    Subscribe
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/rss.xml"
-                    className="text-body hover:text-sea-sage transition-colors inline-flex items-center group"
-                  >
-                    <span className="w-1 h-1 bg-seafoam rounded-full mr-2 group-hover:w-2 transition-all"></span>
-                    RSS Feed
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Contact Info */}
-            <div>
-              <h4 className="text-sm font-semibold text-sea-sage mb-4 uppercase tracking-wider">
-                Program Info
-              </h4>
-              <p className="text-sm text-body mb-3 leading-6">
-                The Protocol Framework is an evidence-based psychological training system that combines expert 
-                human strategy with our proprietary Resilience Simulator.
-              </p>
-              <p className="text-xs text-soft-clay leading-5">
-                Professional clinical service. HIPAA-compliant and secure.
-              </p>
-            </div>
+            <p className="text-body mb-4 leading-7">
+              An engineered, 30-day intensive designed to solve anxiety for those failed by the traditional model. We measure success by our own redundancy.
+            </p>
+            <p className="text-sm font-medium text-sea-sage mb-2">
+              Created by Robert Carpenter, Licensed Psychotherapist.
+            </p>
+            <p className="text-xs text-soft-clay">
+              Professional clinical service. End-to-end encrypted and secure.
+            </p>
+            
+            {/* Navigation */}
+            <nav className="flex flex-wrap justify-center gap-6 mt-8 pt-6 border-t border-dune-shadow">
+              <Link href="/protocol" className="text-sm text-body hover:text-sea-sage transition-colors">
+                The Protocol
+              </Link>
+              <Link href="/about" className="text-sm text-body hover:text-sea-sage transition-colors">
+                About
+              </Link>
+              <Link href="/blog" className="text-sm text-body hover:text-sea-sage transition-colors">
+                Insights
+              </Link>
+              <Link href="/investment" className="text-sm text-body hover:text-sea-sage transition-colors">
+                Investment
+              </Link>
+              <Link href="/apply" className="text-sm text-body hover:text-sea-sage transition-colors">
+                Apply
+              </Link>
+            </nav>
           </div>
 
           {/* Copyright */}

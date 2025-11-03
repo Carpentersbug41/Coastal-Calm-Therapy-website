@@ -10,9 +10,9 @@ interface BlogPageProps {
 }
 
 export const metadata = {
-  title: 'Anxiety Mastery Insights',
+  title: 'From the Lab: Insights on Anxiety Engineering',
   description:
-    'Expert insights on anxiety mastery from The Anxiety Protocol. Learn about resilience bootcamp techniques, defusion skills, exposure therapy, and the science behind rapid anxiety treatment.',
+    'Research and development insights from The Anxiety Protocol. Deconstructing the flawed traditional model, explaining our engineering principles, and demonstrating the skills that solve anxiety.',
 };
 
 export default function BlogPage({ searchParams }: BlogPageProps) {
@@ -27,18 +27,18 @@ export default function BlogPage({ searchParams }: BlogPageProps) {
           <div className="mb-16 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sage-50 border border-sage-200 mb-6">
               <span className="w-2 h-2 bg-sage-500 rounded-full animate-pulse"></span>
-              <span className="text-sm font-medium text-sage-700">Anxiety Mastery Education</span>
+              <span className="text-sm font-medium text-sage-700">Research & Development</span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               <span className="bg-gradient-to-r from-brand-900 to-sage-700 bg-clip-text text-transparent">
-                Insights & Training Methods
+                From the Lab: Insights on Anxiety Engineering
               </span>
             </h1>
             
             <p className="text-xl text-ink/70 max-w-3xl mx-auto leading-8">
-              Learn the science and skills behind The Anxiety Protocol. Evidence-based insights on 
-              defusion, exposure therapy, somatic practices, and the resilience bootcamp approach.
+              A library of intellectual property. Deconstructing the traditional therapy model, 
+              explaining the engineering principles behind our protocol, and demonstrating the skills that solve anxiety.
             </p>
           </div>
         </ScrollReveal>

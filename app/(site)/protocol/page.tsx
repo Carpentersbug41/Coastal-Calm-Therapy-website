@@ -72,10 +72,10 @@ export default function ProtocolPage() {
                   </div>
                   <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft-lg border border-dune-shadow flex-1 md:mt-8">
                     <h2 className="text-2xl md:text-3xl font-bold text-sea-sage mb-4">
-                      Phase 2: Installing New Instincts for Calm.
+                      Pillar 3: The Resilience Simulator (For Somatic Work)
                     </h2>
                     <p className="text-base md:text-lg leading-7 md:leading-8 text-body">
-                      This is where you do the work. Through 2-3 weekly drills in our simulator, you will actively build and automate the specific skills—somatic and cognitive—that give you control over your nervous system.
+                      To recalibrate a hyper-sensitive Bottom-Up nervous system, you will run short, daily drills in our proprietary Resilience Simulator. This somatic gym is where you achieve the high-volume 'reps' necessary for neuroplastic change in a sterile, non-judgmental environment.
                     </p>
                   </div>
                 </div>

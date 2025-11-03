@@ -233,9 +233,9 @@ export default function HomePage() {
                       3
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-sea-sage mb-3">3. The Flight Simulator</h3>
+                      <h3 className="text-2xl font-bold text-sea-sage mb-3">3. The Resilience Simulator</h3>
                       <p className="text-lg leading-8 text-body">
-                        1-2 times per day, you will run short, 5-10 minute drills in our proprietary Flight Simulator. This is your somatic gym where you build the high volume of "reps" necessary to make your new skills automatic.
+                        1-2 times per day, you will run short, 5-10 minute drills in our proprietary Resilience Simulator. This is your somatic gym where you build the high volume of "reps" necessary to make your new skills automatic.
                       </p>
                     </div>
                   </div>
@@ -318,7 +318,7 @@ export default function HomePage() {
                   <div>
                     <h3 className="text-xl font-bold text-sea-sage mb-2">2. The High-Dosage Training</h3>
                     <p className="text-body leading-7">
-                      Engage in 1-2 daily drills in the Flight Simulator to build foundational skills, supplemented by 2-3 full AI-led sessions per week to integrate the work.
+                      Engage in 1-2 daily drills in the Resilience Simulator to build foundational skills, supplemented by 2-3 full AI-led sessions per week to integrate the work.
                     </p>
                   </div>
                 </div>

@@ -38,12 +38,12 @@ export default function ApplyPage() {
                 
                 {/* H1 */}
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-sea-sage mb-6">
-                  Begin the Diagnostic Process.
+                  The First Step: The Clinical Diagnostic
                 </h1>
                 
                 {/* Explanation */}
                 <p className="text-lg md:text-xl text-body leading-relaxed max-w-3xl mx-auto">
-                  This is the first, critical step of The Anxiety Protocol. The following questions are not a simple contact form; they are a clinical instrument designed to provide the initial data for your case. Your answers will allow us to make an accurate determination of whether our model is the correct fit for your specific situation. Please answer with care and candor.
+                  This is the critical entry point to The Anxiety Protocol. The following is not a contact form; it is a clinical instrument designed to provide the initial data for your case. Your answers will allow us to make an accurate determination of whether our model is the correct fit for your specific situation. Please answer with care and candour.
                 </p>
               </div>
             </ScrollReveal>
@@ -51,40 +51,41 @@ export default function ApplyPage() {
         </Container>
       </section>
 
-      {/* THE FILTER */}
+      {/* PREREQUISITES */}
       <section className="py-12 md:py-16 bg-warm-linen/50">
         <Container>
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <ScrollReveal>
-              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage text-center mb-4">
-                A Reminder: The Protocol's Mandate
+              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
+                Prerequisites for Application
               </h2>
-              <p className="text-lg md:text-xl text-body text-center leading-relaxed max-w-3xl mx-auto mb-12">
-                This is an intensive, 30-day program engineered for a defined outcome. It is not a substitute for traditional, open-ended therapy.
+              <p className="text-lg md:text-xl text-body leading-relaxed mb-8">
+                This is an intensive, 30-day programme engineered for a defined outcome. It is not a substitute for traditional, open-ended therapy. Before proceeding, confirm that you meet the following criteria:
               </p>
             </ScrollReveal>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Who it's for */}
-              <ScrollReveal delay={100}>
-                <div className="glass-effect rounded-3xl p-8 shadow-soft ring-1 ring-dune-shadow h-full">
-                  <h4 className="text-xl font-bold text-sea-sage mb-6">Our Protocol is for you if:</h4>
-                  <p className="text-body leading-7">
-                    You value data, a structured process, and a clear path to a defined outcome. You have tried traditional therapy and found it lacking. You want a finite, intensive protocol with a clear finish line.
-                  </p>
-                </div>
-              </ScrollReveal>
-
-              {/* Not for */}
-              <ScrollReveal delay={200}>
-                <div className="glass-effect rounded-3xl p-8 shadow-soft ring-1 ring-dune-shadow h-full">
-                  <h4 className="text-xl font-bold text-sea-sage mb-6">Our Protocol is NOT for you if:</h4>
-                  <p className="text-body leading-7">
-                    You are seeking a supportive space for open-ended talk. You are in an acute crisis or have deep-seated developmental trauma that requires long-term exploratory work.
-                  </p>
-                </div>
-              </ScrollReveal>
-            </div>
+            <ScrollReveal delay={100}>
+              <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft ring-1 ring-dune-shadow">
+                <ul className="space-y-4 text-body leading-7">
+                  <li className="flex gap-4">
+                    <span className="flex-shrink-0 w-2 h-2 rounded-full bg-sea-sage mt-2"></span>
+                    <span><strong>You are a 'therapy veteran'</strong> who has tried the traditional model and found it lacking.</span>
+                  </li>
+                  <li className="flex gap-4">
+                    <span className="flex-shrink-0 w-2 h-2 rounded-full bg-sea-sage mt-2"></span>
+                    <span><strong>You are seeking a structured, finite protocol</strong> with a clear finish line, not an open-ended exploration.</span>
+                  </li>
+                  <li className="flex gap-4">
+                    <span className="flex-shrink-0 w-2 h-2 rounded-full bg-sea-sage mt-2"></span>
+                    <span><strong>You value a data-driven process</strong> and are ready to move from talking to training.</span>
+                  </li>
+                  <li className="flex gap-4">
+                    <span className="flex-shrink-0 w-2 h-2 rounded-full bg-sea-sage mt-2"></span>
+                    <span><strong>You are NOT in an acute crisis</strong> or dealing with deep-seated developmental trauma that requires long-term exploratory work.</span>
+                  </li>
+                </ul>
+              </div>
+            </ScrollReveal>
           </div>
         </Container>
       </section>
@@ -134,9 +135,9 @@ export default function ApplyPage() {
                     3
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-sea-sage mb-2">The Fit & Alignment Call</h3>
+                    <h3 className="text-xl font-bold text-sea-sage mb-2">The Strategic Consultation</h3>
                     <p className="text-body leading-7">
-                      If your diagnostic data indicates a strong match, you will be invited to a brief, no-obligation consultation to confirm alignment before a final decision is made.
+                      If your diagnostic data indicates a strong match, you will be invited to a brief, no-obligation consultation to confirm final alignment before a decision is made.
                     </p>
                   </div>
                 </div>
@@ -164,22 +165,12 @@ export default function ApplyPage() {
               </div>
             </ScrollReveal>
 
-            {/* Trust badges below form */}
+            {/* Trust signals directly below form */}
             <ScrollReveal delay={200}>
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-soft-clay">
-                <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-seafoam" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span>Licensed psychotherapist (BACP Reg.)</span>
-                </div>
-                <span className="hidden sm:inline">•</span>
-                <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-seafoam" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
-                  </svg>
-                  <span>HIPAA-grade platform • End-to-end encryption</span>
-                </div>
+              <div className="mt-8 glass-effect rounded-2xl p-6 text-center ring-1 ring-dune-shadow">
+                <p className="text-sm text-soft-clay leading-relaxed">
+                  <strong className="text-sea-sage">Data Integrity Commitment:</strong> Your submission is confidential and protected by end-to-end encryption on a HIPAA-grade platform. All services are provided by a BACP registered psychotherapist.
+                </p>
               </div>
             </ScrollReveal>
           </div>

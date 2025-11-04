@@ -130,8 +130,8 @@ export default function HomePage() {
             {/* DOSAGE COMPARISON GRAPHIC */}
             <ScrollReveal delay={100}>
               <div className="glass-effect rounded-3xl p-8 md:p-12 shadow-soft-lg border border-dune-shadow mb-12">
-                <h3 className="text-2xl font-bold text-sea-sage mb-8 text-center">DOSAGE COMPARISON</h3>
-                <div className="flex items-end justify-center gap-12 md:gap-20 h-80">
+                <h3 className="text-2xl font-bold text-sea-sage mb-12 text-center relative z-10">DOSAGE COMPARISON</h3>
+                <div className="flex items-end justify-center gap-12 md:gap-20" style={{ height: '380px' }}>
                   {/* Old Model Bar */}
                   <div className="flex flex-col items-center gap-4 flex-1 max-w-xs">
                     <div className="w-full bg-soft-clay/30 rounded-t-lg flex items-end justify-center" style={{ height: '40px' }}>
@@ -147,7 +147,7 @@ export default function HomePage() {
 
                   {/* New Model Bar */}
                   <div className="flex flex-col items-center gap-4 flex-1 max-w-xs">
-                    <div className="w-full bg-sea-sage rounded-t-lg flex items-center justify-center text-white font-bold text-2xl" style={{ height: '320px' }}>
+                    <div className="w-full bg-sea-sage rounded-t-lg flex items-center justify-center text-white font-bold text-2xl" style={{ height: '280px' }}>
                       15+
                     </div>
                     <div className="text-center">

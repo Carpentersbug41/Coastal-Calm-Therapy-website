@@ -70,18 +70,32 @@ export default function HomePage() {
                 </div>
                 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-sea-sage mb-6">
-                  A year in therapy is not a sign of commitment. It's a symptom of an inefficient model.
+                  A Year Into Therapy and Still Stuck?
                 </h1>
                 
-                <p className="text-xl leading-8 text-body mb-8">
-                  The Anxiety Protocol is a 30-day, data-driven intensive engineered to solve anxiety for those who have been failed by traditional talk therapy. We don't manage problems; we make ourselves redundant.
+                <p className="text-xl leading-8 text-body mb-4">
+                  You haven't failed. You've been failed by a flawed design.
                 </p>
+
+                <div className="space-y-4 text-lg leading-8 text-body mb-8">
+                  <p>You've done everything asked of you.</p>
+                  
+                  <p>Week after week, you've shown up, done the talking, and paid the bill. You've been patient with a process that promised gradual change.</p>
+                  
+                  <p>But the real-world result you were seeking hasn't materialized. A minor stressor can still trigger a disproportionate, physical reaction. You still feel stuck.</p>
+                  
+                  <p>When the model fails to deliver, it offers no explanation. The unspoken conclusion is that the failure must be yours.</p>
+                  
+                  <p>That is an excuse born from a flawed system.</p>
+                  
+                  <p>The problem was never your effort. It's that the weekly, talk-based model is an inadequate tool for this specific job. It is not engineered to deliver a rapid, durable result.</p>
+                </div>
 
                 <Link
                   href="/apply"
                   className="group inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-sea-sage text-white font-medium shadow-soft hover:shadow-soft-lg hover:bg-golden-shell hover:text-olive-grey hover:scale-105 transition-all duration-300"
                 >
-                  <span>Begin the Diagnostic</span>
+                  <span>Discover the Alternative</span>
                   <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -121,55 +135,37 @@ export default function HomePage() {
         </Container>
       </section>
 
-      {/* 3. THE PROBLEM */}
+      {/* 3. WE'VE ENGINEERED A NEW MODEL */}
       <section className="py-16 md:py-20">
         <Container>
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6">
-                You're Not Broken. The Model Is.
+                We've Engineered a New Model
               </h2>
               
-              <p className="text-lg leading-8 text-body mb-6">
-                If you've found traditional talk therapy to be a slow, unstructured, and frustrating process, the problem isn't you. It is a system with three fundamental design flaws that guarantee inefficiency.
+              <p className="text-lg leading-8 text-body mb-12">
+                The Anxiety Protocol is not "better" therapy. It is a different architecture entirely. We are a team of clinical engineers who have deconstructed the old model and built a 30-day intensive designed for a durable result. We've separated the two critical functions of therapy to achieve a level of precision the old system can't match.
               </p>
 
-              <div className="space-y-4 mb-6">
-                <div className="flex items-start gap-4 p-6 glass-effect rounded-2xl shadow-soft border border-dune-shadow">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-soft-clay/20 flex items-center justify-center">
-                    <svg className="w-6 h-6 text-soft-clay" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/>
-                    </svg>
+              <div className="space-y-8">
+                <ScrollReveal delay={100}>
+                  <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow">
+                    <h3 className="text-2xl font-bold text-sea-sage mb-4">1. The Human Clinical Strategist</h3>
+                    <p className="text-lg leading-8 text-body">
+                      An expert human serves as the architect, diagnosing the core problem and designing your custom protocol. Their sole function is high-level strategy, data analysis, and adjustment—not delivering reps.
+                    </p>
                   </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-sea-sage mb-2">The Misaligned Incentive</h3>
-                    <p className="text-body">The traditional model is built on repeat business. The therapist's financial success is tied to the length of your treatment. This is a fundamental conflict of interest. Our model is engineered to solve it.</p>
-                  </div>
-                </div>
+                </ScrollReveal>
 
-                <div className="flex items-start gap-4 p-6 glass-effect rounded-2xl shadow-soft border border-dune-shadow">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-soft-clay/20 flex items-center justify-center">
-                    <svg className="w-6 h-6 text-soft-clay" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                    </svg>
+                <ScrollReveal delay={200}>
+                  <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow">
+                    <h3 className="text-2xl font-bold text-sea-sage mb-4">2. The Flight Simulator</h3>
+                    <p className="text-lg leading-8 text-body">
+                      You do the work in our proprietary simulator. It is a precision instrument, not a chatbot, that delivers the high-repetition practice required to rewire your nervous system in a private, non-judgmental environment.
+                    </p>
                   </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-sea-sage mb-2">The Fidelity Failure</h3>
-                    <p className="text-body">A human therapist is inherently variable. Mood, bias, and fatigue alter how a protocol is delivered. In a system that demands precision, human variability is not a feature; it is a bug.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 p-6 glass-effect rounded-2xl shadow-soft border border-dune-shadow">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-soft-clay/20 flex items-center justify-center">
-                    <svg className="w-6 h-6 text-soft-clay" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-sea-sage mb-2">The Dosage Failure</h3>
-                    <p className="text-body">Your nervous system rewires through high-repetition practice. The one-hour-a-week session is a neurologically insignificant dose. To create lasting change, the required dosage is closer to 10-15x what traditional therapy can provide. It is a system designed to fail.</p>
-                  </div>
-                </div>
+                </ScrollReveal>
               </div>
             </ScrollReveal>
           </div>
@@ -261,7 +257,7 @@ export default function HomePage() {
             <ScrollReveal delay={100}>
               <blockquote className="glass-effect rounded-3xl p-8 md:p-12 shadow-soft-lg border border-dune-shadow">
                 <p className="text-xl md:text-2xl leading-relaxed text-body italic mb-6">
-                  "The Simulator provided the high-intensity reps I needed, but the real breakthrough came from the weekly Performance Review. My strategist had analyzed every transcript and was able to pinpoint a core avoidance pattern I never would have seen on my own. That single, data-driven insight changed the entire trajectory of the program for me. It's the combination of flawless practice and expert human analysis that makes this system so powerful."
+                  "Three months ago, a critical project deadline would have sent me into a multi-day spiral. Last week, I navigated it with a sense of focused calm I didn't think was possible. This wasn't about 'managing' my anxiety; it was about getting a functional upgrade."
                 </p>
                 <footer className="text-lg font-medium text-sea-sage">
                   — Alex, Product Lead

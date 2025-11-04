@@ -69,7 +69,7 @@ export default function HomePage() {
                   <span className="text-sm font-medium text-sea-sage">A New Model for Anxiety Resolution</span>
                 </div>
                 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-sea-sage mb-6">
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-sea-sage mb-6">
                   A Year Into Therapy and Still Stuck?
                 </h1>
                 
@@ -86,7 +86,7 @@ export default function HomePage() {
                   
                   <p>When the model fails to deliver, it offers no explanation. The unspoken conclusion is that the failure must be yours.</p>
                   
-                  <p>That is an excuse born from a flawed system.</p>
+                  <p className="font-bold">That is an excuse born from a flawed system.</p>
                   
                   <p>The problem was never your effort. It's that the weekly, talk-based model is an inadequate tool for this specific job. It is not engineered to deliver a rapid, durable result.</p>
                 </div>
@@ -138,30 +138,48 @@ export default function HomePage() {
       {/* 3. WE'VE ENGINEERED A NEW MODEL */}
       <section className="py-16 md:py-20">
         <Container>
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <ScrollReveal>
-              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6 text-center">
                 We've Engineered a New Model
               </h2>
               
-              <p className="text-lg leading-8 text-body mb-12">
+              <p className="text-lg leading-8 text-body mb-12 text-center">
                 The Anxiety Protocol is not "better" therapy. It is a different architecture entirely. We are a team of clinical engineers who have deconstructed the old model and built a 30-day intensive designed for a durable result. We've separated the two critical functions of therapy to achieve a level of precision the old system can't match.
               </p>
 
-              <div className="space-y-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Column 1: Human Clinical Strategist */}
                 <ScrollReveal delay={100}>
-                  <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow">
-                    <h3 className="text-2xl font-bold text-sea-sage mb-4">1. The Human Clinical Strategist</h3>
-                    <p className="text-lg leading-8 text-body">
+                  <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow h-full">
+                    {/* Strategy/Blueprint Icon */}
+                    <div className="flex justify-center mb-6">
+                      <div className="w-16 h-16 rounded-full bg-sea-sage/10 flex items-center justify-center">
+                        <svg className="w-8 h-8 text-sea-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                        </svg>
+                      </div>
+                    </div>
+                    <h3 className="text-2xl font-bold text-sea-sage mb-4 text-center">1. The Human Clinical Strategist</h3>
+                    <p className="text-lg leading-8 text-body text-center">
                       An expert human serves as the architect, diagnosing the core problem and designing your custom protocol. Their sole function is high-level strategy, data analysis, and adjustment—not delivering reps.
                     </p>
                   </div>
                 </ScrollReveal>
 
+                {/* Column 2: Flight Simulator */}
                 <ScrollReveal delay={200}>
-                  <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow">
-                    <h3 className="text-2xl font-bold text-sea-sage mb-4">2. The Flight Simulator</h3>
-                    <p className="text-lg leading-8 text-body">
+                  <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow h-full">
+                    {/* System/Practice Icon */}
+                    <div className="flex justify-center mb-6">
+                      <div className="w-16 h-16 rounded-full bg-sea-sage/10 flex items-center justify-center">
+                        <svg className="w-8 h-8 text-sea-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                      </div>
+                    </div>
+                    <h3 className="text-2xl font-bold text-sea-sage mb-4 text-center">2. The Flight Simulator</h3>
+                    <p className="text-lg leading-8 text-body text-center">
                       You do the work in our proprietary simulator. It is a precision instrument, not a chatbot, that delivers the high-repetition practice required to rewire your nervous system in a private, non-judgmental environment.
                     </p>
                   </div>

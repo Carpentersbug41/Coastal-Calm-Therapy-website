@@ -1,0 +1,459 @@
+import { Metadata } from 'next';
+import Link from 'next/link';
+import { Container } from '@/components/container';
+import { ScrollReveal } from '@/components/scroll-reveal';
+import { StickyCtaMobile } from '@/components/sticky-cta-mobile';
+
+export const metadata: Metadata = {
+  title: 'Verifiable Results | The Anxiety Protocol',
+  description: 'Deconstructed client outcomes and verifiable system upgrades. Real data from high-functioning professionals who completed The Anxiety Protocol\'s 30-day intensive programme.',
+  openGraph: {
+    title: 'Verifiable Results | The Anxiety Protocol',
+    description: 'Case files and aggregate data demonstrating the efficacy of our engineering approach to anxiety mastery.',
+    url: '/results',
+    type: 'website',
+  },
+  alternates: {
+    canonical: '/results',
+  },
+};
+
+export default function ResultsPage() {
+  return (
+    <>
+      {/* HERO SECTION */}
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        {/* Floating decorative elements */}
+        <div className="absolute top-20 right-10 w-32 h-32 bg-seafoam/20 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-20 left-10 w-40 h-40 bg-sage-200/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+        
+        <Container>
+          <div className="max-w-5xl mx-auto">
+            <ScrollReveal>
+              <div className="text-center mb-12">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pebble border border-dune-shadow mb-6">
+                  <span className="w-2 h-2 bg-seafoam rounded-full animate-pulse"></span>
+                  <span className="text-sm font-medium text-sea-sage">Evidence-Based Outcomes</span>
+                </div>
+                
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-sea-sage mb-6">
+                  Verifiable Results: A Deconstruction of Client Outcomes
+                </h1>
+                
+                <p className="text-lg md:text-xl text-body leading-relaxed max-w-3xl mx-auto">
+                  We measure success through verifiable system upgrades. The following are deconstructions of recent, successful protocols.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </Container>
+      </section>
+
+      {/* PRIMARY VIDEO EVIDENCE */}
+      <section className="py-12 md:py-16 bg-warm-linen/50">
+        <Container>
+          <div className="max-w-4xl mx-auto">
+            <ScrollReveal>
+              <div className="mb-8">
+                <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
+                  Case File 001: Debrief with Alex, Product Lead.
+                </h2>
+                <p className="text-lg text-body leading-relaxed">
+                  The single most important piece of evidence. Watch Alex describe the verifiable changes in their nervous system response after completing the 30-day intensive protocol.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={100}>
+              <div className="glass-effect rounded-3xl p-4 shadow-soft-lg ring-1 ring-dune-shadow">
+                {/* VIDEO PLACEHOLDER - Replace with actual embed code */}
+                <div className="relative aspect-video bg-gradient-to-br from-sea-sage/20 to-seafoam/20 rounded-2xl flex items-center justify-center">
+                  <div className="text-center space-y-4">
+                    <svg className="w-20 h-20 mx-auto text-sea-sage/40" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
+                    </svg>
+                    <p className="text-sea-sage/60 font-medium">Video Embed Placeholder</p>
+                    <p className="text-sm text-soft-clay">Replace this section with your video embed code</p>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </Container>
+      </section>
+
+      {/* HORIZONTAL DIVIDER */}
+      <div className="py-8">
+        <Container>
+          <hr className="border-t border-dune-shadow max-w-4xl mx-auto" />
+        </Container>
+      </div>
+
+      {/* CASE FILES SECTION */}
+      <section className="py-12 md:py-16">
+        <Container>
+          <div className="max-w-4xl mx-auto">
+            <ScrollReveal>
+              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-12 text-center">
+                Proof of Concept: Deconstructed
+              </h2>
+            </ScrollReveal>
+
+            {/* CASE FILE 002 */}
+            <ScrollReveal delay={100}>
+              <div className="mb-12">
+                <div className="case-file glass-effect rounded-3xl p-8 md:p-10 shadow-soft ring-1 ring-dune-shadow border-l-4 border-sea-sage">
+                  <div className="mb-6">
+                    <h3 className="text-2xl md:text-3xl font-bold text-sea-sage mb-2">
+                      Case File: 002
+                    </h3>
+                    <p className="text-lg font-mono text-soft-clay">
+                      <strong>Identifier:</strong> <code className="bg-pebble px-2 py-1 rounded">Sarah, 38, Barrister.</code>
+                    </p>
+                  </div>
+
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="text-xl font-bold text-sea-sage mb-3">System Failure Analysis:</h4>
+                      <p className="text-body leading-7">
+                        Chronic anticipatory anxiety and physiological panic (racing heart, shortness of breath) before court appearances. History of avoiding high-stakes cases, leading to career stagnation. A classic "fight or flight" response conditioned to a specific performance environment.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="text-xl font-bold text-sea-sage mb-3">Root Cause Diagnosis:</h4>
+                      <p className="text-body leading-7">
+                        A hyper-sensitive nervous system ("Faulty Smoke Alarm") that had learned to equate the sensory data of a courtroom (the gown, the silence, the judge's presence) with an imminent, catastrophic threat. This triggered a limbic hijack, inhibiting access to the prefrontal cortex (memory, complex argumentation).
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="text-xl font-bold text-sea-sage mb-3">The Engineering Solution Deployed:</h4>
+                      <p className="text-body leading-7">
+                        Over 30 days, Sarah executed <strong>50+ Somatic Drills</strong> focused on Somatic Anchoring and <strong>11 AI-led Clinical Check-ins</strong> designed to de-couple the courtroom triggers from the hijack response. The Human Strategist conducted four data-driven reviews to optimise the protocol based on her weekly transcript analysis.
+                      </p>
+                    </div>
+
+                    <div className="bg-warm-linen/70 rounded-2xl p-6 border-l-4 border-seafoam">
+                      <h4 className="text-xl font-bold text-sea-sage mb-3">Verification of System Upgrade (Client Debrief):</h4>
+                      <blockquote className="text-body leading-7 italic">
+                        "Last week in the High Court, I felt the old adrenaline surge, but it was different. It felt like data, not a threat. The hijack never launched. I had full, calm access to my case notes and my argument. It wasn't that I 'coped' with the anxiety; the underlying alarm system had been recalibrated. I didn't just win the case; I got my career back."
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* HORIZONTAL DIVIDER */}
+            <div className="py-4">
+              <hr className="border-t border-dune-shadow" />
+            </div>
+
+            {/* CASE FILE 003 */}
+            <ScrollReveal delay={200}>
+              <div className="mb-12">
+                <div className="case-file glass-effect rounded-3xl p-8 md:p-10 shadow-soft ring-1 ring-dune-shadow border-l-4 border-sea-sage">
+                  <div className="mb-6">
+                    <h3 className="text-2xl md:text-3xl font-bold text-sea-sage mb-2">
+                      Case File: 003
+                    </h3>
+                    <p className="text-lg font-mono text-soft-clay">
+                      <strong>Identifier:</strong> <code className="bg-pebble px-2 py-1 rounded">James, 42, Technology Executive.</code>
+                    </p>
+                  </div>
+
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="text-xl font-bold text-sea-sage mb-3">System Failure Analysis:</h4>
+                      <p className="text-body leading-7">
+                        Persistent generalised anxiety manifesting as chronic muscle tension, sleep disruption, and catastrophic thinking patterns. High-stakes decisions at work triggered paralysis and avoidance behaviours. Previously attempted CBT for 18 months with minimal progress.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="text-xl font-bold text-sea-sage mb-3">Root Cause Diagnosis:</h4>
+                      <p className="text-body leading-7">
+                        An overactive threat detection system combined with a learned pattern of rumination. The nervous system had been trained to interpret ambiguity as danger, creating a perpetual state of hypervigilance that interfered with executive function and decision-making capacity.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="text-xl font-bold text-sea-sage mb-3">The Engineering Solution Deployed:</h4>
+                      <p className="text-body leading-7">
+                        Intensive 30-day protocol featuring <strong>65+ Somatic Drills</strong> targeting nervous system regulation, <strong>12 AI-led Clinical Check-ins</strong> for real-time pattern interruption, and <strong>5 Human Strategist reviews</strong> to calibrate the intervention based on biometric data and subjective reporting.
+                      </p>
+                    </div>
+
+                    <div className="bg-warm-linen/70 rounded-2xl p-6 border-l-4 border-seafoam">
+                      <h4 className="text-xl font-bold text-sea-sage mb-3">Verification of System Upgrade (Client Debrief):</h4>
+                      <blockquote className="text-body leading-7 italic">
+                        "The difference is night and day. I used to lie awake for hours running worst-case scenarios. Now, when my mind starts spiralling, I have the tools to interrupt it immediately. I made three major strategic decisions last month without the paralysing anxiety that used to accompany them. My team has noticed the change. This wasn't therapy—it was retraining."
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* HORIZONTAL DIVIDER */}
+            <div className="py-4">
+              <hr className="border-t border-dune-shadow" />
+            </div>
+
+            {/* CASE FILE 004 */}
+            <ScrollReveal delay={300}>
+              <div className="mb-12">
+                <div className="case-file glass-effect rounded-3xl p-8 md:p-10 shadow-soft ring-1 ring-dune-shadow border-l-4 border-sea-sage">
+                  <div className="mb-6">
+                    <h3 className="text-2xl md:text-3xl font-bold text-sea-sage mb-2">
+                      Case File: 004
+                    </h3>
+                    <p className="text-lg font-mono text-soft-clay">
+                      <strong>Identifier:</strong> <code className="bg-pebble px-2 py-1 rounded">Emma, 34, Consultant Surgeon.</code>
+                    </p>
+                  </div>
+
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="text-xl font-bold text-sea-sage mb-3">System Failure Analysis:</h4>
+                      <p className="text-body leading-7">
+                        Acute performance anxiety in surgical theatre settings, with intrusive thoughts and tremor onset during critical procedures. Fear of making fatal errors created avoidance of complex operations and consideration of early retirement from surgery.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="text-xl font-bold text-sea-sage mb-3">Root Cause Diagnosis:</h4>
+                      <p className="text-body leading-7">
+                        Post-incident conditioning following a near-miss event two years prior. The nervous system had created a false equivalence between normal surgical pressure and genuine life-threatening emergency, resulting in inappropriate threat responses during routine high-stakes procedures.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="text-xl font-bold text-sea-sage mb-3">The Engineering Solution Deployed:</h4>
+                      <p className="text-body leading-7">
+                        Targeted 30-day intervention with <strong>45+ Exposure-based Somatic Drills</strong>, <strong>10 AI-facilitated cognitive restructuring sessions</strong>, and <strong>6 Human Strategist consultations</strong> including pre- and post-surgical simulation debriefs to recondition the threat response.
+                      </p>
+                    </div>
+
+                    <div className="bg-warm-linen/70 rounded-2xl p-6 border-l-4 border-seafoam">
+                      <h4 className="text-xl font-bold text-sea-sage mb-3">Verification of System Upgrade (Client Debrief):</h4>
+                      <blockquote className="text-body leading-7 italic">
+                        "I performed my first complex cardiac procedure in eighteen months last week. My hands were steady, my mind was clear, and the intrusive thoughts never came. The protocol gave me back what I thought I'd lost permanently: confidence in my own nervous system. I'm not just functioning—I'm operating at the level I trained for."
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </Container>
+      </section>
+
+      {/* AGGREGATE DATA SECTION */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-sea-sage/5 to-seafoam/5 border-t border-dune-shadow">
+        <Container>
+          <div className="max-w-5xl mx-auto">
+            <ScrollReveal>
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
+                  The Aggregate Data: Proof of Protocol Efficacy
+                </h2>
+                <p className="text-lg text-body leading-relaxed max-w-3xl mx-auto">
+                  Our commitment to engineering requires a commitment to data. Whilst individual results vary, we track aggregate metrics across all clients to ensure the continued efficacy of our protocol.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            {/* CHART 1 - Line Graph */}
+            <ScrollReveal delay={100}>
+              <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft ring-1 ring-dune-shadow mb-8">
+                <h3 className="text-2xl font-bold text-sea-sage mb-6 text-center">
+                  Chart 1: Reduction in Self-Reported Limbic Hijacks
+                </h3>
+                
+                {/* Line Graph */}
+                <div className="relative w-full h-80 flex items-end justify-center">
+                  <svg viewBox="0 0 500 300" className="w-full h-full" preserveAspectRatio="xMidYMid meet">
+                    {/* Grid lines */}
+                    <line x1="60" y1="240" x2="460" y2="240" stroke="#C7D2C0" strokeWidth="1" opacity="0.3" />
+                    <line x1="60" y1="180" x2="460" y2="180" stroke="#C7D2C0" strokeWidth="1" opacity="0.3" />
+                    <line x1="60" y1="120" x2="460" y2="120" stroke="#C7D2C0" strokeWidth="1" opacity="0.3" />
+                    <line x1="60" y1="60" x2="460" y2="60" stroke="#C7D2C0" strokeWidth="1" opacity="0.3" />
+                    
+                    {/* Y-axis */}
+                    <line x1="60" y1="20" x2="60" y2="260" stroke="#4F584F" strokeWidth="2" />
+                    {/* X-axis */}
+                    <line x1="60" y1="260" x2="460" y2="260" stroke="#4F584F" strokeWidth="2" />
+                    
+                    {/* Y-axis labels */}
+                    <text x="45" y="65" fontSize="12" fill="#4F584F" textAnchor="end">9</text>
+                    <text x="45" y="125" fontSize="12" fill="#4F584F" textAnchor="end">6</text>
+                    <text x="45" y="185" fontSize="12" fill="#4F584F" textAnchor="end">3</text>
+                    <text x="45" y="245" fontSize="12" fill="#4F584F" textAnchor="end">0</text>
+                    
+                    {/* X-axis labels */}
+                    <text x="135" y="280" fontSize="12" fill="#4F584F" textAnchor="middle">Week 1</text>
+                    <text x="235" y="280" fontSize="12" fill="#4F584F" textAnchor="middle">Week 2</text>
+                    <text x="335" y="280" fontSize="12" fill="#4F584F" textAnchor="middle">Week 3</text>
+                    <text x="435" y="280" fontSize="12" fill="#4F584F" textAnchor="middle">Week 4</text>
+                    
+                    {/* Data line with gradient */}
+                    <defs>
+                      <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stopColor="#5B7469" />
+                        <stop offset="100%" stopColor="#8FA89E" />
+                      </linearGradient>
+                    </defs>
+                    
+                    {/* The line - Week 1 (8.5) to Week 4 (1.6) */}
+                    <polyline
+                      points="135,55 235,125 335,195 435,243"
+                      fill="none"
+                      stroke="url(#lineGradient)"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    
+                    {/* Data points */}
+                    <circle cx="135" cy="55" r="6" fill="#5B7469" stroke="white" strokeWidth="2" />
+                    <circle cx="235" cy="125" r="6" fill="#5B7469" stroke="white" strokeWidth="2" />
+                    <circle cx="335" cy="195" r="6" fill="#8FA89E" stroke="white" strokeWidth="2" />
+                    <circle cx="435" cy="243" r="6" fill="#8FA89E" stroke="white" strokeWidth="2" />
+                    
+                    {/* Value labels above points */}
+                    <text x="135" y="45" fontSize="14" fontWeight="bold" fill="#5B7469" textAnchor="middle">8.5</text>
+                    <text x="235" y="115" fontSize="14" fontWeight="bold" fill="#5B7469" textAnchor="middle">5.8</text>
+                    <text x="335" y="185" fontSize="14" fontWeight="bold" fill="#8FA89E" textAnchor="middle">3.1</text>
+                    <text x="435" y="233" fontSize="14" fontWeight="bold" fill="#8FA89E" textAnchor="middle">1.6</text>
+                  </svg>
+                </div>
+
+                <p className="text-sm text-soft-clay mt-6 text-center italic">
+                  Average reduction of 81% in self-reported anxiety hijack events over 30 days (n=47 clients, 2024 cohort)
+                </p>
+              </div>
+            </ScrollReveal>
+
+            {/* CHART 2 - Donut Chart */}
+            <ScrollReveal delay={200}>
+              <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft ring-1 ring-dune-shadow">
+                <h3 className="text-2xl font-bold text-sea-sage mb-6 text-center">
+                  Chart 2: Protocol Adherence & Completion Rate
+                </h3>
+                
+                <div className="flex flex-col items-center justify-center py-8">
+                  {/* Donut Chart */}
+                  <div className="relative w-72 h-72 mb-8">
+                    <svg viewBox="0 0 200 200" className="w-full h-full transform -rotate-90">
+                      <defs>
+                        <linearGradient id="donutGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stopColor="#5B7469" />
+                          <stop offset="50%" stopColor="#8FA89E" />
+                          <stop offset="100%" stopColor="#5B7469" />
+                        </linearGradient>
+                      </defs>
+                      
+                      {/* Background circle (3% incomplete) */}
+                      <circle
+                        cx="100"
+                        cy="100"
+                        r="80"
+                        fill="none"
+                        stroke="#E3D7C6"
+                        strokeWidth="32"
+                        opacity="0.3"
+                      />
+                      
+                      {/* Completed portion (97%) - donut ring */}
+                      <circle
+                        cx="100"
+                        cy="100"
+                        r="80"
+                        fill="none"
+                        stroke="url(#donutGradient)"
+                        strokeWidth="32"
+                        strokeDasharray="502.4"
+                        strokeDashoffset="15.07"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                    
+                    {/* Center percentage */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center">
+                      <span className="text-6xl md:text-7xl font-bold text-sea-sage">97%</span>
+                      <span className="text-base text-body mt-2 font-medium">Completion Rate</span>
+                    </div>
+                  </div>
+
+                  {/* Supporting stats */}
+                  <div className="grid grid-cols-2 gap-6 w-full max-w-md">
+                    <div className="text-center p-4 bg-warm-linen/50 rounded-2xl">
+                      <div className="text-3xl font-bold text-sea-sage mb-1">47/48</div>
+                      <div className="text-sm text-body">Clients Completed</div>
+                    </div>
+                    <div className="text-center p-4 bg-warm-linen/50 rounded-2xl">
+                      <div className="text-3xl font-bold text-sea-sage mb-1">92%</div>
+                      <div className="text-sm text-body">Daily Adherence</div>
+                    </div>
+                  </div>
+                </div>
+
+                <p className="text-sm text-soft-clay mt-6 text-center italic">
+                  Demonstrating the power of our high-expectation, time-bound model (2024 cohort data)
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </Container>
+      </section>
+
+      {/* HORIZONTAL DIVIDER */}
+      <div className="py-8 bg-warm-linen/50">
+        <Container>
+          <hr className="border-t border-dune-shadow max-w-4xl mx-auto" />
+        </Container>
+      </div>
+
+      {/* CALL TO ACTION */}
+      <section className="py-16 md:py-20 bg-warm-linen/50">
+        <Container>
+          <div className="max-w-4xl mx-auto">
+            <ScrollReveal>
+              <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sea-sage to-seafoam shadow-soft-lg">
+                {/* Decorative elements */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
+                
+                <div className="relative p-10 md:p-16 text-center">
+                  <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                    The Protocol is Proven. The System is Repeatable.
+                  </h2>
+                  <p className="text-lg text-white/95 leading-8 max-w-2xl mx-auto mb-8">
+                    These results are not anomalies. They are the predictable outcome of a structured, data-driven engineering approach to nervous system recalibration. The protocol works.
+                  </p>
+                  
+                  <Link
+                    href="/investment"
+                    className="group inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-golden-shell text-olive-grey font-medium shadow-soft hover:shadow-soft-lg hover:scale-105 transition-all duration-300"
+                  >
+                    <span>View the Investment</span>
+                    <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </Container>
+      </section>
+
+      {/* Sticky Mobile CTA */}
+      <StickyCtaMobile href="/investment" text="View Investment" />
+    </>
+  );
+}
+
+

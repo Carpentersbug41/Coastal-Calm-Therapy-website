@@ -1,113 +1,102 @@
 import Link from 'next/link';
 import { Container } from '@/components/container';
-import { PostCard } from '@/components/post-card';
 import { ScrollReveal } from '@/components/scroll-reveal';
-import { BlogSubscribe } from '@/components/blog-subscribe';
-import { getPaginatedPosts } from '@/lib/posts';
+import { BlogLeadMagnet } from '@/components/blog-lead-magnet';
+import { BlogArchiveTabs } from '@/components/blog-archive-tabs';
 
-interface BlogPageProps {
-  searchParams: { page?: string };
-}
-
-export const metadata = {
-  title: 'From the Lab: Insights on Anxiety Engineering',
-  description:
-    'Research and development insights from The Anxiety Protocol. Deconstructing the flawed traditional model, explaining our engineering principles, and demonstrating the skills that solve anxiety.',
-};
-
-export default function BlogPage({ searchParams }: BlogPageProps) {
-  const currentPage = Number(searchParams.page) || 1;
-  const { posts, totalPages, hasNextPage, hasPrevPage } = getPaginatedPosts(currentPage);
+export default function BlogPage() {
+  // Cornerstone articles data
+  const cornerstoneArticles = [
+    { slug: 'weekly-fail', title: "Why Weekly Therapy Often Fails (And a 'Bootcamp' Model That Works)", description: "A deconstruction of the five systemic flaws in the traditional model that make it structurally inefficient for solving anxiety." },
+    { slug: 'why-positive-thinking-fails', title: "Why 'Positive Thinking' Fails: The Truth About Your Brain's Panic Alarm", description: "The core neuroscientific argument for our hardware-first approach, explaining the 'Faulty Smoke Alarm' principle." },
+    { slug: 'Not-a-Character-Flaw', title: "Not a Character Flaw: A New Way to Understand Overwhelming Anxiety", description: "The foundational reframing of anxiety as a technical problem to be solved, not a personal failing to be managed." },
+  ];
 
   return (
     <div className="py-16 md:py-24">
       <Container>
-        {/* Page Header */}
+        {/* SECTION 1: THE BRIEFING ROOM */}
         <ScrollReveal>
           <div className="mb-16 text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sage-50 border border-sage-200 mb-6">
-              <span className="w-2 h-2 bg-sage-500 rounded-full animate-pulse"></span>
-              <span className="text-sm font-medium text-sage-700">Research & Development</span>
-            </div>
-            
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               <span className="bg-gradient-to-r from-brand-900 to-sage-700 bg-clip-text text-transparent">
-                From the Lab: Insights on Anxiety Engineering
+                The Engineer&apos;s Briefing Room
               </span>
             </h1>
             
             <p className="text-xl text-ink/70 max-w-3xl mx-auto leading-8">
-              A library of intellectual property. Deconstructing the traditional therapy model, 
-              explaining the engineering principles behind our protocol, and demonstrating the skills that solve anxiety.
+              <strong>Technical Briefings & Deconstructions</strong>
+            </p>
+            <p className="text-lg text-ink/60 max-w-3xl mx-auto leading-7 mt-3">
+              This is our R&D library. A collection of strategic documents, skill blueprints, and system deconstructions 
+              that form the intellectual foundation of our protocol.
             </p>
           </div>
         </ScrollReveal>
 
-        {/* Posts Grid */}
-        {posts.length > 0 ? (
-          <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-              {posts.map((post, index) => (
-                <ScrollReveal key={post.slug} delay={index * 100}>
-                  <PostCard post={post} />
+        <hr className="my-12 border-sage-200" />
+
+        {/* SECTION 2: CORNERSTONE CONTENT */}
+        <ScrollReveal delay={100}>
+          <div className="mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-900 mb-4 text-center">
+              Required Reading: The Foundational Briefings
+            </h2>
+            <p className="text-lg text-ink/60 max-w-2xl mx-auto text-center mb-12 leading-7">
+              For new visitors, these three articles provide the core conceptual framework of our entire model. 
+              Understanding these principles is the first step.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {cornerstoneArticles.map((article, index) => (
+                <ScrollReveal key={article.slug} delay={index * 100}>
+                  <div className="bg-gradient-to-br from-sage-50 to-sand-50 rounded-2xl shadow-soft ring-1 ring-black/5 p-8 hover:shadow-soft-lg transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+                    <h4 className="text-xl font-bold text-brand-900 mb-4 leading-snug">
+                      {article.title}
+                    </h4>
+                    <p className="text-ink/70 mb-6 leading-relaxed flex-grow">
+                      {article.description}
+                    </p>
+                    <Link 
+                      href={`/blog/${article.slug}`}
+                      className="inline-flex items-center text-brand-700 font-medium hover:text-brand-900 transition-colors group"
+                    >
+                      Read the Briefing
+                      <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </Link>
+                  </div>
                 </ScrollReveal>
               ))}
             </div>
+          </div>
+        </ScrollReveal>
 
-            {/* Pagination */}
-            {totalPages > 1 && (
-              <ScrollReveal>
-                <div className="flex justify-center items-center gap-4">
-                  {hasPrevPage && (
-                    <Link
-                      href={`/blog?page=${currentPage - 1}`}
-                      className="inline-flex items-center px-6 py-3 rounded-xl bg-white border-2 border-brand-500 text-brand-900 font-medium hover:bg-brand-50 hover:scale-105 transition-all duration-300 shadow-soft"
-                    >
-                      <svg className="mr-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                      </svg>
-                      Previous
-                    </Link>
-                  )}
+        <hr className="my-12 border-sage-200" />
 
-                  <span className="px-4 py-2 text-ink/70 font-medium">
-                    Page {currentPage} of {totalPages}
-                  </span>
+        {/* SECTION 3: LEAD MAGNET */}
+        <ScrollReveal delay={200}>
+          <div className="mb-16">
+            <BlogLeadMagnet />
+          </div>
+        </ScrollReveal>
 
-                  {hasNextPage && (
-                    <Link
-                      href={`/blog?page=${currentPage + 1}`}
-                      className="inline-flex items-center px-6 py-3 rounded-xl bg-gradient-to-r from-brand-500 to-brand-700 text-white font-medium hover:scale-105 transition-all duration-300 shadow-soft hover:shadow-soft-lg"
-                    >
-                      Next
-                      <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </Link>
-                  )}
-                </div>
-              </ScrollReveal>
-            )}
+        <hr className="my-12 border-sage-200" />
 
-            {/* Subscribe section */}
-            <ScrollReveal delay={200}>
-              <div className="max-w-4xl mx-auto">
-                <BlogSubscribe />
-              </div>
-            </ScrollReveal>
-          </>
-        ) : (
-          <ScrollReveal>
-            <div className="text-center py-20">
-              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-sage-100 flex items-center justify-center">
-                <span className="text-4xl">📝</span>
-              </div>
-              <p className="text-xl text-ink/70">
-                No posts found. Check back soon for new content!
-              </p>
-            </div>
-          </ScrollReveal>
-        )}
+        {/* SECTION 4: THE FULL ARCHIVE */}
+        <ScrollReveal delay={300}>
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-900 mb-8 text-center">
+              The Full R&D Archive
+            </h2>
+            <p className="text-lg text-ink/60 max-w-2xl mx-auto text-center mb-12 leading-7">
+              Explore the complete library, organised by function.
+            </p>
+
+            <BlogArchiveTabs />
+          </div>
+        </ScrollReveal>
       </Container>
     </div>
   );

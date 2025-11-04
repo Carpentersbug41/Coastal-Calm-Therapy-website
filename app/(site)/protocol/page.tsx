@@ -4,11 +4,11 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'The Protocol: An Engineered System for a Defined Outcome',
-  description: 'Traditional therapy is an art, built on open-ended exploration. The Anxiety Protocol is an engineering project, built on a single, non-negotiable principle: our goal is to make ourselves redundant. This page contains the full architectural blueprint of the 30-day intensive designed to achieve that outcome. It is a finite, structured, and data-driven system for those who are ready to stop talking and start solving.',
+  title: 'The 30-Day Intensive: A Blueprint for Independence',
+  description: 'This is not an open-ended exploration. It is a structured engineering project with four distinct phases and a clear deliverable: your autonomy. Discover the three phases of our protocol: Diagnostic & System Mapping, High-Repetition Skill Training, and Stress Testing & The Redundancy Protocol.',
   openGraph: {
-    title: 'The Protocol: An Engineered System for a Defined Outcome',
-    description: 'Traditional therapy is an art, built on open-ended exploration. The Anxiety Protocol is an engineering project, built on a single, non-negotiable principle: our goal is to make ourselves redundant. This page contains the full architectural blueprint of the 30-day intensive designed to achieve that outcome. It is a finite, structured, and data-driven system for those who are ready to stop talking and start solving.',
+    title: 'The 30-Day Intensive: A Blueprint for Independence',
+    description: 'This is not an open-ended exploration. It is a structured engineering project with four distinct phases and a clear deliverable: your autonomy. Discover the three phases of our protocol: Diagnostic & System Mapping, High-Repetition Skill Training, and Stress Testing & The Redundancy Protocol.',
   },
 }
 
@@ -19,129 +19,91 @@ export default function ProtocolPage() {
         {/* Page Header */}
         <ScrollReveal>
           <div className="max-w-4xl mx-auto mb-16 text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pebble border border-dune-shadow mb-6">
-              <span className="w-2 h-2 bg-seafoam rounded-full animate-pulse"></span>
-              <span className="text-sm font-medium text-sea-sage">A Finite, Data-Driven Protocol</span>
-            </div>
-            
             <h1 className="text-4xl md:text-6xl font-bold text-sea-sage mb-6">
-              This is not therapy. This is a protocol.
+              The 30-Day Intensive: A Blueprint for Independence.
             </h1>
             
-            <p className="text-xl leading-8 text-body">
-              Traditional therapy is an art, built on open-ended exploration. The Anxiety Protocol is an engineering project, built on a single, non-negotiable principle: <strong>our goal is to make ourselves redundant.</strong> This page contains the full architectural blueprint of the 30-day intensive designed to achieve that outcome. It is a finite, structured, and data-driven system for those who are ready to stop talking and start solving.
+            <p className="text-xl md:text-2xl leading-8 text-body font-medium">
+              This is not an open-ended exploration. It is a structured engineering project with four distinct phases and a clear deliverable: your autonomy.
             </p>
           </div>
         </ScrollReveal>
 
-        {/* Strategic Roadmap Timeline */}
+        {/* The Three Phases */}
         <div className="max-w-5xl mx-auto mb-16">
-          <div className="relative">
+          <div className="space-y-12">
+            {/* Phase 1 */}
             <ScrollReveal delay={100}>
-              <div className="mb-12 md:mb-24">
-                <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6 text-center">
-                  The Diagnostic Failure of Traditional Therapy
-                </h2>
-                <p className="text-lg leading-8 text-body max-w-3xl mx-auto text-center">
-                  Anxiety is not one thing. It runs on two distinct, interacting pathways: <strong>Top-Down</strong> (ignited by catastrophic thoughts) and <strong>Bottom-Up</strong> (triggered by a hyper-sensitive nervous system). While both are always in play, every anxiety spiral has an <strong>ignition point.</strong> The critical error of traditional therapy is its diagnostic imprecision—it applies a generic "talk it out" model without first identifying where the fire actually starts.
-                </p>
-                <p className="text-lg leading-8 text-body max-w-3xl mx-auto text-center mt-4">
-                  This is why progress is so often slow and frustrating. The model fails to match the right tool to the right problem. It brings cognitive solutions to a physiological crisis, or insufficient practice to a deeply ingrained cognitive habit. Our protocol corrects this foundational error. We begin with a deep, forensic diagnosis to identify the primary driver of <em>your</em> system. The answer to that single question determines the entire strategy.
-                </p>
-              </div>
-            </ScrollReveal>
-
-            {/* Section 2: The Three Pillars of the Protocol */}
-            <ScrollReveal delay={200}>
-              <div className="mb-12 md:mb-24">
-                <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6 text-center">
-                  The Three Pillars of the Protocol
-                </h2>
-                <p className="text-lg leading-8 text-body max-w-3xl mx-auto text-center mb-12">
-                  Once we have accurately diagnosed the primary pathway, we deconstruct the therapeutic role to deploy the correct, specialized tools with unparalleled precision and intensity.
-                </p>
-
-                <div className="grid md:grid-cols-3 gap-8">
-                  {/* Pillar 1 */}
-                  <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow">
-                    <h3 className="text-xl font-bold text-sea-sage mb-3">
-                      Pillar 1: The Human Clinical Strategist (The Diagnostician)
-                    </h3>
-                    <p className="text-base leading-7 text-body">
-                      The human expert's role is too valuable to be wasted on generic practice. Your strategist's function is exclusively high-level: a deep forensic analysis to diagnose your primary pathway; the architectural design of your bespoke 30-day protocol; and the ongoing, data-driven analysis of your session transcripts to make high-leverage adjustments.
-                    </p>
+              <div className="glass-effect rounded-3xl p-8 md:p-12 shadow-soft-lg border border-dune-shadow">
+                <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center gap-4">
+                      <div className="text-6xl md:text-7xl font-bold text-seafoam opacity-50">01</div>
+                      <div className="w-16 h-16 flex items-center justify-center rounded-2xl bg-seafoam/10 border border-seafoam/30">
+                        <svg className="w-8 h-8 text-seafoam" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
-                  {/* Pillar 2 */}
-                  <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow">
-                    <h3 className="text-xl font-bold text-sea-sage mb-3">
-                      Pillar 2: The Precision Instrument (For Cognitive Work)
+                  <div className="flex-1">
+                    <h3 className="text-2xl md:text-3xl font-bold text-sea-sage mb-4">
+                      Phase 1 (Days 1-7): Diagnostic & System Mapping
                     </h3>
-                    <p className="text-base leading-7 text-body">
-                      To deconstruct faulty <strong>Top-Down</strong> thought patterns, you will engage 2-3 times per week with our AI-guided instrument. It executes complex cognitive drills (like defusion and restructuring) with a fidelity a human cannot match, spotting and challenging recurring mental loops with surgical precision.
-                    </p>
-                  </div>
-                  {/* Pillar 3 */}
-                  <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow">
-                    <h3 className="text-xl font-bold text-sea-sage mb-3">
-                      Pillar 3: The Resilience Simulator (For Somatic Work)
-                    </h3>
-                    <p className="text-base leading-7 text-body">
-                      To recalibrate a hyper-sensitive <strong>Bottom-Up</strong> nervous system, you will run short, daily drills in our proprietary Resilience Simulator. This somatic gym is where you achieve the high-volume 'reps' necessary for neuroplastic change in a sterile, non-judgmental environment.
+                    <p className="text-lg leading-8 text-body">
+                      We conduct a deep diagnostic to identify the specific failure points in your system. We are not looking for a psychological label; we are looking for the precise mechanism of your conditioned responses. You'll receive your personalized <strong>"Anxiety Blueprint,"</strong> a document that maps your triggers, responses, and the core logic of your hijack spiral.
                     </p>
                   </div>
                 </div>
               </div>
             </ScrollReveal>
 
-            {/* Section 3: The Client Journey */}
-            <ScrollReveal delay={300}>
-              <div className="mb-12 md:mb-24">
-                <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6 text-center">
-                  The 30-Day Blueprint: From Diagnosis to Redundancy
-                </h2>
-                <p className="text-lg leading-8 text-body max-w-3xl mx-auto text-center mb-12">
-                  The protocol is a meticulously choreographed, four-phase intensive. Each phase has a clear objective and a defined deliverable.
-                </p>
+            {/* Phase 2 */}
+            <ScrollReveal delay={200}>
+              <div className="glass-effect rounded-3xl p-8 md:p-12 shadow-soft-lg border border-dune-shadow">
+                <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center gap-4">
+                      <div className="text-6xl md:text-7xl font-bold text-seafoam opacity-50">02</div>
+                      <div className="w-16 h-16 flex items-center justify-center rounded-2xl bg-seafoam/10 border border-seafoam/30">
+                        <svg className="w-8 h-8 text-seafoam" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl md:text-3xl font-bold text-sea-sage mb-4">
+                      Phase 2 (Days 8-21): High-Repetition Skill Training
+                    </h3>
+                    <p className="text-lg leading-8 text-body">
+                      This is the core of the work. Guided by your Human Strategist, you will use the <strong>Flight Simulator</strong> to run daily, targeted drills. You will learn and myelinate the skills of Titration, Pendulation, Defusion, and Somatic Anchoring until they become automatic.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
 
-                <div className="grid md:grid-cols-2 gap-8">
-                  {/* Phase 1 */}
-                  <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow">
-                    <h3 className="text-xl font-bold text-sea-sage mb-3">Phase 1: The Anxiety Blueprint</h3>
-                    <p className="text-base leading-7 text-body mb-4">
-                      <strong>Objective:</strong> To move from a vague feeling of "anxiety" to a precise, mechanical understanding of your unique system.
-                    </p>
-                    <p className="text-base leading-7 text-body">
-                      <strong>Deliverable:</strong> A written, tangible plan that maps your specific triggers, patterns, and the 30-day protocol designed to solve them.
-                    </p>
+            {/* Phase 3 */}
+            <ScrollReveal delay={300}>
+              <div className="glass-effect rounded-3xl p-8 md:p-12 shadow-soft-lg border border-dune-shadow">
+                <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center gap-4">
+                      <div className="text-6xl md:text-7xl font-bold text-seafoam opacity-50">03</div>
+                      <div className="w-16 h-16 flex items-center justify-center rounded-2xl bg-seafoam/10 border border-seafoam/30">
+                        <svg className="w-8 h-8 text-seafoam" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
-                  {/* Phase 2 */}
-                  <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow">
-                    <h3 className="text-xl font-bold text-sea-sage mb-3">Phase 2: The High-Dosage Training</h3>
-                    <p className="text-base leading-7 text-body mb-4">
-                      <strong>Objective:</strong> To build and myelinate new neural pathways for calm and regulation through intensive, high-repetition practice.
-                    </p>
-                    <p className="text-base leading-7 text-body">
-                      <strong>Deliverable:</strong> A measurable increase in your ability to tolerate distress and "unhook" from automatic thought patterns. Your new skills begin to become your new default.
-                    </p>
-                  </div>
-                  {/* Phase 3 */}
-                  <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow">
-                    <h3 className="text-xl font-bold text-sea-sage mb-3">Phase 3: The Data-Driven Reviews</h3>
-                    <p className="text-base leading-7 text-body mb-4">
-                      <strong>Objective:</strong> To use your session data to iteratively refine and optimize the protocol for maximum impact.
-                    </p>
-                    <p className="text-base leading-7 text-body">
-                      <strong>Deliverable:</strong> High-leverage strategic adjustments that accelerate progress and target the root of your specific sticking points.
-                    </p>
-                  </div>
-                  {/* Phase 4 */}
-                  <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow">
-                    <h3 className="text-xl font-bold text-sea-sage mb-3">Phase 4: The Redundancy Protocol</h3>
-                    <p className="text-base leading-7 text-body mb-4">
-                      <strong>Objective:</strong> To consolidate your skills and transition you from being the client to being your own expert.
-                    </p>
-                    <p className="text-base leading-7 text-body">
-                      <strong>Deliverable:</strong> A comprehensive 'Go-Forward Plan'—your personal user's manual for maintaining your progress and handling future challenges with full autonomy.
+                  <div className="flex-1">
+                    <h3 className="text-2xl md:text-3xl font-bold text-sea-sage mb-4">
+                      Phase 3 (Days 22-30): Stress Testing & The Redundancy Protocol
+                    </h3>
+                    <p className="text-lg leading-8 text-body">
+                      We move from the simulator to the real world. You will apply your new skills to controlled, real-life stressors. The final session is the Handover. We analyze your 30 days of data and deliver your <strong>"Go-Forward Plan"</strong>a user's manual for your own mind, designed to make you a more effective therapist for yourself than we could ever be for you.
                     </p>
                   </div>
                 </div>
@@ -150,27 +112,32 @@ export default function ProtocolPage() {
           </div>
         </div>
 
-        {/* Final Call to Action */}
+        {/* Closing Section - Your Deliverable */}
         <ScrollReveal delay={400}>
-          <div className="max-w-4xl mx-auto text-center mt-16 md:mt-24">
-            <div className="glass-effect rounded-3xl p-12 md:p-16 shadow-soft-xl border border-dune-shadow">
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="text-center mb-8">
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6">
-                This is a System, Not a Suggestion.
+                Your Deliverable: A Toolkit for Life
               </h2>
-              <p className="text-lg leading-8 text-body mb-8">
-                The Anxiety Protocol is a rigorous, demanding, and highly effective system for individuals who are ready to do the work. We accept a maximum of four new clients per month to ensure the highest level of strategic oversight.
+              <p className="text-lg leading-8 text-body">
+                We do not just solve the immediate problem; we equip you with the skills and the system to handle future challenges independently. You will leave this protocol with a verifiable set of tools and the confidence that you are no longer managing a problem, but are fully capable of solving it.
               </p>
-              <Link
-                href="/apply"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-sea-sage rounded-xl hover:bg-opacity-90 transition-all duration-200 shadow-soft-lg hover:shadow-soft-xl"
-              >
-                Begin the Diagnostic
-              </Link>
             </div>
+          </div>
+        </ScrollReveal>
+
+        {/* Final Call to Action */}
+        <ScrollReveal delay={500}>
+          <div className="max-w-4xl mx-auto text-center">
+            <Link
+              href="/apply"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-sea-sage rounded-xl hover:bg-opacity-90 transition-all duration-200 shadow-soft-lg hover:shadow-soft-xl"
+            >
+              Apply for the Protocol
+            </Link>
           </div>
         </ScrollReveal>
       </Container>
     </div>
   )
 }
-

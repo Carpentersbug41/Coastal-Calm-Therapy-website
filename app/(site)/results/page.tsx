@@ -49,6 +49,196 @@ export default function ResultsPage() {
         </Container>
       </section>
 
+      {/* CASE FILE 001: MELISSA - FOUNDATIONAL CASE STUDY */}
+      <section className="py-12 md:py-20 bg-gradient-to-br from-sea-sage/5 to-seafoam/5 border-y border-dune-shadow">
+        <Container>
+          <div className="max-w-5xl mx-auto">
+            <ScrollReveal>
+              <div className="glass-effect rounded-3xl shadow-soft-lg ring-2 ring-sea-sage/30 overflow-hidden">
+                {/* Header Bar - Clinical Report Aesthetic */}
+                <div className="bg-gradient-to-r from-sea-sage to-seafoam px-8 md:px-12 py-6 border-b-4 border-sea-sage">
+                  <div className="flex items-center justify-between flex-wrap gap-4">
+                    <div>
+                      <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
+                        Case File: 001 (Foundational)
+                      </h2>
+                      <p className="text-lg text-white/90 font-mono">
+                        <strong>Identifier:</strong> Melissa, 22, Psychology Student.
+                      </p>
+                    </div>
+                    <div className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-xl border border-white/30">
+                      <span className="text-sm font-bold text-white uppercase tracking-wide">Primary Case Study</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Main Content */}
+                <div className="p-8 md:p-12 space-y-10">
+                  
+                  {/* System Failure Analysis */}
+                  <div>
+                    <h3 className="text-2xl font-bold text-sea-sage mb-4 pb-2 border-b-2 border-dune-shadow">
+                      System Failure Analysis (Presenting Problem):
+                    </h3>
+                    <p className="text-body leading-8 mb-6">
+                      Client presented with a history of frequent, intense "meltdowns" or "spirals" of overwhelming emotion, often triggered by minor, seemingly insignificant events (e.g., feeling too hot). These episodes were characterised by "uncontrollable moments" of crying and an inability to communicate, followed by a powerful "second dart" of shame and self-criticism ("I get mad at myself for being overwhelmed"). The client reported a pattern of suppressing stress throughout the day, leading to a disproportionate emotional release in the evening.
+                    </p>
+                    
+                    <div className="bg-soft-clay/10 border-l-4 border-soft-clay rounded-r-2xl p-6">
+                      <h4 className="text-sm font-bold text-soft-clay uppercase tracking-wide mb-3">
+                        Client's Own Words (Baseline):
+                      </h4>
+                      <blockquote className="text-lg text-body italic leading-8">
+                        "I don't have many like, uncontrollable moments that I'm just like, I'm so overwhelmed. I just don't know what to do with myself... It was just a fast track to a panic attack."
+                      </blockquote>
+                    </div>
+                  </div>
+
+                  {/* Root Cause Diagnosis */}
+                  <div>
+                    <h3 className="text-2xl font-bold text-sea-sage mb-4 pb-2 border-b-2 border-dune-shadow">
+                      Root Cause Diagnosis:
+                    </h3>
+                    <p className="text-body leading-8">
+                      The client's presentation was a textbook example of a hyper-sensitive nervous system (a "Faulty Smoke Alarm") with a conditioned, phobic-like fear of her own internal somatic states. The core mechanism was identified as a bottom-up, physiological process where benign physical sensations would trigger a rapid, pre-cognitive limbic hijack, which was then amplified by a cognitive feedback loop of catastrophic and self-critical thoughts. The primary therapeutic target was therefore the underlying physiological response, not the surface-level thoughts.
+                    </p>
+                  </div>
+
+                  {/* Engineering Solution */}
+                  <div>
+                    <h3 className="text-2xl font-bold text-sea-sage mb-4 pb-2 border-b-2 border-dune-shadow">
+                      The Engineering Solution Deployed:
+                    </h3>
+                    <p className="text-body leading-8 mb-6">
+                      The client engaged in a <strong>3-month therapeutic intensive</strong>, utilising the full hybrid model of The Anxiety Protocol. The intervention was structured as follows:
+                    </p>
+                    
+                    <div className="grid md:grid-cols-3 gap-6">
+                      <div className="bg-warm-linen/50 rounded-2xl p-6 border border-dune-shadow">
+                        <div className="flex items-center gap-3 mb-3">
+                          <div className="w-10 h-10 rounded-full bg-sea-sage text-white flex items-center justify-center font-bold">1</div>
+                          <h4 className="text-lg font-bold text-sea-sage">Human Strategist Oversight</h4>
+                        </div>
+                        <p className="text-sm text-body leading-6">
+                          Initial sessions focused on diagnostics, psychoeducation on the "Faulty Smoke Alarm" model, and building a foundation of somatic safety. This was followed by weekly data-driven reviews and strategic adjustments.
+                        </p>
+                      </div>
+                      
+                      <div className="bg-warm-linen/50 rounded-2xl p-6 border border-dune-shadow">
+                        <div className="flex items-center gap-3 mb-3">
+                          <div className="w-10 h-10 rounded-full bg-sea-sage text-white flex items-center justify-center font-bold">2</div>
+                          <h4 className="text-lg font-bold text-sea-sage">High-Repetition Somatic Drills</h4>
+                        </div>
+                        <p className="text-sm text-body leading-6">
+                          The client was provided with the "Somatic Drill" tool and assigned high-frequency practice of Titration and Pendulation to build the neurological pathways for affect tolerance and regulation.
+                        </p>
+                      </div>
+                      
+                      <div className="bg-warm-linen/50 rounded-2xl p-6 border border-dune-shadow">
+                        <div className="flex items-center gap-3 mb-3">
+                          <div className="w-10 h-10 rounded-full bg-sea-sage text-white flex items-center justify-center font-bold">3</div>
+                          <h4 className="text-lg font-bold text-sea-sage">AI-led Clinical Check-ins</h4>
+                        </div>
+                        <p className="text-sm text-body leading-6">
+                          The client used the "Clinical Check-in" tool to engage in deep, structured therapeutic work, including the installation of positive resources and the "Cognitive Post-Mortem" skill.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Verification of System Upgrade */}
+                  <div>
+                    <h3 className="text-2xl font-bold text-sea-sage mb-4 pb-2 border-b-2 border-dune-shadow">
+                      Verification of System Upgrade (Client Debrief & Outcome):
+                    </h3>
+                    <p className="text-body leading-8 mb-6">
+                      After three months, a formal review confirmed a profound and durable shift in the client's capacity and self-perception.
+                    </p>
+
+                    {/* Core Outcome */}
+                    <div className="mb-8">
+                      <h4 className="text-xl font-bold text-sea-sage mb-4">1. The Core Outcome (In Her Own Words):</h4>
+                      <div className="bg-gradient-to-br from-seafoam/10 to-sea-sage/10 border-l-4 border-seafoam rounded-r-2xl p-6">
+                        <blockquote className="text-lg md:text-xl text-body italic leading-8">
+                          "More regulated. More confident that I can handle things... The struggle with mental health has just been existing in my life for so long that <strong>I didn't think I'd be this capable right now.</strong>"
+                        </blockquote>
+                      </div>
+                    </div>
+
+                    {/* New Relationship with Overwhelm */}
+                    <div className="mb-8">
+                      <h4 className="text-xl font-bold text-sea-sage mb-4">2. A New Relationship with Overwhelm:</h4>
+                      <p className="text-body leading-8 mb-4">
+                        The client's core pattern of spiraling into a meltdown was successfully interrupted. She has moved from a reactive state of being a victim of her feelings to a proactive state of skillful self-management.
+                      </p>
+                      <div className="bg-gradient-to-br from-seafoam/10 to-sea-sage/10 border-l-4 border-seafoam rounded-r-2xl p-6">
+                        <blockquote className="text-lg md:text-xl text-body italic leading-8">
+                          "It's more like <strong>noticing that I'm overwhelmed and knowing that I've got to do something about it before I get too overwhelmed.</strong> ... I'm noticing this. How do I get back? Whereas before... I just didn't know there was that step."
+                        </blockquote>
+                      </div>
+                    </div>
+
+                    {/* Client-Verified Efficacy */}
+                    <div>
+                      <h4 className="text-xl font-bold text-sea-sage mb-4">3. Client-Verified Efficacy of the Protocol's Core Components:</h4>
+                      
+                      <div className="space-y-6">
+                        {/* High-Dosage Practice */}
+                        <div className="bg-warm-linen/70 rounded-2xl p-6 border border-dune-shadow">
+                          <h5 className="text-base font-bold text-sea-sage mb-3 uppercase tracking-wide">
+                            On the High-Dosage Practice (The Somatic Drill):
+                          </h5>
+                          <blockquote className="text-base md:text-lg text-body italic leading-7">
+                            "I think it's probably <strong>escalated my progress</strong>, especially when I was doing the titration and pendulation... I think it's the consistency and probably how much I did... at the start."
+                          </blockquote>
+                        </div>
+
+                        {/* Non-Human Instrument */}
+                        <div className="bg-warm-linen/70 rounded-2xl p-6 border border-dune-shadow">
+                          <h5 className="text-base font-bold text-sea-sage mb-3 uppercase tracking-wide">
+                            On the Advantage of a Non-Human Instrument (The Somatic Drill):
+                          </h5>
+                          <blockquote className="text-base md:text-lg text-body italic leading-7">
+                            "I feel like I could get in my head a lot more if I was in front of a person... it's distracting because you're aware of that person. And that awareness is kind of <strong>splitting your concentration away from the task itself.</strong>"
+                          </blockquote>
+                        </div>
+
+                        {/* AI Precision */}
+                        <div className="bg-warm-linen/70 rounded-2xl p-6 border border-dune-shadow">
+                          <h5 className="text-base font-bold text-sea-sage mb-3 uppercase tracking-wide">
+                            On the Precision of the AI-led Sessions (The Clinical Check-in):
+                          </h5>
+                          <blockquote className="text-base md:text-lg text-body italic leading-7">
+                            "It knows everything, doesn't it? So it's just, <strong>it could potentially work better than a human.</strong> It remembers everything you've said... because it will pull out something from like three months ago... absolutely crystal clear. So you're feeling like, wow, this thing really knows me."
+                          </blockquote>
+                        </div>
+
+                        {/* Human-in-the-Loop */}
+                        <div className="bg-warm-linen/70 rounded-2xl p-6 border border-dune-shadow">
+                          <h5 className="text-base font-bold text-sea-sage mb-3 uppercase tracking-wide">
+                            On the Necessity of the Human-in-the-Loop Model:
+                          </h5>
+                          <blockquote className="text-base md:text-lg text-body italic leading-7">
+                            "It feels more <strong>reassuring</strong> than maybe just chat GPT... knowing that it is just like a system of programmes that <strong>you've given it.</strong> And that works well."
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Footer Bar */}
+                <div className="bg-sea-sage/5 px-8 md:px-12 py-6 border-t border-dune-shadow">
+                  <p className="text-sm text-soft-clay italic text-center">
+                    This case study represents a comprehensive deconstruction of the protocol's mechanisms and efficacy. Client consent obtained for educational use.
+                  </p>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </Container>
+      </section>
+
       {/* PRIMARY VIDEO EVIDENCE */}
       <section className="py-12 md:py-16 bg-warm-linen/50">
         <Container>
@@ -56,10 +246,10 @@ export default function ResultsPage() {
             <ScrollReveal>
               <div className="mb-8">
                 <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                  Case File 001: Debrief with Alex, Product Lead.
+                  Video Evidence: Debrief with Alex, Product Lead.
                 </h2>
                 <p className="text-lg text-body leading-relaxed">
-                  The single most important piece of evidence. Watch Alex describe the verifiable changes in their nervous system response after completing the 30-day intensive protocol.
+                  Watch Alex describe the verifiable changes in their nervous system response after completing the 30-day intensive protocol.
                 </p>
               </div>
             </ScrollReveal>

@@ -215,6 +215,30 @@ export default function HomePage() {
                 </div>
               </ScrollReveal>
             </div>
+
+            {/* CLIENT FEEDBACK: OBJECTION HANDLER */}
+            <ScrollReveal delay={600}>
+              <div className="mt-12 max-w-4xl mx-auto">
+                <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft-lg border-l-4 border-sea-sage bg-gradient-to-br from-sea-sage/5 via-seafoam/5 to-golden-shell/5">
+                  <h4 className="text-lg md:text-xl font-bold text-sea-sage mb-6 uppercase tracking-wide">
+                    Client Feedback: The Advantage of a Non-Human Instrument
+                  </h4>
+                  
+                  <blockquote className="mb-6">
+                    <p className="text-lg md:text-xl leading-relaxed text-body italic mb-4">
+                      "I feel like I could get in my head a lot more if I was in front of a person... it's distracting because you're... aware of that person. And that awareness is kind of splitting your concentration away from the task itself.
+                    </p>
+                    <p className="text-lg md:text-xl leading-relaxed text-body italic">
+                      It's like the judgement, the just random thoughts of like, how should I be reacting right now? What are they thinking about me, my reaction?"
+                    </p>
+                  </blockquote>
+                  
+                  <footer className="text-base md:text-lg font-bold text-sea-sage">
+                    — Melissa, Graduate of The Anxiety Protocol.
+                  </footer>
+                </div>
+              </div>
+            </ScrollReveal>
           </div>
         </Container>
       </section>

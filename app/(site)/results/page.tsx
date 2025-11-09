@@ -31,17 +31,16 @@ export default function ResultsPage() {
           <div className="max-w-5xl mx-auto">
             <ScrollReveal>
               <div className="text-center mb-12">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pebble border border-dune-shadow mb-6">
-                  <span className="w-2 h-2 bg-seafoam rounded-full animate-pulse"></span>
-                  <span className="text-sm font-medium text-sea-sage">Evidence-Based Outcomes</span>
-                </div>
-                
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-sea-sage mb-6">
-                  Verifiable Results: A Deconstruction of Client Outcomes
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-sea-sage mb-4">
+                  A New Outcome is Possible.
                 </h1>
                 
+                <h2 className="text-2xl md:text-3xl font-semibold text-sea-sage/80 mb-8">
+                  Here is the Evidence.
+                </h2>
+                
                 <p className="text-lg md:text-xl text-body leading-relaxed max-w-3xl mx-auto">
-                  We measure success through verifiable system upgrades. The following are deconstructions of recent, successful protocols.
+                  If you recognized yourself in the Veteran's Protocol, this may be the most important page on this site. It is the verifiable proof that a different outcome is not just possible, but predictable when you use the right tool. The following are clinical deconstructions of successful client protocols.
                 </p>
               </div>
             </ScrollReveal>
@@ -60,14 +59,14 @@ export default function ResultsPage() {
                   <div className="flex items-center justify-between flex-wrap gap-4">
                     <div>
                       <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
-                        Case File: 001 (Foundational)
+                        The Foundational Case Study: Melissa
                       </h2>
                       <p className="text-lg text-white/90 font-mono">
                         <strong>Identifier:</strong> Melissa, 22, Psychology Student.
                       </p>
                     </div>
                     <div className="px-4 py-2 bg-white/20 backdrop-blur-sm rounded-xl border border-white/30">
-                      <span className="text-sm font-bold text-white uppercase tracking-wide">Primary Case Study</span>
+                      <span className="text-sm font-bold text-white uppercase tracking-wide">A Deconstruction of a System Upgrade</span>
                     </div>
                   </div>
                 </div>
@@ -226,46 +225,6 @@ export default function ResultsPage() {
                     </div>
                   </div>
                 </div>
-
-                {/* Footer Bar */}
-                <div className="bg-sea-sage/5 px-8 md:px-12 py-6 border-t border-dune-shadow">
-                  <p className="text-sm text-soft-clay italic text-center">
-                    This case study represents a comprehensive deconstruction of the protocol's mechanisms and efficacy. Client consent obtained for educational use.
-                  </p>
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
-        </Container>
-      </section>
-
-      {/* PRIMARY VIDEO EVIDENCE */}
-      <section className="py-12 md:py-16 bg-warm-linen/50">
-        <Container>
-          <div className="max-w-4xl mx-auto">
-            <ScrollReveal>
-              <div className="mb-8">
-                <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                  Video Evidence: Debrief with Alex, Product Lead.
-                </h2>
-                <p className="text-lg text-body leading-relaxed">
-                  Watch Alex describe the verifiable changes in their nervous system response after completing the 30-day intensive protocol.
-                </p>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={100}>
-              <div className="glass-effect rounded-3xl p-4 shadow-soft-lg ring-1 ring-dune-shadow">
-                {/* VIDEO PLACEHOLDER - Replace with actual embed code */}
-                <div className="relative aspect-video bg-gradient-to-br from-sea-sage/20 to-seafoam/20 rounded-2xl flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <svg className="w-20 h-20 mx-auto text-sea-sage/40" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
-                    </svg>
-                    <p className="text-sea-sage/60 font-medium">Video Embed Placeholder</p>
-                    <p className="text-sm text-soft-clay">Replace this section with your video embed code</p>
-                  </div>
-                </div>
               </div>
             </ScrollReveal>
           </div>
@@ -285,7 +244,7 @@ export default function ResultsPage() {
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-12 text-center">
-                Proof of Concept: Deconstructed
+                Further Case Deconstructions
               </h2>
             </ScrollReveal>
 
@@ -325,7 +284,7 @@ export default function ResultsPage() {
                     </div>
 
                     <div className="bg-warm-linen/70 rounded-2xl p-6 border-l-4 border-seafoam">
-                      <h4 className="text-xl font-bold text-sea-sage mb-3">Verification of System Upgrade (Client Debrief):</h4>
+                      <h4 className="text-xl font-bold text-sea-sage mb-3">Outcome Verification (In Their Own Words):</h4>
                       <blockquote className="text-body leading-7 italic">
                         "Last week in the High Court, I felt the old adrenaline surge, but it was different. It felt like data, not a threat. The hijack never launched. I had full, calm access to my case notes and my argument. It wasn't that I 'coped' with the anxiety; the underlying alarm system had been recalibrated. I didn't just win the case; I got my career back."
                       </blockquote>
@@ -376,7 +335,7 @@ export default function ResultsPage() {
                     </div>
 
                     <div className="bg-warm-linen/70 rounded-2xl p-6 border-l-4 border-seafoam">
-                      <h4 className="text-xl font-bold text-sea-sage mb-3">Verification of System Upgrade (Client Debrief):</h4>
+                      <h4 className="text-xl font-bold text-sea-sage mb-3">Outcome Verification (In Their Own Words):</h4>
                       <blockquote className="text-body leading-7 italic">
                         "The difference is night and day. I used to lie awake for hours running worst-case scenarios. Now, when my mind starts spiralling, I have the tools to interrupt it immediately. I made three major strategic decisions last month without the paralysing anxiety that used to accompany them. My team has noticed the change. This wasn't therapy—it was retraining."
                       </blockquote>
@@ -427,7 +386,7 @@ export default function ResultsPage() {
                     </div>
 
                     <div className="bg-warm-linen/70 rounded-2xl p-6 border-l-4 border-seafoam">
-                      <h4 className="text-xl font-bold text-sea-sage mb-3">Verification of System Upgrade (Client Debrief):</h4>
+                      <h4 className="text-xl font-bold text-sea-sage mb-3">Outcome Verification (In Their Own Words):</h4>
                       <blockquote className="text-body leading-7 italic">
                         "I performed my first complex cardiac procedure in eighteen months last week. My hands were steady, my mind was clear, and the intrusive thoughts never came. The protocol gave me back what I thought I'd lost permanently: confidence in my own nervous system. I'm not just functioning—I'm operating at the level I trained for."
                       </blockquote>
@@ -447,10 +406,10 @@ export default function ResultsPage() {
             <ScrollReveal>
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                  The Aggregate Data: Proof of Protocol Efficacy
+                  The Aggregate Data: A Predictable Pattern of Success
                 </h2>
                 <p className="text-lg text-body leading-relaxed max-w-3xl mx-auto">
-                  Our commitment to engineering requires a commitment to data. Whilst individual results vary, we track aggregate metrics across all clients to ensure the continued efficacy of our protocol.
+                  While every individual's protocol is unique, we track aggregate data across all clients to ensure the effectiveness of our model. The data reveals a consistent and predictable pattern of progress.
                 </p>
               </div>
             </ScrollReveal>
@@ -618,10 +577,10 @@ export default function ResultsPage() {
                 
                 <div className="relative p-10 md:p-16 text-center">
                   <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                    The Protocol is Proven. The System is Repeatable.
+                    You Have Seen the Evidence.
                   </h2>
                   <p className="text-lg text-white/95 leading-8 max-w-2xl mx-auto mb-8">
-                    These results are not anomalies. They are the predictable outcome of a structured, data-driven engineering approach to nervous system recalibration. The protocol works.
+                    These results are the product of a repeatable, structured protocol. The next logical step is to understand the investment required to achieve your own outcome.
                   </p>
                   
                   <Link

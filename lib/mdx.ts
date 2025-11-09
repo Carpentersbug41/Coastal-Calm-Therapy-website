@@ -11,6 +11,8 @@ export const FrontmatterSchema = z.object({
   description: z.string(),
   tags: z.array(z.string()),
   cover: z.string().optional(),
+  // Featured location tags for dynamic content integration
+  featuredLocations: z.array(z.enum(['homepage-feature', 'science-hardware-link', 'science-software-link'])).optional().default([]),
 });
 
 export type Frontmatter = z.infer<typeof FrontmatterSchema>;

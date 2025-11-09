@@ -87,3 +87,33 @@ export function getAllTags(): string[] {
   return Array.from(tagSet).sort();
 }
 
+/**
+ * Get posts by featured location tag
+ * @param location - The featured location to filter by
+ * @param limit - Optional limit on number of posts to return
+ * @returns Posts that have the specified featured location tag, sorted by date (newest first)
+ */
+export function getPostsByFeaturedLocation(
+  location: 'homepage-feature' | 'science-hardware-link' | 'science-software-link',
+  limit?: number
+): Post[] {
+  const allPosts = getAllPostsSorted();
+  
+  const filteredPosts = allPosts.filter((post) => 
+    post.featuredLocations && post.featuredLocations.includes(location)
+  );
+
+  return limit ? filteredPosts.slice(0, limit) : filteredPosts;
+}
+
+/**
+ * Get the most recent post for a featured location
+ * Useful for single-article placements like The Science page links
+ */
+export function getFeaturedPost(
+  location: 'homepage-feature' | 'science-hardware-link' | 'science-software-link'
+): Post | null {
+  const posts = getPostsByFeaturedLocation(location, 1);
+  return posts.length > 0 ? posts[0] : null;
+}
+

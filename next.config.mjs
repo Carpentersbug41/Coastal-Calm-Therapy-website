@@ -10,6 +10,27 @@ const nextConfig = {
   experimental: {
     mdxRs: false,
   },
+  
+  // Redirects
+  async redirects() {
+    return [
+      {
+        source: '/about',
+        destination: '/the-architect',
+        permanent: true, // 301 redirect
+      },
+      {
+        source: '/blog',
+        destination: '/articles',
+        permanent: true, // 301 redirect
+      },
+      {
+        source: '/blog/:slug*',
+        destination: '/articles/:slug*',
+        permanent: true, // 301 redirect
+      },
+    ];
+  },
 };
 
 const withMDX = createMDX({

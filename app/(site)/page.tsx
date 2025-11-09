@@ -3,10 +3,11 @@ import { Container } from '@/components/container'
 import { ScrollReveal } from '@/components/scroll-reveal'
 import { OrganizationSchema, ServiceSchema } from '@/components/structured-data'
 import { Metadata } from 'next'
+import { getPostsByFeaturedLocation } from '@/lib/posts'
 
 export const metadata: Metadata = {
   title: 'Still Stuck After a Year in Therapy? - The Anxiety Protocol',
-  description: 'You haven\'t failed. You\'ve been failed by a system with a fatal design flaw. The Anxiety Protocol: A 30-day engineering solution for those who have done the talking.',
+  description: 'You were given the wrong tool. We built the right one. A structured, 30-day intensive designed to install the core skills for autonomy through neurologically significant practice.',
   keywords: [
     'anxiety treatment',
     'anxiety therapy UK',
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Still Stuck After a Year in Therapy? - The Anxiety Protocol',
-    description: 'You haven\'t failed. You\'ve been failed by a system with a fatal design flaw. A 30-day engineering solution for those who have done the talking.',
+    description: 'You were given the wrong tool. We built the right one. A structured, 30-day intensive designed to install the core skills for autonomy through neurologically significant practice.',
     url: '/',
     type: 'website',
   },
@@ -39,6 +40,10 @@ export const metadata: Metadata = {
 }
 
 export default function HomePage() {
+  // Dynamically fetch featured articles for "Required Reading" section
+  // Returns the 2 most recent articles tagged with 'homepage-feature'
+  const featuredArticles = getPostsByFeaturedLocation('homepage-feature', 2);
+
   return (
     <>
       {/* Structured Data for SEO */}
@@ -57,54 +62,50 @@ export default function HomePage() {
                 Still Stuck After a Year in Therapy?
               </h1>
               
-              <h3 className="text-2xl md:text-3xl font-bold text-body mb-8">
-                You haven't failed. You've been failed by a system with a fatal design flaw.
-              </h3>
+              <h2 className="text-2xl md:text-3xl font-bold text-body mb-8">
+                You Were Given the Wrong Tool. We Built the Right One.
+              </h2>
 
               <div className="space-y-4 text-lg leading-8 text-body mb-8 text-left max-w-4xl mx-auto">
-                <p>You've done the talking. You've paid the bills. You've been patient. Yet the physical, disproportionate hijack of anxiety still runs your life. The old model has no answer for this, so the unspoken conclusion is that the failure is yours.</p>
-                
-                <p className="font-bold">That is not a diagnosis. It is an excuse.</p>
-                
-                <p>The problem was never your effort. It's that the weekly, talk-based model delivers a <strong>neurologically insignificant dosage</strong>. It is the wrong tool for a hardware-level problem. We don't intend to fix that broken system. We have engineered its replacement.</p>
+                <p>You have done the work. You have analyzed the story. But the physical, physiological hijack of anxiety remains. The problem isn't a lack of insight; it is a lack of the right kind of practice. To recalibrate a hardware-level problem, you need a neurologically significant dose of training, not more conversation.</p>
               </div>
 
               <Link
                 href="/protocol"
                 className="group inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-sea-sage text-white font-medium shadow-soft hover:shadow-soft-lg hover:bg-golden-shell hover:text-olive-grey hover:scale-105 transition-all duration-300"
               >
-                <span>VIEW THE BLUEPRINT</span>
+                <span>Explore The Protocol</span>
                 <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Link>
             </ScrollReveal>
 
-            {/* NEW CONTENT: THREE SYSTEMIC FAILURES */}
+            {/* NEW CONTENT: DIAGNOSIS OF THE OLD MODEL */}
             <ScrollReveal delay={100}>
               <h3 className="text-2xl md:text-3xl font-bold text-sea-sage mt-16 mb-8 text-center">
-                We Engineered Our Protocol Against Three Systemic Failures:
+                A Diagnosis of the Old Model's Design Flaws
               </h3>
               
               <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 <div className="glass-effect rounded-3xl p-6 shadow-soft border border-dune-shadow">
-                  <h4 className="text-xl font-bold text-sea-sage mb-3">1. Misaligned Financial Incentives</h4>
+                  <h4 className="text-xl font-bold text-sea-sage mb-3">1. Indefinite Timelines</h4>
                   <p className="text-body leading-7">
-                    The old model profits from your continued attendance, not your rapid graduation. Our fixed-term, fixed-price intensive aligns our success directly with yours.
+                    The traditional model often lacks a defined endpoint, fostering dependency. Our protocol is a fixed-term, 30-day intensive designed to install the core skills for autonomy.
                   </p>
                 </div>
 
                 <div className="glass-effect rounded-3xl p-6 shadow-soft border border-dune-shadow">
-                  <h4 className="text-xl font-bold text-sea-sage mb-3">2. Insufficient Dosage</h4>
+                  <h4 className="text-xl font-bold text-sea-sage mb-3">2. Insignificant Dosage</h4>
                   <p className="text-body leading-7">
-                    One hour a week is a mathematical impossibility for overwriting a conditioned response. Our system is engineered to deliver a 15x therapeutic dosage.
+                    One hour a week is a mathematical and neurological impossibility for overwriting a deeply conditioned response. Our system is engineered for high-repetition practice.
                   </p>
                 </div>
 
                 <div className="glass-effect rounded-3xl p-6 shadow-soft border border-dune-shadow">
-                  <h4 className="text-xl font-bold text-sea-sage mb-3">3. An Over-Reliance on "Talk"</h4>
+                  <h4 className="text-xl font-bold text-sea-sage mb-3">3. Insight Without Installation</h4>
                   <p className="text-body leading-7">
-                    Insight is not a skill. Talking about the faulty hardware does not fix it. Our protocol focuses on high-repetition practice to recalibrate your system.
+                    Talking about a faulty alarm system doesn't fix it. Real change requires installing and automating new skills at the level of the nervous system, not just discussing them.
                   </p>
                 </div>
               </div>
@@ -113,17 +114,55 @@ export default function HomePage() {
         </Container>
       </section>
 
-      {/* SECTION 4: THE UNFAIR ADVANTAGE */}
+      {/* SECTION 3.5: REQUIRED READING FROM THE BRIEFING ROOM */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-soft-clay/10 to-golden-shell/10">
+        <Container>
+          <div className="max-w-5xl mx-auto">
+            <ScrollReveal>
+              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6 text-center">
+                From The Briefing Room: Required Reading
+              </h2>
+              
+              <p className="text-lg leading-8 text-body mb-12 text-center">
+                For a deeper clinical analysis of the principles that drive our protocol, the following briefings are essential.
+              </p>
+            </ScrollReveal>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {featuredArticles.map((article, index) => (
+                <ScrollReveal key={article.slug} delay={100 + (index * 100)}>
+                  <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border border-dune-shadow h-full flex flex-col">
+                    <h3 className="text-2xl font-bold text-sea-sage mb-4">
+                      {article.title}
+                    </h3>
+                    <p className="text-base leading-7 text-body mb-6 flex-grow">
+                      {article.description}
+                    </p>
+                    <Link
+                      href={`/articles/${article.slug}`}
+                      className="inline-flex items-center justify-center rounded-2xl px-6 py-3 bg-sea-sage/10 text-sea-sage font-medium border-2 border-sea-sage hover:bg-sea-sage hover:text-white transition-all duration-300"
+                    >
+                      Read the Briefing
+                    </Link>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* SECTION 4: THE CORE PROTOCOL */}
       <section className="py-16 md:py-20 bg-gradient-to-br from-sea-sage/5 to-seafoam/5">
         <Container>
           <div className="max-w-5xl mx-auto">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6 text-center">
-                Our Unfair Advantage: A Radical Re-Engineering of Dosage.
+                The Core of the Protocol: Neurologically Significant Dosage
               </h2>
               
               <p className="text-lg leading-8 text-body mb-12 text-center">
-                The core flaw of the old model is mathematical. Our protocol solves it by delivering a volume and quality of targeted practice that is structurally impossible for any human-only model to replicate.
+                Lasting change in the nervous system is a biological process that requires a high volume of quality repetitions. Our hybrid model is engineered to provide a therapeutic dose that is structurally impossible for a human-only model to replicate.
               </p>
             </ScrollReveal>
 
@@ -160,14 +199,8 @@ export default function HomePage() {
             </ScrollReveal>
 
             {/* THREE-COMPONENT SYSTEM */}
-            <ScrollReveal delay={200}>
-              <h3 className="text-2xl md:text-3xl font-bold text-sea-sage mb-8 text-center">
-                Our Three-Component System:
-              </h3>
-            </ScrollReveal>
-
             <div className="grid md:grid-cols-3 gap-8">
-              {/* Component 1: The Human Strategist */}
+              {/* Component 1: The Human Architect */}
               <ScrollReveal delay={300}>
                 <div className="glass-effect rounded-3xl p-6 shadow-soft-lg border border-dune-shadow h-full">
                   <div className="flex justify-center mb-4">
@@ -175,15 +208,14 @@ export default function HomePage() {
                       1
                     </div>
                   </div>
-                  <h4 className="text-xl font-bold text-sea-sage mb-3 text-center">The Human Strategist</h4>
-                  <p className="text-sm uppercase tracking-wide text-soft-clay mb-3 text-center">(The Architect)</p>
+                  <h4 className="text-xl font-bold text-sea-sage mb-3 text-center">The Human Architect</h4>
                   <p className="text-body leading-7">
-                    Your protocol is designed and overseen by a human Clinical Engineer. Their sole function is high-level diagnosis, data analysis, and strategic adjustment of your protocol. They are the architect, not the labour.
+                    Your protocol is designed and personally overseen by a human expert. Their role is pure strategy: to conduct your deep-diagnostic, architect your therapeutic blueprint, and analyze your data to make critical course corrections.
                   </p>
                 </div>
               </ScrollReveal>
 
-              {/* Component 2: The Clinical Check-in */}
+              {/* Component 2: The Therapeutic Engine */}
               <ScrollReveal delay={400}>
                 <div className="glass-effect rounded-3xl p-6 shadow-soft-lg border border-dune-shadow h-full">
                   <div className="flex justify-center mb-4">
@@ -191,15 +223,14 @@ export default function HomePage() {
                       2
                     </div>
                   </div>
-                  <h4 className="text-xl font-bold text-sea-sage mb-3 text-center">The Clinical Check-in</h4>
-                  <p className="text-sm uppercase tracking-wide text-soft-clay mb-3 text-center">(The Therapeutic Engine)</p>
+                  <h4 className="text-xl font-bold text-sea-sage mb-3 text-center">The Therapeutic Engine</h4>
                   <p className="text-body leading-7">
-                    2-3 times per week, you will engage in a full therapeutic session with our AI-led instrument. It executes your human-designed protocol with perfect fidelity and zero ego. This is where the deep clinical work is done.
+                    Your human-designed plan is executed by our precision AI instrument. It ensures a level of consistency and focus that creates a uniquely safe and effective environment for the deep clinical work, free from the variables of human judgment.
                   </p>
                 </div>
               </ScrollReveal>
 
-              {/* Component 3: The Somatic Drill */}
+              {/* Component 3: The Somatic Gym */}
               <ScrollReveal delay={500}>
                 <div className="glass-effect rounded-3xl p-6 shadow-soft-lg border border-dune-shadow h-full">
                   <div className="flex justify-center mb-4">
@@ -207,182 +238,82 @@ export default function HomePage() {
                       3
                     </div>
                   </div>
-                  <h4 className="text-xl font-bold text-sea-sage mb-3 text-center">The Somatic Drill</h4>
-                  <p className="text-sm uppercase tracking-wide text-soft-clay mb-3 text-center">(The High-Repetition Gym)</p>
+                  <h4 className="text-xl font-bold text-sea-sage mb-3 text-center">The Somatic Gym</h4>
                   <p className="text-body leading-7">
-                    1-2 times per day, you will run targeted drills prescribed by your Strategist. This is your somatic gym where you build the thousands of "reps" necessary to make new neural pathways automatic.
+                    Daily, targeted drills prescribed by your Architect. This is your high-repetition practice environment, where you build the new neural pathways until they become automatic.
                   </p>
                 </div>
               </ScrollReveal>
             </div>
 
-            {/* CLIENT FEEDBACK: OBJECTION HANDLER */}
-            <ScrollReveal delay={600}>
-              <div className="mt-12 max-w-4xl mx-auto">
-                <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft-lg border-l-4 border-sea-sage bg-gradient-to-br from-sea-sage/5 via-seafoam/5 to-golden-shell/5">
-                  <h4 className="text-lg md:text-xl font-bold text-sea-sage mb-6 uppercase tracking-wide">
-                    Client Feedback: The Advantage of a Non-Human Instrument
-                  </h4>
-                  
-                  <blockquote className="mb-6">
-                    <p className="text-lg md:text-xl leading-relaxed text-body italic mb-4">
-                      "I feel like I could get in my head a lot more if I was in front of a person... it's distracting because you're... aware of that person. And that awareness is kind of splitting your concentration away from the task itself.
-                    </p>
-                    <p className="text-lg md:text-xl leading-relaxed text-body italic">
-                      It's like the judgement, the just random thoughts of like, how should I be reacting right now? What are they thinking about me, my reaction?"
-                    </p>
-                  </blockquote>
-                  
-                  <footer className="text-base md:text-lg font-bold text-sea-sage">
-                    — Melissa, Graduate of The Anxiety Protocol.
-                  </footer>
-                </div>
-              </div>
-            </ScrollReveal>
           </div>
         </Container>
       </section>
 
-      {/* SECTION 5: THE OUTCOME */}
+      {/* SECTION 5: RESULT AND PROOF */}
       <section className="py-16 md:py-20">
         <Container>
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6 text-center">
-                The Result: A Return of Your Future.
+                The Advantage of a Purpose-Built Instrument
               </h2>
               
               <p className="text-lg leading-8 text-body mb-10 text-center">
-                The primary pain of anxiety is not the feeling itself. It is the <strong>opportunity cost</strong>. The promotion you didn't chase, the business you didn't build, the life you are not living. We are not selling a reduction in symptoms. We are selling a return of your future.
+                A core part of the protocol is creating the optimal environment for practice. For many, this means removing the social friction and self-consciousness that comes with a human audience, allowing for a deeper level of focus.
               </p>
             </ScrollReveal>
 
             <ScrollReveal delay={100}>
               <blockquote className="glass-effect rounded-3xl p-8 md:p-12 shadow-soft-lg border border-dune-shadow bg-gradient-to-br from-sea-sage/5 to-seafoam/5">
                 <p className="text-xl md:text-2xl leading-relaxed text-body italic mb-6">
-                  "Three months ago, a critical project deadline would have sent me into a multi-day spiral. Last week, I navigated it with a sense of focused calm I didn't think was possible. This wasn't about 'managing' my anxiety; it was about getting a functional upgrade. I got my future back."
+                  "I feel like I could get in my head a lot more if I was in front of a person... it's distracting because you're aware of that person. And that awareness is kind of splitting your concentration away from the task itself. It's like the judgement, the just random thoughts of like, how should I be reacting right now? What are they thinking about me, my reaction?"
                 </p>
                 <footer className="text-lg font-bold text-sea-sage">
-                  — Alex, Product Lead
+                  — Melissa, Graduate of The Anxiety Protocol
                 </footer>
               </blockquote>
             </ScrollReveal>
-          </div>
-        </Container>
-      </section>
 
-
-      {/* SECTION 6: THE COMMITMENT CONTRACT (THE FILTER) */}
-      <section className="py-16 md:py-20">
-        <Container>
-          <div className="max-w-5xl mx-auto">
-            <ScrollReveal>
-              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6 text-center">
-                This Protocol is a High-Expectation Contract.
-              </h2>
-              
-              <p className="text-lg leading-8 text-body mb-12 text-center">
-                We have engineered a high-performance system, and it demands commitment. We are rigorous in our selection process because our reputation is forged by a single metric: the undeniable success of the individuals we work with. We do not accept ambivalence. We select for dedication.
-              </p>
+            <ScrollReveal delay={200}>
+              <div className="text-center mt-10">
+                <Link
+                  href="/results"
+                  className="group inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-sea-sage text-white font-medium shadow-soft hover:shadow-soft-lg hover:bg-golden-shell hover:text-olive-grey hover:scale-105 transition-all duration-300"
+                >
+                  <span>See More Verifiable Results</span>
+                  <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
             </ScrollReveal>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* FOR YOU */}
-              <ScrollReveal delay={100}>
-                <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border-2 border-sea-sage h-full">
-                  <h3 className="text-2xl font-bold text-sea-sage mb-6 text-center">THIS PROTOCOL IS FOR YOU IF:</h3>
-                  <ul className="space-y-4 text-body leading-7">
-                    <li className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-sea-sage flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>You are a therapy veteran fed up with a lack of tangible progress.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-sea-sage flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>You are ready to stop talking and start executing a plan.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-sea-sage flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>You value data, structure, and a defined outcome.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-sea-sage flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>You are ruthlessly committed to solving this problem, now.</span>
-                    </li>
-                  </ul>
-                </div>
-              </ScrollReveal>
-
-              {/* NOT FOR YOU */}
-              <ScrollReveal delay={200}>
-                <div className="glass-effect rounded-3xl p-8 shadow-soft-lg border-2 border-soft-clay h-full">
-                  <h3 className="text-2xl font-bold text-soft-clay mb-6 text-center">THIS IS NOT FOR YOU IF:</h3>
-                  <ul className="space-y-4 text-body leading-7">
-                    <li className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-soft-clay flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                      <span>You are looking for a supportive space for open-ended talk.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-soft-clay flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                      <span>You are not prepared to commit to daily drills for 30 days.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-soft-clay flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                      <span>You want a passive process or are not ready to be accountable.</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-6 h-6 text-soft-clay flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                      <span>You are in an acute crisis requiring immediate, long-term human support.</span>
-                    </li>
-                  </ul>
-                </div>
-              </ScrollReveal>
-            </div>
           </div>
         </Container>
       </section>
 
 
-      {/* SECTION 7: THE FINAL CALL TO ACTION */}
+      {/* SECTION 6: THE FINAL CTA */}
       <section className="py-16 md:py-20">
         <Container>
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6 text-center">
-                The Application is the First Diagnostic.
+                This is a New Model. It Requires a New Level of Clarity.
               </h2>
               
-              <p className="text-lg leading-8 text-body mb-8 text-center">
-                Our process begins with your application. It is a diagnostic designed to ensure a mutual fit for this intensive protocol. We accept a maximum of four new individuals per month to ensure the absolute integrity of our strategic oversight.
-              </p>
-              
-              <p className="text-lg leading-8 text-body mb-10 text-center font-medium">
-                If you are ready to get on with it, the work begins now.
+              <p className="text-lg leading-8 text-body mb-10 text-center">
+                This protocol is not for everyone. It is a structured, intensive engagement designed for a specific type of person—the capable, intelligent individual who is ready to move from talking to training. The first step is to determine if you are a fit for the work.
               </p>
             </ScrollReveal>
 
             <ScrollReveal delay={100}>
               <div className="text-center">
                 <Link
-                  href="/apply"
+                  href="/is-this-for-you"
                   className="group inline-flex items-center justify-center rounded-2xl px-10 py-5 bg-sea-sage text-white font-bold text-lg shadow-soft hover:shadow-soft-lg hover:bg-golden-shell hover:text-olive-grey hover:scale-105 transition-all duration-300"
                 >
-                  <span>BEGIN THE DIAGNOSTIC</span>
+                  <span>Is This Protocol For You?</span>
                   <svg className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>

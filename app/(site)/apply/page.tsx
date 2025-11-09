@@ -5,11 +5,11 @@ import { StickyCtaMobile } from '@/components/sticky-cta-mobile';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'The Diagnostic | The Anxiety Protocol',
-  description: 'Begin the diagnostic process. This clinical instrument provides the initial data for your case to determine if The Anxiety Protocol is the correct fit for your specific situation.',
+  title: 'Begin Your Confidential Diagnostic | The Anxiety Protocol',
+  description: 'Start your professional review. Complete our confidential diagnostic to allow our Clinical Architect to determine if our protocol is the correct solution for you.',
   openGraph: {
-    title: 'The Diagnostic | The Anxiety Protocol',
-    description: 'Complete the diagnostic intake. A clinical instrument designed to determine if our 30-day intensive protocol is appropriate for your needs.',
+    title: 'Begin Your Confidential Diagnostic | The Anxiety Protocol',
+    description: 'Start the first step towards a new protocol. A confidential diagnostic to determine if our 30-day intensive is the right fit for your needs.',
     url: '/apply',
     type: 'website',
   },
@@ -33,17 +33,22 @@ export default function ApplyPage() {
               <div className="text-center mb-12">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pebble border border-dune-shadow mb-6">
                   <span className="w-2 h-2 bg-seafoam rounded-full animate-pulse"></span>
-                  <span className="text-sm font-medium text-sea-sage">The Diagnostic</span>
+                  <span className="text-sm font-medium text-sea-sage">Confidential Diagnostic</span>
                 </div>
                 
                 {/* H1 */}
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-sea-sage mb-6">
-                  The First Step: The Clinical Diagnostic
+                  Begin Your Confidential Diagnostic
                 </h1>
+                
+                {/* Sub-headline */}
+                <h2 className="text-2xl md:text-3xl font-semibold text-sea-sage/80 mb-8">
+                  The First Step Towards a New Protocol
+                </h2>
                 
                 {/* Explanation */}
                 <p className="text-lg md:text-xl text-body leading-relaxed max-w-3xl mx-auto">
-                  This is the critical entry point to The Anxiety Protocol. The following is not a contact form; it is a clinical instrument designed to provide the initial data for your case. Your answers will allow us to make an accurate determination of whether our model is the correct fit for your specific situation. Please answer with care and candour.
+                  This is the starting point for our professional review. The following is not a simple contact form, but a confidential diagnostic designed to provide the initial data for your case file. Your candid answers will allow our Clinical Architect to make an accurate, initial determination of whether our model is the correct and most effective solution for you.
                 </p>
               </div>
             </ScrollReveal>
@@ -57,10 +62,10 @@ export default function ApplyPage() {
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                Prerequisites for Application
+                A Final Check for Fit
               </h2>
               <p className="text-lg md:text-xl text-body leading-relaxed mb-8">
-                This is an intensive, 30-day programme engineered for a defined outcome. It is not a substitute for traditional, open-ended therapy. Before proceeding, confirm that you meet the following criteria:
+                Our protocol is a significant commitment. To ensure a successful outcome, please confirm that the following statements accurately describe your situation:
               </p>
             </ScrollReveal>
 
@@ -96,7 +101,7 @@ export default function ApplyPage() {
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage text-center mb-12">
-                Our Process for Determining Fit
+                Our Three-Step Assessment Process
               </h2>
             </ScrollReveal>
 
@@ -107,9 +112,9 @@ export default function ApplyPage() {
                     1
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-sea-sage mb-2">Submit Your Diagnostic Data</h3>
+                    <h3 className="text-xl font-bold text-sea-sage mb-2">You Submit Your Confidential Diagnostic</h3>
                     <p className="text-body leading-7">
-                      Complete the secure, encrypted form below. This is our primary tool for assessing the fit between your needs and our methodology.
+                      Complete the secure, encrypted form below. This allows us to begin a professional review of your case.
                     </p>
                   </div>
                 </div>
@@ -121,9 +126,9 @@ export default function ApplyPage() {
                     2
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-sea-sage mb-2">Clinical Strategist Review</h3>
+                    <h3 className="text-xl font-bold text-sea-sage mb-2">We Conduct a Professional Review</h3>
                     <p className="text-body leading-7">
-                      Your application will be personally reviewed by our Clinical Strategist within 24-48 business hours to determine if the protocol is appropriate.
+                      Your diagnostic will be personally reviewed by our Clinical Architect within 24-48 business hours to determine a potential clinical match.
                     </p>
                   </div>
                 </div>
@@ -135,9 +140,9 @@ export default function ApplyPage() {
                     3
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-sea-sage mb-2">The Strategic Consultation</h3>
+                    <h3 className="text-xl font-bold text-sea-sage mb-2">The Clinical Match Consultation</h3>
                     <p className="text-body leading-7">
-                      If your diagnostic data indicates a strong match, you will be invited to a brief, no-obligation consultation to confirm final alignment before a decision is made.
+                      If the diagnostic indicates a strong fit, you will be invited to a brief, confidential consultation with the Architect to confirm that our protocol is the definitive right choice for you.
                     </p>
                   </div>
                 </div>
@@ -154,7 +159,7 @@ export default function ApplyPage() {
             <ScrollReveal>
               <div className="text-center mb-10">
                 <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                  The Diagnostic Intake
+                  Confidential Diagnostic Form
                 </h2>
               </div>
             </ScrollReveal>
@@ -162,15 +167,6 @@ export default function ApplyPage() {
             <ScrollReveal delay={100}>
               <div className="glass-effect rounded-3xl p-8 md:p-10 shadow-soft-lg ring-1 ring-dune-shadow">
                 <ApplyForm />
-              </div>
-            </ScrollReveal>
-
-            {/* Trust signals directly below form */}
-            <ScrollReveal delay={200}>
-              <div className="mt-8 glass-effect rounded-2xl p-6 text-center ring-1 ring-dune-shadow">
-                <p className="text-sm text-soft-clay leading-relaxed">
-                  <strong className="text-sea-sage">Data Integrity Commitment:</strong> Your submission is confidential and protected by end-to-end encryption on a HIPAA-grade platform. All services are provided by a BACP registered psychotherapist.
-                </p>
               </div>
             </ScrollReveal>
           </div>

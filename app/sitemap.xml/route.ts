@@ -18,7 +18,7 @@ export function GET() {
       priority: 0.95,
     },
     {
-      url: `${siteUrl}/blog`,
+      url: `${siteUrl}/articles`,
       lastModified: new Date().toISOString(),
       changeFrequency: 'daily',
       priority: 0.9,
@@ -44,7 +44,7 @@ export function GET() {
   ];
 
   const postPages = posts.map((post) => ({
-    url: `${siteUrl}/blog/${post.slug}`,
+    url: `${siteUrl}/articles/${post.slug}`,
     lastModified: new Date(post.date).toISOString(),
     changeFrequency: 'monthly',
     priority: 0.8,

@@ -69,7 +69,7 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
         </div>
         <h3 className="text-2xl font-bold text-sea-sage mb-4">Application Received!</h3>
         <p className="text-lg text-body leading-7">
-          Your application is under review. Our Clinical Strategist will personally evaluate your submission and respond within 24–48 business hours.
+          Your application is under review. Our Clinical Architect will personally evaluate your submission and respond within 24–48 business hours.
         </p>
       </div>
     );
@@ -153,7 +153,7 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
           onChange={(e) => setFormData({ ...formData, commitment: e.target.value })}
           className="w-full px-4 py-3 rounded-xl border border-dune-shadow bg-white text-olive-grey focus:outline-none focus:ring-2 focus:ring-sea-sage focus:border-transparent transition-all"
         >
-          <option value="">Please select a rating</option>
+          <option value="">1 = Not ready at all | 10 = Absolutely ready to begin now</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -213,8 +213,8 @@ export function ApplyForm({ variant = 'default' }: ApplyFormProps) {
           )}
         </button>
         
-        <p className="mt-4 text-center text-sm text-soft-clay">
-          Your submission is confidential, encrypted, and will be reviewed by our Clinical Strategist within 24-48 hours.
+        <p className="mt-4 text-center text-sm text-soft-clay leading-relaxed">
+          <strong className="text-sea-sage">Data Integrity Commitment:</strong> Your submission is 100% confidential and protected by end-to-end, HIPAA-grade encryption. All clinical services are provided by a BACP registered psychotherapist.
         </p>
       </div>
     </form>

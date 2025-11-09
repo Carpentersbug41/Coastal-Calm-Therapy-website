@@ -4,11 +4,11 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'The 30-Day Blueprint to Autonomy | The Anxiety Protocol',
-  description: 'This is not a vague therapeutic journey. It is a structured, 30-day engineering project with a single, defined outcome: to make ourselves redundant. A transparent, data-driven process designed to install a new operating system for your nervous system.',
+  title: 'The 30-Day Blueprint for a New Toolkit | The Anxiety Protocol',
+  description: 'This is not a vague therapeutic journey. It is a structured, 30-day intensive designed to install a complete, new toolkit for your nervous system. Our single, defined outcome is to equip you with the skills for lifelong autonomy.',
   openGraph: {
-    title: 'The 30-Day Blueprint to Autonomy | The Anxiety Protocol',
-    description: 'A structured, 30-day engineering project to install a new, more effective operating system for your nervous system. The exact, phased blueprint of your intensive.',
+    title: 'The 30-Day Blueprint for a New Toolkit | The Anxiety Protocol',
+    description: 'A structured, 30-day intensive to install a complete, new toolkit for your nervous system. Our single outcome: to equip you with the skills for lifelong autonomy.',
     url: '/protocol',
     type: 'website',
   },
@@ -25,11 +25,11 @@ export default function ProtocolPage() {
         <ScrollReveal>
           <div className="max-w-4xl mx-auto mb-16 text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-sea-sage mb-6">
-              The 30-Day Blueprint to Autonomy
+              The 30-Day Blueprint for a New Toolkit
             </h1>
             
             <p className="text-xl md:text-2xl leading-8 text-body font-medium">
-              This is not a vague therapeutic 'journey.' It is a structured, 30-day engineering project with a single, defined outcome: to make ourselves redundant. It is a transparent, data-driven process designed to install a new, more effective operating system for your nervous system. Below is the exact, phased blueprint of your intensive.
+              This is not a vague therapeutic 'journey.' It is a structured, 30-day intensive designed to install a complete, new toolkit for your nervous system. Our single, defined outcome is to equip you with the skills for lifelong autonomy. Below is the exact, phased blueprint of how we install and hand over that toolkit.
             </p>
           </div>
         </ScrollReveal>
@@ -43,10 +43,10 @@ export default function ProtocolPage() {
           <ScrollReveal>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                The Three Core Tools of the Protocol
+                Your Three Core Tools
               </h2>
               <p className="text-lg leading-8 text-body max-w-3xl mx-auto">
-                Our system deconstructs the therapeutic process and deploys three distinct tools, each with a specific function. You will interact with all three in a carefully sequenced and integrated manner.
+                To install your new toolkit, you will work with three distinct but integrated tools, each with a specific and powerful function.
               </p>
             </div>
           </ScrollReveal>
@@ -62,11 +62,11 @@ export default function ProtocolPage() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold text-sea-sage">
-                    1. The Human Strategist
+                    1. The Human Architect
                   </h3>
                 </div>
                 <p className="text-base leading-7 text-body">
-                  <strong>Function:</strong> The architect and project lead. A human expert conducts your initial diagnostic, analyses all your session data, provides weekly oversight, and makes all high-level strategic adjustments to your protocol.
+                  <strong>Function:</strong> Your trusted expert and guide. A senior clinician personally designs your protocol, analyzes your data, and provides weekly strategic oversight to ensure you are always on the most effective path.
                 </p>
               </div>
             </ScrollReveal>
@@ -81,11 +81,11 @@ export default function ProtocolPage() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold text-sea-sage">
-                    2. The Clinical Check-in
+                    2. The Therapeutic Engine
                   </h3>
                 </div>
                 <p className="text-base leading-7 text-body">
-                  <strong>Function:</strong> The core therapeutic engine. An AI-led session that executes your human-designed protocol with perfect fidelity. You will engage in 2-3 Check-ins per week to do the deep clinical work and receive your targeted homework.
+                  <strong>Function:</strong> A safe and consistent space for deep work. This AI-led session executes your Architect's plan with perfect fidelity, allowing you to focus entirely on your practice without the variables of human judgment.
                 </p>
               </div>
             </ScrollReveal>
@@ -100,11 +100,11 @@ export default function ProtocolPage() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold text-sea-sage">
-                    3. The Somatic Drill
+                    3. The Somatic Gym
                   </h3>
                 </div>
                 <p className="text-base leading-7 text-body">
-                  <strong>Function:</strong> The high-repetition practice tool. Short, targeted drills prescribed by your Strategist at the appropriate time in your protocol. You will run these daily to build and myelinate the new neural pathways until they become automatic.
+                  <strong>Function:</strong> Your high-repetition practice environment. Daily, targeted drills that build and automate new neural pathways, giving you the thousands of 'reps' required for lasting change.
                 </p>
               </div>
             </ScrollReveal>
@@ -120,7 +120,7 @@ export default function ProtocolPage() {
           <ScrollReveal>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                A Phased Approach to a Verifiable Result
+                A Phased Approach to Installation & Autonomy
               </h2>
             </div>
           </ScrollReveal>
@@ -150,7 +150,7 @@ export default function ProtocolPage() {
                         Days 1-3
                       </p>
                       <p className="text-sm leading-6 text-body">
-                        The project begins with a human-led diagnostic—a person-centred, fact-finding mission to build your "Anxiety Blueprint." Following this, you will conduct your first AI-led Clinical Check-in. We then hold a human feedback session to ensure perfect system calibration and answer any questions before the core work begins.
+                        The intensive begins with a human-led deep-diagnostic to build your personal "Anxiety Blueprint." Following your first AI-led session, we hold a human feedback session to ensure perfect system calibration before the core work begins.
                       </p>
                     </div>
                   </div>
@@ -173,7 +173,7 @@ export default function ProtocolPage() {
                         Days 4-14
                       </p>
                       <p className="text-sm leading-6 text-body">
-                        You will engage in a series of AI-led Clinical Check-ins, each assigning specific, targeted homework. After every 2-3 Check-ins, your Human Strategist will review your session transcripts and data, providing feedback and making precise adjustments to the system prompts for your next block of sessions.
+                        You will engage in a series of AI-led sessions via the Therapeutic Engine, each assigning specific, targeted homework. After every 2-3 sessions, your Human Architect will review your transcripts and data, providing feedback and making precise adjustments to the system prompts for your next block of sessions.
                       </p>
                     </div>
                   </div>
@@ -196,7 +196,7 @@ export default function ProtocolPage() {
                         Days 15-25
                       </p>
                       <p className="text-sm leading-6 text-body">
-                        Once the foundational skills are in place, your Strategist will prescribe and introduce the first Somatic Drills. You will now run these daily in parallel with your Clinical Check-ins. The drills automate the skills, while the check-ins help you integrate them. Your Strategist monitors the data from both tools to optimise your training in the weekly human check-in.
+                        Once the foundational skills are in place, your Architect will prescribe and introduce the first sessions in the Somatic Gym. You will now run these daily in parallel with your Therapeutic Engine sessions. The Gym automates the skills, while the Engine helps you integrate them. Your Architect monitors the data from both tools to optimize your training in the weekly human check-in.
                       </p>
                     </div>
                   </div>
@@ -213,13 +213,13 @@ export default function ProtocolPage() {
                     {/* Phase card */}
                     <div className="glass-effect rounded-2xl p-6 shadow-soft-lg border border-seafoam/40 bg-gradient-to-br from-seafoam/5 to-transparent h-full">
                       <h3 className="text-xl font-bold text-sea-sage mb-2">
-                        The Handover Protocol
+                        The Handover Protocol & Graduation
                       </h3>
                       <p className="text-sm text-seafoam font-semibold mb-3">
                         Days 26-30
                       </p>
                       <p className="text-sm leading-6 text-body">
-                        The final week is focused on making you the lead engineer of your own system. We analyse the full 30 days of performance data and co-create your 'Go-Forward Plan'—the user's manual for your own mind. The final human-led session is not a conclusion; it is a handover, designed to ensure you graduate with radical autonomy.
+                        The final week is focused on the handover. We analyze your 30 days of performance data and co-create your 'Go-Forward Plan'—the user's manual for your own mind. This marks your graduation from the intensive, equipped for autonomy. Ongoing, less-frequent strategic consultation is available to support your long-term success.
                       </p>
                     </div>
                   </div>
@@ -250,7 +250,7 @@ export default function ProtocolPage() {
                     Days 1-3
                   </p>
                   <p className="text-base leading-7 text-body">
-                    The project begins with a human-led diagnostic—a person-centred, fact-finding mission to build your "Anxiety Blueprint." Following this, you will conduct your first AI-led Clinical Check-in. We then hold a human feedback session to ensure perfect system calibration and answer any questions before the core work begins.
+                    The intensive begins with a human-led deep-diagnostic to build your personal "Anxiety Blueprint." Following your first AI-led session, we hold a human feedback session to ensure perfect system calibration before the core work begins.
                   </p>
                 </div>
               </div>
@@ -273,7 +273,7 @@ export default function ProtocolPage() {
                     Days 4-14
                   </p>
                   <p className="text-base leading-7 text-body">
-                    You will engage in a series of AI-led Clinical Check-ins, each assigning specific, targeted homework. After every 2-3 Check-ins, your Human Strategist will review your session transcripts and data, providing feedback and making precise adjustments to the system prompts for your next block of sessions.
+                    You will engage in a series of AI-led sessions via the Therapeutic Engine, each assigning specific, targeted homework. After every 2-3 sessions, your Human Architect will review your transcripts and data, providing feedback and making precise adjustments to the system prompts for your next block of sessions.
                   </p>
                 </div>
               </div>
@@ -296,7 +296,7 @@ export default function ProtocolPage() {
                     Days 15-25
                   </p>
                   <p className="text-base leading-7 text-body">
-                    Once the foundational skills are in place, your Strategist will prescribe and introduce the first Somatic Drills. You will now run these daily in parallel with your Clinical Check-ins. The drills automate the skills, while the check-ins help you integrate them. Your Strategist monitors the data from both tools to optimise your training in the weekly human check-in.
+                    Once the foundational skills are in place, your Architect will prescribe and introduce the first sessions in the Somatic Gym. You will now run these daily in parallel with your Therapeutic Engine sessions. The Gym automates the skills, while the Engine helps you integrate them. Your Architect monitors the data from both tools to optimize your training in the weekly human check-in.
                   </p>
                 </div>
               </div>
@@ -311,13 +311,13 @@ export default function ProtocolPage() {
                 
                 <div className="glass-effect rounded-2xl p-6 shadow-soft border border-seafoam/40 bg-gradient-to-br from-seafoam/5 to-transparent">
                   <h3 className="text-xl font-bold text-sea-sage mb-2">
-                    The Handover Protocol
+                    The Handover Protocol & Graduation
                   </h3>
                   <p className="text-sm text-seafoam font-semibold mb-3">
                     Days 26-30
                   </p>
                   <p className="text-base leading-7 text-body">
-                    The final week is focused on making you the lead engineer of your own system. We analyse the full 30 days of performance data and co-create your 'Go-Forward Plan'—the user's manual for your own mind. The final human-led session is not a conclusion; it is a handover, designed to ensure you graduate with radical autonomy.
+                    The final week is focused on the handover. We analyze your 30 days of performance data and co-create your 'Go-Forward Plan'—the user's manual for your own mind. This marks your graduation from the intensive, equipped for autonomy. Ongoing, less-frequent strategic consultation is available to support your long-term success.
                   </p>
                 </div>
               </div>
@@ -334,7 +334,7 @@ export default function ProtocolPage() {
           <ScrollReveal>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-4">
-                Your Data, Your Blueprint: A Transparent Feedback Loop
+                A Fully Transparent, Data-Driven Process
               </h2>
               <p className="text-lg leading-8 text-body max-w-3xl mx-auto">
                 This is a data-driven protocol. After every Clinical Check-in, you receive a complete toolkit to ensure total transparency and accountability.
@@ -404,7 +404,7 @@ export default function ProtocolPage() {
           <ScrollReveal delay={400}>
             <div className="mt-8 text-center">
               <p className="text-base leading-7 text-body max-w-2xl mx-auto">
-                This feedback loop ensures you are a fully informed, active partner in your own engineering project.
+                This feedback loop ensures you are a fully informed and capable partner in your own progress.
               </p>
             </div>
           </ScrollReveal>
@@ -418,13 +418,13 @@ export default function ProtocolPage() {
         <ScrollReveal delay={450}>
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-8">
-              The Blueprint is Engineered for a Result.
+              This Blueprint is Designed for a Verifiable Result.
             </h2>
             <Link
               href="/results"
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-sea-sage to-seafoam rounded-2xl hover:shadow-soft-lg hover:scale-105 transition-all duration-300 shadow-soft"
             >
-              <span>See the Evidence</span>
+              <span>See the Verifiable Results</span>
               <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

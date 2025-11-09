@@ -5,10 +5,10 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Investment - The Anxiety Protocol',
-  description: 'A fixed price of £2,500 for a defined outcome. Calculate the cost of inaction before considering our fee. An investment in radical autonomy.',
+  description: 'A fixed investment of £2,500 for a defined installation. The true cost of a miscalibrated nervous system is not the anxiety itself, but the opportunity cost.',
   openGraph: {
     title: 'Investment',
-    description: 'A fixed price for a defined outcome. Calculate the cost of inaction. An investment in radical autonomy.',
+    description: 'A fixed investment for a defined installation. What your investment delivers: a calibrated nervous system and lifelong autonomy.',
   },
 }
 
@@ -25,16 +25,16 @@ export default function InvestmentPage() {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold text-sea-sage mb-8">
-              First, Calculate the Cost of Inaction.
+              First, We Must Consider the Cost of Inaction.
             </h1>
             
             <div className="space-y-6 text-lg leading-8 text-body">
               <p>
-                Before you consider our fee, calculate the price you are already paying. The primary cost of anxiety is not the feeling itself; it is the <strong className="text-sea-sage">opportunity cost</strong>. The promotion you didn't apply for. The business you haven't started. The relationships you're holding back in. The life you could be living.
+                Before considering our fee, it is important to acknowledge the price you are already paying. The true cost of a miscalibrated nervous system is not the anxiety itself, but the <strong className="text-sea-sage">opportunity cost</strong>: the cognitive capacity, the professional confidence, and the future you are holding back on.
               </p>
               
               <p>
-                The old model asks for a small payment every week, indefinitely, ensuring that cost continues to accumulate. We are asking for a one-time investment to eliminate it.
+                The old model accepts this as a recurring cost. We view it as a problem to be solved.
               </p>
             </div>
           </div>
@@ -49,7 +49,7 @@ export default function InvestmentPage() {
         <section className="mb-16 max-w-4xl mx-auto">
           <ScrollReveal delay={100}>
             <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-8">
-              A Fixed Price for a Defined Outcome.
+              A Fixed Investment for a Defined Installation.
             </h2>
             
             <div className="glass-effect rounded-3xl p-8 md:p-12 shadow-soft-lg border border-dune-shadow mb-12">
@@ -96,7 +96,7 @@ export default function InvestmentPage() {
                   <tr className="border-t border-dune-shadow/30 hover:bg-warm-linen/20 transition-colors">
                     <td className="py-5 px-5 md:px-6 font-semibold text-sea-sage">Outcome</td>
                     <td className="py-5 px-5 md:px-6 text-body border-l-2 border-r-2 border-seafoam/30 bg-seafoam/5">
-                      <strong className="text-sea-sage text-base">A Measurable Result & the Tools for Autonomy</strong>
+                      <strong className="text-sea-sage text-base">A Complete Toolkit & the Skills for Lifelong Autonomy</strong>
                     </td>
                     <td className="py-5 px-5 md:px-6 text-body">
                       <strong className="text-sea-sage text-base">Uncertain, Vague Exploration, Potential Dependency</strong>
@@ -105,7 +105,7 @@ export default function InvestmentPage() {
                   <tr className="border-t border-dune-shadow/30 hover:bg-warm-linen/20 transition-colors">
                     <td className="py-5 px-5 md:px-6 font-semibold text-sea-sage rounded-bl-2xl">Dosage</td>
                     <td className="py-5 px-5 md:px-6 text-body border-l-2 border-r-2 border-seafoam/30 bg-seafoam/5">
-                      <strong className="text-sea-sage text-base">The Equivalent of 15+ Sessions/Week</strong>
+                      <strong className="text-sea-sage text-base">The Neurological Equivalent of 15+ Sessions/Week</strong>
                     </td>
                     <td className="py-5 px-5 md:px-6 text-body rounded-br-2xl">
                       <strong className="text-sea-sage text-base">1 Session/Week (Neurologically Insignificant)</strong>
@@ -127,11 +127,11 @@ export default function InvestmentPage() {
           <ScrollReveal delay={200}>
             <div className="max-w-4xl mx-auto mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6">
-                An Investment in Radical Autonomy
+                What Your Investment Delivers
               </h2>
               
               <p className="text-lg leading-8 text-body">
-                You are not buying 'sessions.' You are investing in a permanent system upgrade. The return on this investment is delivered as a verifiable set of assets:
+                You are not buying 'sessions.' You are investing in a permanent capability upgrade. The return on this investment is delivered as a verifiable set of assets:
               </p>
             </div>
             
@@ -145,10 +145,10 @@ export default function InvestmentPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-sea-sage mb-3">
-                  A System Upgrade
+                  A Calibrated Nervous System
                 </h3>
                 <p className="text-base leading-7 text-body">
-                  A re-engineered nervous system that responds to stress with calibrated control, not a chaotic hijack.
+                  A nervous system that has been trained to respond to stress with capability, not chaos.
                 </p>
               </div>
 
@@ -160,10 +160,10 @@ export default function InvestmentPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-sea-sage mb-3">
-                  A Permanent Toolkit
+                  A Lifelong Toolkit
                 </h3>
                 <p className="text-base leading-7 text-body">
-                  The complete set of Somatic Drills and cognitive tools to handle future challenges independently.
+                  The complete set of somatic and cognitive tools to handle future challenges with confidence and independence.
                 </p>
               </div>
 
@@ -210,7 +210,7 @@ export default function InvestmentPage() {
           <ScrollReveal delay={250}>
             <div className="bg-warm-linen/50 rounded-3xl p-8 md:p-12 border border-dune-shadow">
               <h2 className="text-3xl font-bold text-sea-sage mb-6">
-                Our Process: We Select for Fit
+                Our Process: We Select for a Precise Fit
               </h2>
               
               <p className="text-lg leading-8 text-body mb-6">
@@ -218,7 +218,7 @@ export default function InvestmentPage() {
               </p>
 
               <p className="text-lg leading-8 text-body">
-                The first step is to submit an application. If your profile aligns with our protocol, you will be invited to a no-obligation strategic consultation to make a final determination.
+                The first step is to submit an application. If your diagnostic data indicates a strong potential for success with our model, you will be invited to a brief, confidential consultation to determine a final clinical match.
               </p>
             </div>
           </ScrollReveal>
@@ -233,7 +233,7 @@ export default function InvestmentPage() {
               
               <div className="relative p-10 md:p-12 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Stop Paying for an Endless Process. Invest in an Outcome.
+                  Invest in a Definitive Outcome, Not an Endless Process.
                 </h2>
                 <p className="text-lg text-white/95 leading-8 mb-8 max-w-xl mx-auto">
                   If you are ready to make a deliberate investment in your autonomy, the next step is to begin the diagnostic process.
@@ -243,7 +243,7 @@ export default function InvestmentPage() {
                   href="/apply"
                   className="inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-golden-shell text-olive-grey font-medium shadow-soft hover:shadow-soft-lg hover:scale-105 transition-all duration-300"
                 >
-                  <span>Begin the Diagnostic</span>
+                  <span>Begin a Confidential Diagnostic</span>
                   <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>

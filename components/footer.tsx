@@ -66,7 +66,7 @@ export function Footer() {
               </h3>
             </div>
             <p className="text-body mb-4 leading-7">
-              An engineered, 30-day intensive designed to solve anxiety for those failed by the traditional model. We measure success by our own redundancy.
+              A structured, 30-day intensive designed to equip you with the tools to manage anxiety autonomously.
             </p>
             <p className="text-sm font-medium text-sea-sage mb-2">
               Created by Robert Carpenter, Licensed Psychotherapist.
@@ -77,20 +77,23 @@ export function Footer() {
             
             {/* Navigation */}
             <nav className="flex flex-wrap justify-center gap-6 mt-8 pt-6 border-t border-dune-shadow">
-              <Link href="/protocol" className="text-sm text-body hover:text-sea-sage transition-colors">
-                The Protocol
+              <Link href="/the-science" className="text-sm text-body hover:text-sea-sage transition-colors">
+                The Science
               </Link>
-              <Link href="/about" className="text-sm text-body hover:text-sea-sage transition-colors">
-                About
-              </Link>
-              <Link href="/blog" className="text-sm text-body hover:text-sea-sage transition-colors">
-                Insights
+              <Link href="/our-commitment" className="text-sm text-body hover:text-sea-sage transition-colors">
+                Our Commitment
               </Link>
               <Link href="/investment" className="text-sm text-body hover:text-sea-sage transition-colors">
                 Investment
               </Link>
-              <Link href="/apply" className="text-sm text-body hover:text-sea-sage transition-colors">
-                Apply
+              <Link href="/qa" className="text-sm text-body hover:text-sea-sage transition-colors">
+                Q&A
+              </Link>
+              <Link href="/articles" className="text-sm text-body hover:text-sea-sage transition-colors">
+                Articles
+              </Link>
+              <Link href="/contact" className="text-sm text-body hover:text-sea-sage transition-colors">
+                Contact
               </Link>
             </nav>
           </div>

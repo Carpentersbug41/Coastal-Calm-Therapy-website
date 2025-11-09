@@ -7,7 +7,7 @@ export function generateRssFeed(): string {
 
   const rssItems = posts
     .map((post) => {
-      const postUrl = `${siteUrl}/blog/${post.slug}`;
+      const postUrl = `${siteUrl}/articles/${post.slug}`;
       const pubDate = new Date(post.date).toUTCString();
 
       return `

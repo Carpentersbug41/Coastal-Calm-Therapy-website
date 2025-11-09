@@ -57,7 +57,7 @@ export function PostCard({ post }: PostCardProps) {
         {/* Title */}
         <h3 className="text-xl font-bold text-sea-sage mb-3 group-hover:text-golden-shell transition-colors leading-tight">
           <Link 
-            href={`/blog/${post.slug}`} 
+            href={`/articles/${post.slug}`} 
             className="focus:outline-none focus-visible:ring-2 focus-visible:ring-sea-sage rounded-lg"
           >
             <span className="absolute inset-0" aria-hidden="true" />

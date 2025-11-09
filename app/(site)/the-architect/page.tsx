@@ -5,15 +5,15 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About - My Goal is to Make Myself Redundant',
-  description: 'Robert Carpenter is a licensed psychotherapist who was forced to become an engineer. The Anxiety Protocol is a system built not just to manage anxiety, but to solve it.',
+  title: 'The Architect - Your Protocol is Personally Architected by a Clinical Expert',
+  description: 'Robert Carpenter is a licensed psychotherapist and Clinical Architect. The Anxiety Protocol is a system re-engineered from first principles to create lasting change.',
   openGraph: {
-    title: 'About Robert Carpenter - Clinical Engineer',
-    description: 'A licensed psychotherapist forced to become an engineer. Re-engineering therapy for defined outcomes, measurable results, and maximum efficiency.',
+    title: 'The Architect - Robert Carpenter - Clinical Architect',
+    description: 'A licensed psychotherapist and Clinical Architect. The Anxiety Protocol is a system re-engineered from first principles based on the objective data of what actually works.',
   },
 }
 
-export default function AboutPage() {
+export default function TheArchitectPage() {
   return (
     <div className="py-16 md:py-24">
       <Container>
@@ -21,11 +21,11 @@ export default function AboutPage() {
         <ScrollReveal>
           <div className="max-w-4xl mx-auto mb-16 text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-sea-sage mb-6">
-              My Goal is to Make Myself Redundant.
+              Your Protocol is Personally Architected by a Clinical Expert.
             </h1>
             
             <h2 className="text-xl md:text-2xl text-soft-clay">
-              A Statement from Your Clinical Engineer, Robert Carpenter.
+              A Statement on the Irreplaceable Role of Human Strategy.
             </h2>
           </div>
         </ScrollReveal>
@@ -57,25 +57,21 @@ export default function AboutPage() {
           {/* Content */}
           <ScrollReveal direction="right" delay={200} className="order-1 lg:order-2">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-sea-sage mb-2">
-                Robert Carpenter
-              </h2>
-              
-              <p className="text-xl text-soft-clay mb-8">
-                Psychotherapist & Clinical Engineer
+              <p className="text-xl text-soft-clay mb-2">
+                Robert Carpenter, Clinical Architect
               </p>
+              
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-sea-sage mb-8">
+                Licensed Psychotherapist
+              </h2>
               
               <div className="space-y-6 text-lg leading-8 text-body">
                 <p>
-                  I am a licensed psychotherapist who was forced to become an engineer. For years, I applied the best, evidence-based tools of modern therapy, only to watch my most capable clients remain stuck. The data was undeniable: the failure was not in the client; it was in the architecture of the therapeutic model itself.
+                  For years as a licensed psychotherapist, I saw the same frustrating pattern: intelligent, capable clients would do all the work, gain all the insight, and yet remain stuck in the same cycles of anxiety. This led to a single, unavoidable conclusion: the failure was not in the client, but in the fundamental design of the therapeutic model itself.
                 </p>
                 
                 <p>
-                  That professional failure became my obsession. I went back to first principles, deconstructing the entire process to answer one question: <strong>If we were to re-engineer therapy for a defined outcome, measurable results, and maximum efficiency, what would it look like?</strong>
-                </p>
-                
-                <p>
-                  The Anxiety Protocol is the answer. It is a system built not just to manage anxiety, but to solve it.
+                  The Anxiety Protocol is the result of that conclusion—a system re-engineered from first principles, based on the objective data of what actually works to create lasting change.
                 </p>
               </div>
             </div>
@@ -92,12 +88,12 @@ export default function AboutPage() {
           <ScrollReveal delay={300}>
             <div className="mb-8">
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-8 text-center">
-                My Function is Strategic, Not Therapeutic
+                The Architect's Role: Pure Strategy
               </h2>
               
               <div className="max-w-4xl mx-auto mb-12">
                 <p className="text-lg leading-8 text-body">
-                  My function within the 30-day protocol is not that of a traditional therapist. The billable-hour, talk-based model is an inefficient and unreliable vehicle for skill acquisition. My role is purely strategic, focused on the three high-leverage areas where human expertise is irreplaceable:
+                  My role within the 30-day intensive is not that of a traditional, talk-based therapist. It is focused exclusively on the three high-leverage areas where expert human oversight is irreplaceable:
                 </p>
               </div>
             </div>
@@ -110,10 +106,10 @@ export default function AboutPage() {
                   <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-seafoam/10 text-seafoam text-xl font-bold">1</span>
                 </div>
                 <h3 className="text-xl font-bold text-sea-sage mb-3">
-                  Forensic Diagnosis & Blueprint Design
+                  Deep-Dive Diagnostic & Blueprint Design
                 </h3>
                 <p className="text-body leading-7">
-                  I conduct the initial deep-dive analysis to map your unique anxiety algorithm and architect your bespoke 30-day protocol.
+                  I personally conduct the initial analysis to map your unique anxiety system and architect your bespoke 30-day protocol.
                 </p>
               </div>
 
@@ -123,10 +119,10 @@ export default function AboutPage() {
                   <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-seafoam/10 text-seafoam text-xl font-bold">2</span>
                 </div>
                 <h3 className="text-xl font-bold text-sea-sage mb-3">
-                  Data Analysis & Performance Review
+                  Data Analysis & Refinement
                 </h3>
                 <p className="text-body leading-7">
-                  I analyse the objective, verbatim data from your AI-led sessions to track progress, identify leverage points, and find the signal in the noise.
+                  I analyze the objective data from your sessions to track progress, identify leverage points, and refine your protocol in real-time.
                 </p>
               </div>
 
@@ -136,17 +132,17 @@ export default function AboutPage() {
                   <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-seafoam/10 text-seafoam text-xl font-bold">3</span>
                 </div>
                 <h3 className="text-xl font-bold text-sea-sage mb-3">
-                  Strategic Optimisation
+                  Strategic Adjustments
                 </h3>
                 <p className="text-body leading-7">
-                  In our weekly check-ins, I provide the precise, data-driven adjustments required to optimise your protocol for the fastest possible, durable result.
+                  In our weekly check-ins, I provide the precise, data-driven course corrections required to ensure you are on the fastest, most effective path to autonomy.
                 </p>
               </div>
             </div>
             
             <div className="max-w-4xl mx-auto">
               <p className="text-lg leading-8 text-body">
-                The day-to-day, high-repetition practice is executed using the <strong>Clinical Check-in</strong> and the <strong>Somatic Drill</strong>. This division of labour is the core of our model's efficiency. It allows me to provide you with pure, undiluted strategic oversight, ensuring the entire project remains relentlessly focused on the outcome.
+                This division of labour is the core of the protocol's effectiveness. It ensures that the expert human intelligence in the system is dedicated entirely to a single goal: the success of your outcome.
               </p>
             </div>
           </ScrollReveal>
@@ -162,12 +158,8 @@ export default function AboutPage() {
           <ScrollReveal delay={400}>
             <div className="mb-8">
               <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-8 text-center">
-                My Engineering Philosophy
+                Our Guiding Principles
               </h2>
-              
-              <p className="text-lg leading-8 text-body mb-8 text-center">
-                My work is governed by a simple, non-negotiable set of principles. This is the ethos that underpins the entire protocol.
-              </p>
             </div>
             
             <div className="space-y-6">
@@ -177,7 +169,7 @@ export default function AboutPage() {
                   Data Over Dogma
                 </h3>
                 <p className="text-body leading-7">
-                  I am not wedded to any single therapeutic modality, only to the objective data of what works. We follow the evidence, not a pre-written script.
+                  We are not wedded to any single therapeutic modality, only to the objective evidence of what works for you.
                 </p>
               </div>
 
@@ -187,7 +179,7 @@ export default function AboutPage() {
                   Skills Over Insight
                 </h3>
                 <p className="text-body leading-7">
-                  Whilst understanding is useful, it is not a skill. My focus is on equipping you with a verifiable, transportable toolkit that functions under real-world pressure.
+                  While understanding is useful, our focus is on equipping you with a verifiable, transportable toolkit that functions under real-world pressure.
                 </p>
               </div>
 
@@ -197,7 +189,7 @@ export default function AboutPage() {
                   Autonomy Over Dependency
                 </h3>
                 <p className="text-body leading-7">
-                  The entire protocol is engineered to make you the expert. Success is not measured by your reliance on me, but by your radical independence from me.
+                  The entire protocol is engineered to make you the expert. Our success is measured not by your reliance on us, but by your independence from us.
                 </p>
               </div>
             </div>
@@ -218,17 +210,17 @@ export default function AboutPage() {
               
               <div className="relative p-10 md:p-12 text-center">
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  The Process Begins with Data.
+                  The First Step is to Determine the Fit.
                 </h3>
                 <p className="text-lg text-white/95 leading-8 mb-8 max-w-xl mx-auto">
-                  Our protocol is a serious engagement for individuals who are ready for a new model. The process begins with a diagnostic application to determine if our system is the correct fit for your specific situation.
+                  This is a rigorous, intensive protocol for individuals who are ready for a new model. The process begins with a clinical diagnostic to ensure our system is the correct and most effective solution for your specific situation.
                 </p>
                 
                 <Link
                   href="/apply"
                   className="inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-golden-shell text-olive-grey font-medium shadow-soft hover:shadow-soft-lg hover:scale-105 transition-all duration-300"
                 >
-                  <span>Begin the Diagnostic</span>
+                  <span>Begin a Confidential Diagnostic</span>
                   <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>

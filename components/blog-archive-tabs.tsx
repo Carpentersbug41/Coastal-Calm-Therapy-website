@@ -83,7 +83,7 @@ export function BlogArchiveTabs() {
               : 'text-ink/60 hover:text-brand-900 hover:bg-white/50'
           }`}
         >
-          Case Files
+          Clinical Debriefs
         </button>
       </div>
 
@@ -95,11 +95,11 @@ export function BlogArchiveTabs() {
             {articlesData.system.map((article) => (
               <div key={article.slug} className="border-b border-sage-100 pb-6 last:border-0 last:pb-0">
                 <h4 className="text-xl font-bold text-brand-900 mb-3 hover:text-brand-700 transition-colors">
-                  <Link href={`/blog/${article.slug}`}>{article.title}</Link>
+                  <Link href={`/articles/${article.slug}`}>{article.title}</Link>
                 </h4>
                 <p className="text-ink/70 leading-relaxed mb-4">{article.summary}</p>
                 <Link 
-                  href={`/blog/${article.slug}`}
+                  href={`/articles/${article.slug}`}
                   className="inline-flex items-center text-brand-700 font-medium hover:text-brand-900 transition-colors group text-sm"
                 >
                   Read the Briefing
@@ -118,11 +118,11 @@ export function BlogArchiveTabs() {
             {articlesData.skills.map((article) => (
               <div key={article.slug} className="border-b border-sage-100 pb-6 last:border-0 last:pb-0">
                 <h4 className="text-xl font-bold text-brand-900 mb-3 hover:text-brand-700 transition-colors">
-                  <Link href={`/blog/${article.slug}`}>{article.title}</Link>
+                  <Link href={`/articles/${article.slug}`}>{article.title}</Link>
                 </h4>
                 <p className="text-ink/70 leading-relaxed mb-4">{article.summary}</p>
                 <Link 
-                  href={`/blog/${article.slug}`}
+                  href={`/articles/${article.slug}`}
                   className="inline-flex items-center text-brand-700 font-medium hover:text-brand-900 transition-colors group text-sm"
                 >
                   Read the Briefing
@@ -135,17 +135,17 @@ export function BlogArchiveTabs() {
           </div>
         )}
 
-        {/* Case Files */}
+        {/* Clinical Debriefs */}
         {activeTab === 'cases' && (
           <div className="space-y-6">
             {articlesData.cases.map((article) => (
               <div key={article.slug} className="border-b border-sage-100 pb-6 last:border-0 last:pb-0">
                 <h4 className="text-xl font-bold text-brand-900 mb-3 hover:text-brand-700 transition-colors">
-                  <Link href={`/blog/${article.slug}`}>{article.title}</Link>
+                  <Link href={`/articles/${article.slug}`}>{article.title}</Link>
                 </h4>
                 <p className="text-ink/70 leading-relaxed mb-4">{article.summary}</p>
                 <Link 
-                  href={`/blog/${article.slug}`}
+                  href={`/articles/${article.slug}`}
                   className="inline-flex items-center text-brand-700 font-medium hover:text-brand-900 transition-colors group text-sm"
                 >
                   Read the Briefing

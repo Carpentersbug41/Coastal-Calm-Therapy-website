@@ -114,6 +114,43 @@ export default function HomePage() {
         </Container>
       </section>
 
+      {/* SECTION 2: OUR FOUNDATIONAL DOCTRINE - THE MANIFESTO */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-sea-sage/5 to-seafoam/5">
+        <Container>
+          <div className="max-w-5xl mx-auto">
+            <ScrollReveal>
+              <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6 text-center">
+                Our Foundational Doctrine
+              </h2>
+              
+              <p className="text-lg leading-8 text-body mb-12 text-center max-w-3xl mx-auto">
+                We are not just offering a new service; we are proposing a new paradigm. Our entire model is built on a first-principles diagnosis of a broken system and a data-driven report on the new architecture we engineered to replace it. This is our definitive manifesto.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal delay={100}>
+              <div className="glass-effect rounded-3xl p-10 md:p-12 shadow-soft-lg border-2 border-sea-sage/30 bg-gradient-to-br from-warm-linen to-pebble">
+                <h3 className="text-2xl md:text-3xl font-bold text-sea-sage mb-6">
+                  The Architect and The Engine: A Data-Driven Manifesto for the Future of Psychotherapy
+                </h3>
+                <p className="text-base md:text-lg leading-8 text-body mb-8">
+                  A complete, data-validated report on the Dosage Crisis, the Human Fidelity Crisis, and the Hybrid Intelligence System we built to solve them. This is the intellectual foundation of The Anxiety Protocol.
+                </p>
+                <Link
+                  href="/articles/architect-and-engine-manifesto"
+                  className="inline-flex items-center justify-center rounded-2xl px-8 py-4 bg-sea-sage text-white font-medium shadow-soft hover:shadow-soft-lg hover:bg-golden-shell hover:text-olive-grey hover:scale-105 transition-all duration-300"
+                >
+                  <span>Read the Full Manifesto</span>
+                  <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
+            </ScrollReveal>
+          </div>
+        </Container>
+      </section>
+
       {/* SECTION 3.5: REQUIRED READING FROM THE BRIEFING ROOM */}
       <section className="py-16 md:py-20 bg-gradient-to-br from-soft-clay/10 to-golden-shell/10">
         <Container>

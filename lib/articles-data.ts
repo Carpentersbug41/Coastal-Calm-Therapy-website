@@ -22,6 +22,11 @@ export interface Article {
 
 export const cornerstoneArticles: Article[] = [
   {
+    slug: 'architect-and-engine-manifesto',
+    title: "The Architect and The Engine: A Data-Driven Manifesto for the Future of Psychotherapy",
+    description: "The complete intellectual and clinical foundation of The Anxiety Protocol. This is the definitive report on the failures of the old model and the new architecture we engineered to replace it."
+  },
+  {
     slug: 'weekly-fail',
     title: "Why Weekly Therapy Often Fails (And a 'Bootcamp' Model That Works)",
     description: "A deconstruction of the five systemic flaws in the traditional model that make it structurally inefficient for solving anxiety."

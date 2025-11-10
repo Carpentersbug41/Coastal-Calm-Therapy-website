@@ -158,40 +158,38 @@ export default function PostPage({ params }: PostPageProps) {
           </ScrollReveal>
 
           {/* Post content */}
-          <ScrollReveal delay={300}>
-            <div className="bg-white rounded-3xl shadow-soft ring-1 ring-black/5 p-8 md:p-12 mb-12">
-              {/* Cover image inside content - floats to the right with text wrap */}
-              {post.cover && (
-                <div className="float-right ml-6 mb-6 rounded-2xl overflow-hidden shadow-md ring-1 ring-black/5 group w-64 md:w-80">
-                  <img
-                    src={post.cover}
-                    alt={post.title}
-                    className="w-full h-auto group-hover:scale-105 transition-transform duration-700"
-                  />
-                </div>
-              )}
-              
-              <Prose>
-                <MDXRemote
-                  source={post.content}
-                  options={{
-                    mdxOptions: {
-                      remarkPlugins: [remarkGfm],
-                    },
-                  }}
+          <div className="bg-white rounded-3xl shadow-soft ring-1 ring-black/5 p-8 md:p-12 mb-12">
+            {/* Cover image inside content - floats to the right with text wrap */}
+            {post.cover && (
+              <div className="float-right ml-6 mb-6 rounded-2xl overflow-hidden shadow-md ring-1 ring-black/5 group w-64 md:w-80">
+                <img
+                  src={post.cover}
+                  alt={post.title}
+                  className="w-full h-auto group-hover:scale-105 transition-transform duration-700"
                 />
-              </Prose>
-            </div>
-          </ScrollReveal>
+              </div>
+            )}
+            
+            <Prose>
+              <MDXRemote
+                source={post.content}
+                options={{
+                  mdxOptions: {
+                    remarkPlugins: [remarkGfm],
+                  },
+                }}
+              />
+            </Prose>
+          </div>
 
           {/* Subscribe section */}
-          <ScrollReveal delay={350}>
+          <ScrollReveal delay={100}>
             <BlogSubscribe />
           </ScrollReveal>
 
           {/* Previous/Next navigation */}
           {(prev || next) && (
-            <ScrollReveal delay={400}>
+            <ScrollReveal delay={200}>
               <nav className="mt-16 pt-10 border-t border-sage-100">
                 <h3 className="text-lg font-semibold text-brand-900 mb-6">Continue Reading</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

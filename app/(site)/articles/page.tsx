@@ -40,20 +40,15 @@ export default function ArticlesPage() {
               To fully understand our model, begin with our foundational manifesto. The subsequent briefings provide deeper analysis of the core principles.
             </p>
             
-            <div className="space-y-8">
+            <div className="space-y-6">
               {cornerstoneArticles.map((article, index) => (
-                <ScrollReveal key={article.slug} delay={index * 100}>
+                <ScrollReveal key={article.slug} delay={index * 50}>
                   {index === 0 ? (
-                    // Special prominent styling for the manifesto (first article)
+                    // The Manifesto - First item with enhanced styling
                     <div className="bg-gradient-to-br from-pebble to-warm-linen rounded-2xl shadow-soft-lg ring-2 ring-sea-sage/30 p-10 md:p-12 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                      <div className="flex items-start gap-3 mb-4">
-                        <span className="inline-block px-3 py-1 bg-sea-sage text-white text-sm font-bold rounded-full">
-                          FOUNDATIONAL MANIFESTO
-                        </span>
-                      </div>
-                      <h4 className="text-2xl md:text-3xl font-bold text-sea-sage mb-4 leading-snug">
+                      <h3 className="text-2xl md:text-3xl font-bold text-sea-sage mb-4 leading-snug">
                         {article.title}
-                      </h4>
+                      </h3>
                       <p className="text-base md:text-lg text-olive-grey/80 mb-6 leading-relaxed">
                         {article.description}
                       </p>
@@ -68,21 +63,12 @@ export default function ArticlesPage() {
                       </Link>
                     </div>
                   ) : (
-                    // Standard grid for other articles
-                    <div></div>
-                  )}
-                </ScrollReveal>
-              ))}
-              
-              {/* Supporting Articles Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-4">
-                {cornerstoneArticles.slice(1).map((article, index) => (
-                  <ScrollReveal key={article.slug} delay={(index + 1) * 100}>
-                    <div className="bg-gradient-to-br from-pebble to-warm-linen rounded-2xl shadow-soft ring-1 ring-black/5 p-8 hover:shadow-soft-lg transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
-                      <h4 className="text-xl font-bold text-sea-sage mb-4 leading-snug">
+                    // Supporting articles - Standard styling
+                    <div className="bg-gradient-to-br from-pebble to-warm-linen rounded-2xl shadow-soft ring-1 ring-black/5 p-8 hover:shadow-soft-lg transition-all duration-300 hover:-translate-y-1">
+                      <h3 className="text-xl font-bold text-sea-sage mb-4 leading-snug">
                         {article.title}
-                      </h4>
-                      <p className="text-olive-grey/80 mb-6 leading-relaxed flex-grow">
+                      </h3>
+                      <p className="text-olive-grey/80 mb-6 leading-relaxed">
                         {article.description}
                       </p>
                       <Link 
@@ -95,9 +81,9 @@ export default function ArticlesPage() {
                         </svg>
                       </Link>
                     </div>
-                  </ScrollReveal>
-                ))}
-              </div>
+                  )}
+                </ScrollReveal>
+              ))}
             </div>
           </div>
         </ScrollReveal>

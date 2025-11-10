@@ -136,26 +136,22 @@ export default function PostPage({ params }: PostPageProps) {
                 {post.title}
               </h1>
 
-              {/* Tags */}
-              {post.tags.length > 0 && (
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {post.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-sage-50 text-sage-700 border border-sage-200"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              )}
-
               {/* Description */}
               <p className="text-xl text-ink/70 leading-8 border-l-4 border-brand-500 pl-6 py-2">
                 {post.description}
               </p>
             </header>
           </ScrollReveal>
+
+          {/* Key Concepts - Only for Manifesto - Between header and content */}
+          {params.slug === 'architect-and-engine-manifesto' && (
+            <div className="mb-8 p-6 bg-gradient-to-br from-sea-sage/5 to-seafoam/5 rounded-2xl border border-sea-sage/20">
+              <h4 className="text-lg font-bold text-sea-sage mb-4">Key Concepts in this Briefing:</h4>
+              <p className="text-base text-body leading-relaxed">
+                <span className="font-medium">System Architecture</span> • <span className="font-medium">The Dosage Crisis</span> • <span className="font-medium">The Human Fidelity Crisis</span> • <span className="font-medium">Hybrid Intelligence</span> • <span className="font-medium">The Architect & The Engine</span> • <span className="font-medium">Re-Engineering the Alliance</span>
+              </p>
+            </div>
+          )}
 
           {/* Post content */}
           <div className="bg-white rounded-3xl shadow-soft ring-1 ring-black/5 p-8 md:p-12 mb-12">
@@ -182,13 +178,35 @@ export default function PostPage({ params }: PostPageProps) {
             </Prose>
           </div>
 
-          {/* Subscribe section */}
+          {/* CTA Section - Conditional based on article */}
           <ScrollReveal delay={100}>
-            <BlogSubscribe />
+            {params.slug === 'architect-and-engine-manifesto' ? (
+              // Direct Application CTA for Manifesto
+              <div className="glass-effect rounded-3xl p-10 md:p-12 shadow-soft-lg border-2 border-sea-sage/30 bg-gradient-to-br from-sea-sage/5 to-seafoam/5 text-center">
+                <h2 className="text-3xl md:text-4xl font-bold text-sea-sage mb-6">
+                  You Have Read the Blueprint.
+                </h2>
+                <p className="text-lg leading-8 text-body mb-8 max-w-2xl mx-auto">
+                  This manifesto is the complete intellectual foundation of our protocol. If this data-driven, engineering approach aligns with your goals, the next logical step is to begin the formal diagnostic process.
+                </p>
+                <Link
+                  href="/apply"
+                  className="inline-flex items-center justify-center rounded-2xl px-10 py-5 bg-sea-sage text-white font-bold text-lg shadow-soft hover:shadow-soft-lg hover:bg-golden-shell hover:text-olive-grey hover:scale-105 transition-all duration-300"
+                >
+                  Begin a Confidential Diagnostic
+                  <svg className="ml-3 w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
+            ) : (
+              // Standard subscribe for other articles
+              <BlogSubscribe />
+            )}
           </ScrollReveal>
 
-          {/* Previous/Next navigation */}
-          {(prev || next) && (
+          {/* Previous/Next navigation - Hidden for Manifesto */}
+          {params.slug !== 'architect-and-engine-manifesto' && (prev || next) && (
             <ScrollReveal delay={200}>
               <nav className="mt-16 pt-10 border-t border-sage-100">
                 <h3 className="text-lg font-semibold text-brand-900 mb-6">Continue Reading</h3>
